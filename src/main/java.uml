@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement>C:/Users/domco/Documents/Škola/informatika/Java the Hutt/wörk files/demo/src/main/java</OriginalElement>
+  <nodes>
+    <node x="678.8367030821152" y="226.51667687468188">cs.cvut.fel.pjv.demo.view.items.tools.Picaxe</node>
+    <node x="610.5361398639094" y="543.29429478884">cs.cvut.fel.pjv.demo.view.items.Key</node>
+    <node x="683.6245002789304" y="1456.7204112356908">cs.cvut.fel.pjv.demo.view.characters.NPC</node>
+    <node x="354.6112759386363" y="473.5400894562946">cs.cvut.fel.pjv.demo.view.Material</node>
+    <node x="526.1434339398423" y="359.3606288716903">cs.cvut.fel.pjv.demo.view.items.Item</node>
+    <node x="678.0410529088969" y="722.4195266879572">cs.cvut.fel.pjv.demo.view.Direction</node>
+    <node x="259.18219078956736" y="636.0511906932393">cs.cvut.fel.pjv.demo.view.Realm</node>
+    <node x="569.8875437845875" y="936.406386192383">cs.cvut.fel.pjv.demo.view.SpecialBlock</node>
+    <node x="323.42753941288083" y="1003.5693079352783">cs.cvut.fel.pjv.demo.view.characters.Avatar</node>
+    <node x="-0.09756749206019322" y="443.7321091768276">cs.cvut.fel.pjv.demo.model.Model</node>
+    <node x="821.5954584178521" y="1246.8474497491425">cs.cvut.fel.pjv.demo.OdysseyOfRealms</node>
+    <node x="518.3657038610168" y="-13.57377809483549">cs.cvut.fel.pjv.demo.view.items.tools.Sword</node>
+    <node x="490.95441119370486" y="173.13838254468436">cs.cvut.fel.pjv.demo.view.items.tools.Showel</node>
+    <node x="262.35132080845676" y="161.35059617403755">cs.cvut.fel.pjv.demo.view.items.tools.Tool</node>
+    <node x="453.9413666650201" y="1235.5092736536265">cs.cvut.fel.pjv.demo.view.characters.Enemy</node>
+    <node x="-95.77659659595543" y="1185.7578483210918">cs.cvut.fel.pjv.demo.controller.Controller</node>
+    <node x="230.9669585904915" y="301.4507692586588">cs.cvut.fel.pjv.demo.view.items.Portal</node>
+    <node x="341.4311940090787" y="1466.6782068843117">cs.cvut.fel.pjv.demo.view.characters.Player</node>
+    <node x="-53.40354005014825" y="691.9120386226671">cs.cvut.fel.pjv.demo.view.Block</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="cs.cvut.fel.pjv.demo.view.items.Key" target="cs.cvut.fel.pjv.demo.view.items.Item" relationship="GENERALIZATION">
+      <point x="-62.0" y="0.0" />
+      <point x="577.3875437845875" y="594.29429478884" />
+      <point x="6.2441098447451395" y="27.0" />
+    </edge>
+    <edge source="cs.cvut.fel.pjv.demo.view.characters.NPC" target="cs.cvut.fel.pjv.demo.view.characters.Avatar" relationship="GENERALIZATION">
+      <point x="4.997210695592003E-4" y="-120.50041123569076" />
+      <point x="799.125" y="1432.0" />
+      <point x="406.928" y="1432.0" />
+      <point x="4.6058711919272355E-4" y="61.99969206472167" />
+    </edge>
+    <edge source="cs.cvut.fel.pjv.demo.view.SpecialBlock" target="cs.cvut.fel.pjv.demo.view.Block" relationship="GENERALIZATION">
+      <point x="-148.0" y="-69.83707825710474" />
+      <point x="126.0" y="116.15726931261122" />
+    </edge>
+    <edge source="cs.cvut.fel.pjv.demo.view.characters.Player" target="cs.cvut.fel.pjv.demo.view.characters.Avatar" relationship="GENERALIZATION">
+      <point x="-1.940090787115878E-4" y="-281.50020688431164" />
+      <point x="462.431" y="1432.0" />
+      <point x="406.928" y="1432.0" />
+      <point x="4.6058711919272355E-4" y="61.99969206472167" />
+    </edge>
+    <edge source="cs.cvut.fel.pjv.demo.view.characters.Enemy" target="cs.cvut.fel.pjv.demo.view.characters.Avatar" relationship="GENERALIZATION">
+      <point x="-3.666650201239463E-4" y="85.49972634637356" />
+      <point x="538.441" y="1432.0" />
+      <point x="406.928" y="1432.0" />
+      <point x="4.6058711919272355E-4" y="61.99969206472167" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic Compact" zoom="0.3507751937984496" showDependencies="false" x="742.1810282123896" y="904.0" />
+  <SelectedNodes />
+  <Categories>
+    <Category>Constructors</Category>
+    <Category>Fields</Category>
+    <Category>Methods</Category>
+    <Category>Properties</Category>
+  </Categories>
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>private</VISIBILITY>
+</Diagram>
+
