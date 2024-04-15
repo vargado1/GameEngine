@@ -1,4 +1,4 @@
-package cs.cvut.fel.pjv.demo.view.items;
+package cs.cvut.fel.pjv.demo.view;
 
 public class Portal {
     private boolean isUnlocked = false;

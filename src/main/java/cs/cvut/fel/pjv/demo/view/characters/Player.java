@@ -1,11 +1,7 @@
 package cs.cvut.fel.pjv.demo.view.characters;
 
-import cs.cvut.fel.pjv.demo.view.Block;
-import cs.cvut.fel.pjv.demo.view.Direction;
-import cs.cvut.fel.pjv.demo.view.Material;
-import cs.cvut.fel.pjv.demo.view.SpecialBlock;
-import cs.cvut.fel.pjv.demo.view.items.Key;
-import cs.cvut.fel.pjv.demo.view.items.tools.Tool;
+import cs.cvut.fel.pjv.demo.view.*;
+import cs.cvut.fel.pjv.demo.view.tools.Tool;
 
 import java.util.ArrayList;
 

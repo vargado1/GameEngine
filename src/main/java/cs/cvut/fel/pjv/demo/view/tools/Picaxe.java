@@ -1,4 +1,4 @@
-package cs.cvut.fel.pjv.demo.view.items.tools;
+package cs.cvut.fel.pjv.demo.view.tools;
 
 public class Picaxe {
     private int level;
