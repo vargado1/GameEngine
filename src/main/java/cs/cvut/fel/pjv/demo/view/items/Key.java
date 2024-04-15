@@ -1,6 +1,6 @@
 package cs.cvut.fel.pjv.demo.view.items;
 
-public class Key extends Item{
+public class Key {
     private boolean isDropped = false;
 
     private String name;

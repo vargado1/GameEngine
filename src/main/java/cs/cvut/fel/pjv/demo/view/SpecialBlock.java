@@ -1,6 +1,5 @@
 package cs.cvut.fel.pjv.demo.view;
 
-import cs.cvut.fel.pjv.demo.view.items.Item;
 import cs.cvut.fel.pjv.demo.view.items.tools.Tool;
 
 import java.util.ArrayList;

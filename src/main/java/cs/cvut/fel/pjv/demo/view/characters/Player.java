@@ -4,7 +4,7 @@ import cs.cvut.fel.pjv.demo.view.Block;
 import cs.cvut.fel.pjv.demo.view.Direction;
 import cs.cvut.fel.pjv.demo.view.Material;
 import cs.cvut.fel.pjv.demo.view.SpecialBlock;
-import cs.cvut.fel.pjv.demo.view.items.Item;
+import cs.cvut.fel.pjv.demo.view.items.Key;
 import cs.cvut.fel.pjv.demo.view.items.tools.Tool;
 
 import java.util.ArrayList;
@@ -13,10 +13,20 @@ public class Player extends Avatar {
     private boolean isMoving = false;
     private Direction direction = Direction.RIGHT;
     private int speed;
-    ArrayList<Object> inventory = new ArrayList<>();
-    ArrayList<Object> hotBar = new ArrayList<>();
+    private ArrayList<Object> inventory = new ArrayList<>();
+    private ArrayList<Object> hotBar = new ArrayList<>();
+    private Object selectetItem = null;
 
     public Player() {
+    }
+
+    /**
+     * Metóda na nastavenie itemu ktorý ma hráč v ruke
+     *
+     * @param selectetItem item na nastavenie
+     */
+    public void setSelectetItem(Object selectetItem) {
+        this.selectetItem = selectetItem;
     }
 
     /**
@@ -52,9 +62,9 @@ public class Player extends Avatar {
     /**
      * Metóda na pridanie položky do inventára hráča.
      *
-     * @param item Položka, ktorá sa má pridať do inventára.
+     * @param key Kľúč, ktorý sa má pridať do inventára.
      */
-    public void addToInvenory(Item item){}
+    public void addToInvenory(Key key){}
 
     /**
      * Metóda na pridanie bloku do inventára hráča.
@@ -80,9 +90,9 @@ public class Player extends Avatar {
     /**
      * Metóda na pridanie položky do HotBaru hráča.
      *
-     * @param item Položka, ktorá sa má pridať do HotBaru.
+     * @param key Kľúč, ktorý sa má pridať do HotBaru.
      */
-    public void addToHotBar(Item item){}
+    public void addToHotBar(Key key){}
 
     /**
      * Metóda na pridanie položky do HotBaru hráča.
@@ -175,6 +185,13 @@ public class Player extends Avatar {
      */
     @Override
     public void moveRIGHT() {
+
+    }
+
+    /**
+     * Metóda na skok hráča.
+     */
+    public void Jump() {
 
     }
 }
