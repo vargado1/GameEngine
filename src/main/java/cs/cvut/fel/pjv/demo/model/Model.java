@@ -1,7 +1,9 @@
 package cs.cvut.fel.pjv.demo.model;
 
+import cs.cvut.fel.pjv.demo.view.Direction;
 import cs.cvut.fel.pjv.demo.view.Material;
 import cs.cvut.fel.pjv.demo.view.Realm;
+import cs.cvut.fel.pjv.demo.view.characters.Player;
 import javafx.scene.layout.StackPane;
 
 public class Model {
@@ -13,12 +15,46 @@ public class Model {
      */
     public boolean checkForRecipe(Material[] materials){return false;}
 
-    /**
-     * Metóda na zistenie kolízie.
-     *
-     * @return True, ak dochádza k kolízii, inak false.
-     */
-    public boolean isCollision(){
+    public boolean isBlockUnder(Realm realm, Player player) {
+        int playerXCoord = player.getxCoord();
+        int playerYCoord = player.getyCoord();
+
+        if (realm.map[playerXCoord][playerYCoord + 1] == null) {
+            return false;
+        }
+
+        return true;
+    }
+
+    public boolean isCollision(Realm realm, Player player){
+        Direction dir = player.getDirection();
+        int playerXCoord = player.getxCoord();
+        int playerYCoord = player.getyCoord();
+
+        switch (dir) {
+            case RIGHT ->
+            {
+                if (realm.map[playerXCoord + 1][playerYCoord] != null || realm.map[playerXCoord + 1][playerYCoord - 1] != null) {
+                    return true;
+                }
+                break;
+            }
+            case LEFT ->
+            {
+                if (realm.map[playerXCoord - 1][playerYCoord] != null || realm.map[playerXCoord - 1][playerYCoord - 1] != null) {
+                    return true;
+                }
+                break;
+            }
+            case JUMP ->
+            {
+                if (realm.map[playerXCoord][playerYCoord - 2] != null) {
+                    return true;
+                }
+                break;
+            }
+        }
+
         return false;
     }
 

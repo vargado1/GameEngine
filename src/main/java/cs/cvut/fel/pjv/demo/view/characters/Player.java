@@ -78,7 +78,9 @@ public class Player {
      *
      * @param direction Smer pohybu hráča.
      */
-    public void setDirection(Direction direction){}
+    public void setDirection(Direction direction){
+        this.direction = direction;
+    }
 
     /**
      * Metóda na nastavenie rýchlosti hráča.
@@ -351,6 +353,10 @@ public class Player {
 //        return lastIndex;
 //    }
 
+
+    public Direction getDirection() {
+        return direction;
+    }
 
     public int getSpeed() {
         return speed;

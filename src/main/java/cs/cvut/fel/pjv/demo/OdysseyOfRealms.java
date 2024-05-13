@@ -238,6 +238,16 @@ public class OdysseyOfRealms extends Application {
         loadPlayer(root);
     }
 
+    private void isFalling(int xCoord, int yCoord, StackPane root) {
+        int[] coords;
+        while (!model.isBlockUnder(world, player)) {
+            root.getChildren().remove(playerIMG);
+            coords = controller.moveDown();
+            viewPlayer(root, coords[0], coords[1]);
+        }
+    }
+
+
     @Override
     public void start(Stage stage) throws IOException {
 
@@ -297,7 +307,7 @@ public class OdysseyOfRealms extends Application {
 
         controller = new Controller(player, model, world);
 
-        PauseTransition pause = new PauseTransition(Duration.seconds(0.5)); // Definícia oneskorenia na 1 sekundu
+        PauseTransition pause = new PauseTransition(Duration.seconds(0.5));
         pause.setOnFinished(jump -> {
             root.getChildren().remove(playerIMG);
             int[] finalCoords = controller.moveDown();
@@ -305,15 +315,26 @@ public class OdysseyOfRealms extends Application {
             isPaused = false;
         });
 
+        PauseTransition fall = new PauseTransition(Duration.seconds(0.3));
+        fall.setOnFinished(event -> isFalling(player.getxCoord(), player.getyCoord(), root));
+
+
         scene.setOnKeyPressed(new EventHandler<KeyEvent>() {
             @Override
             public void handle(KeyEvent event) {
                 int[] coords;
                 switch (event.getCode()) {
                     case A:
+                        player.setDirection(Direction.LEFT);
+
+                        if (model.isCollision(world, player)) {
+                            break;
+                        }
+
                         root.getChildren().remove(playerIMG);
                         coords = controller.moveLeft();
                         viewPlayer(root, coords[0], coords[1]);
+
 
                         if (isPaused) {
                             root.getChildren().remove(playerIMG);
@@ -322,8 +343,16 @@ public class OdysseyOfRealms extends Application {
 
                         }
 
+                        fall.play();
+
                         break;
                     case D:
+                        player.setDirection(Direction.RIGHT);
+
+                        if (model.isCollision(world, player)) {
+                            break;
+                        }
+
                         root.getChildren().remove(playerIMG);
                         coords = controller.moveRight();
                         viewPlayer(root, coords[0], coords[1]);
@@ -335,8 +364,16 @@ public class OdysseyOfRealms extends Application {
 
                         }
 
+                        fall.play();
+
                         break;
-                        case SPACE:
+                    case SPACE:
+                        player.setDirection(Direction.JUMP);
+
+                        if (model.isCollision(world, player)) {
+                            break;
+                        }
+
                         if (!isPaused) {
                             root.getChildren().remove(playerIMG);
                             coords = controller.moveUp();

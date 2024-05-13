@@ -49,7 +49,7 @@
     null
   ],
   "playerImage": "player.png",
-  "xCoords": 25,
+  "xCoords": 27,
   "yCoords": 13,
   "HP": 100
 }
