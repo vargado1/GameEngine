@@ -1,25 +1,26 @@
 package cs.cvut.fel.pjv.demo.view;
 
-public class Key {
+import com.google.gson.annotations.Expose;
+
+public class Key extends Item{
+    @Expose
     private boolean isDropped = false;
 
-    private String name;
 
     /**
      * Konštruktor pre vytvorenie inštancie kľúča.
      *
      * @param name Názov kľúča.
      */
-    public Key(String name) {
-        this.name = name;
+    public Key(String name, String group, String imagePath) {
+        super(group, name, imagePath);
     }
 
-    /**
-     * Metóda vracejúca názov kľúča.
-     *
-     * @return Názov kľúča.
-     */
-    public String getName() {
-        return name;
+    public boolean isDropped() {
+        return isDropped;
+    }
+
+    public void setDropped(boolean dropped) {
+        isDropped = dropped;
     }
 }

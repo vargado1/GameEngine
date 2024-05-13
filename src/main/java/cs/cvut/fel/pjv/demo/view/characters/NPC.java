@@ -1,14 +1,21 @@
 package cs.cvut.fel.pjv.demo.view.characters;
 
+import com.google.gson.annotations.Expose;
 import cs.cvut.fel.pjv.demo.view.Material;
-import cs.cvut.fel.pjv.demo.view.characters.Avatar;
 
-public class NPC extends Avatar {
+public class NPC{
     private String riddle;
     private Material reward;
     private String NpcName;
+    @Expose
+    private int xCoords;
+    @Expose
+    private int yCoords;
 
-    public NPC(String riddle, Material reward, String npcName) {
+
+    public NPC(String riddle, Material reward, String npcName, int xCoords, int yCoords) {
+        this.xCoords = xCoords;
+        this.yCoords = yCoords;
         this.riddle = riddle;
         this.reward = reward;
         NpcName = npcName;
@@ -44,12 +51,12 @@ public class NPC extends Avatar {
     /**
      * NPC sa nebude môcť hýbať
      */
-    @Override
+
     void moveRIGHT() {
 
     }
 
-    @Override
+
     void moveLEFT() {
 
     }

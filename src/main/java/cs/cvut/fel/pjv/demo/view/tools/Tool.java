@@ -1,6 +1,6 @@
 package cs.cvut.fel.pjv.demo.view.tools;
 
-public abstract class Tool {
+public class Tool {
 
     /**
      * Metóda na rozbíjanie blokov pomocou nástroja.

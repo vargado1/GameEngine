@@ -1,23 +1,15 @@
 package cs.cvut.fel.pjv.demo.view;
 
-public class Material {
-    private String type;
+import com.google.gson.annotations.Expose;
+
+public class Material extends Item {
 
     /**
      * Konštruktor pre vytvorenie inštancie materiálu.
      *
      * @param type Typ materiálu.
      */
-    public Material(String type) {
-        this.type = type;
-    }
-
-    /**
-     * Metóda vracejúca typ materiálu.
-     *
-     * @return Typ materiálu.
-     */
-    public String getType() {
-        return type;
+    public Material(String type, String group, String imagePath) {
+        super(group, type, imagePath);
     }
 }

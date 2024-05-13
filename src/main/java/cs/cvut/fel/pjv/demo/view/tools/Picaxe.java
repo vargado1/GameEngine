@@ -1,23 +1,10 @@
 package cs.cvut.fel.pjv.demo.view.tools;
 
-public class Picaxe {
-    private int level;
+import cs.cvut.fel.pjv.demo.view.Item;
 
-    /**
-     * Konštruktor pre vytvorenie inštancie krompáča s určitou úrovňou.
-     *
-     * @param level Úroveň krompáča.
-     */
-    public Picaxe(int level) {
-        this.level = level;
-    }
+public class Picaxe extends Item {
 
-    /**
-     * Metóda vracejúca úroveň krompáča.
-     *
-     * @return Úroveň krompáča.
-     */
-    public int getLevel() {
-        return level;
+    public Picaxe(String level, String group, String imagePath) {
+        super(group, level, imagePath);
     }
 }

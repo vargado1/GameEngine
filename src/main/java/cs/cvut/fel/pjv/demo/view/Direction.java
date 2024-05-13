@@ -2,7 +2,7 @@ package cs.cvut.fel.pjv.demo.view;
 
 public enum Direction {
     LEFT(-1, 0),
-    RIGHT(1, 0);
+    RIGHT(1, 0),
     JUMP(0, 1);
 
     /**

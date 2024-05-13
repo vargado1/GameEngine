@@ -1,15 +1,23 @@
 package cs.cvut.fel.pjv.demo.view;
 
-public class Block {
-    private boolean isCraftable;
-    private int xCoord;
-    private int yCoord;
-    private final int size = 1;
-    private boolean canFall;
-    private String type;
-    private boolean placed = false;
+import com.google.gson.annotations.Expose;
+import cs.cvut.fel.pjv.demo.view.characters.Player;
 
-    public Block(boolean isCraftable, boolean canFall, String type) {
+public class Block extends Item{
+    @Expose
+    private boolean isCraftable;
+    @Expose
+    private int xCoord;
+    @Expose
+    private int yCoord;
+    @Expose
+    private final int size = 30;
+    @Expose
+    private boolean canFall;
+    public boolean isPlaced = false;
+
+    public Block(boolean isCraftable, boolean canFall, String type, String imagePath, String group) {
+        super(group, imagePath, type);
         this.isCraftable = isCraftable;
         this.canFall = canFall;
         this.type = type;
@@ -60,45 +68,24 @@ public class Block {
         return canFall;
     }
 
-    /**
-     * Metóda vracajúca typ bloku.
-     *
-     * @return Typ bloku.
-     */
-    public String getType(){
-        return type;
-    }
 
     /**
      * Metóda nastavujúca X-ovú súradnicu bloku.
      *
      * @param xCoord Nová X-ová súradnica bloku.
      */
-    public void setXCoord(int xCoord) {
+    public void setCoords(int xCoord, int yCoord) {
         this.xCoord = xCoord;
-    }
-
-    /**
-     * Metóda nastavujúca Y-ovú súradnicu bloku.
-     *
-     * @param yCoord Nová Y-ová súradnica bloku.
-     */
-    public void setYCoord(int yCoord) {
         this.yCoord = yCoord;
     }
 
-    /**
-     * Metóda nastavujúca informáciu o tom, či je blok umiestnený.
-     *
-     * @param placed True, ak je blok umiestnený, inak false.
-     */
-    public void setPlaced(boolean placed) {
-        this.placed = placed;
-    }
 
     /**
      * Metóda na vrátenie bloku do inventáru.
      */
-    public void returnBlock(){}
+    public void returnBlockToInventory(){
+
+    }
+
 
 }

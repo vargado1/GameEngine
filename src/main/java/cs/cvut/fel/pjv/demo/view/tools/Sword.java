@@ -1,24 +1,11 @@
 package cs.cvut.fel.pjv.demo.view.tools;
 
-public class Sword {
-    private int level;
+import com.google.gson.annotations.Expose;
+import cs.cvut.fel.pjv.demo.view.Item;
 
-    /**
-     * Konštruktor pre vytvorenie inštancie meča s určitou úrovňou.
-     *
-     * @param level Úroveň meča.
-     */
-    public Sword(int level) {
-        this.level = level;
-    }
-
-    /**
-     * Metóda vracejúca úroveň meča.
-     *
-     * @return Úroveň meča.
-     */
-    public int getLevel() {
-        return level;
+public class Sword extends Item {
+    public Sword(String type, String group, String imagePath) {
+        super(group, type, imagePath);
     }
 
     /**

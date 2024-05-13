@@ -1,13 +1,24 @@
 package cs.cvut.fel.pjv.demo.view.characters;
 
-public class Enemy extends Avatar {
+import com.google.gson.annotations.Expose;
+
+public class Enemy {
     private int speed;
     private int damage;
     private String type;
+    @Expose
+    private int xCoords;
+    @Expose
+    private int yCoords;
+    @Expose
+    private int HP;
 
-    public Enemy(int damage, String type) {
+    public Enemy(int damage, String type, int xCoords, int yCoords, int HP) {
+        this.xCoords = xCoords;
+        this.yCoords = yCoords;
         this.damage = damage;
         this.type = type;
+        this.HP = HP;
     }
 
     /**
@@ -33,12 +44,12 @@ public class Enemy extends Avatar {
      *
      * @param character Postava, na ktorú sa má vykonať útok.
      */
-    public void attack(Avatar character) {}
+    public void attack(Player character) {}
 
     /**
      * Metóda pre pohyb nepriateľa doprava.
      */
-    @Override
+
     void moveRIGHT() {
 
     }
@@ -46,7 +57,7 @@ public class Enemy extends Avatar {
     /**
      * Metóda pre pohyb nepriateľa doľava.
      */
-    @Override
+
     void moveLEFT() {
 
     }

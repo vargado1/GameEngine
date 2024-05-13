@@ -1,23 +1,16 @@
 package cs.cvut.fel.pjv.demo.view.tools;
 
-public class Showel{
-    private int level;
+import cs.cvut.fel.pjv.demo.view.Item;
+
+public class Showel extends Item {
 
     /**
      * Konštruktor pre vytvorenie inštancie lopaty s určitou úrovňou.
      *
      * @param level Úroveň lopaty.
      */
-    public Showel(int level) {
-        this.level = level;
+    public Showel(String level, String group, String imagePath) {
+        super(group, level, imagePath);
     }
 
-    /**
-     * Metóda vracejúca úroveň lopaty.
-     *
-     * @return Úroveň lopaty.
-     */
-    public int getLevel() {
-        return level;
-    }
 }
