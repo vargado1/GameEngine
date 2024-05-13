@@ -1,0 +1,1419 @@
+{
+  "xMaxCoords": 49,
+  "yMaxCoords": 28,
+  "name": "Overworld",
+  "bossName": "none",
+  "difficulty": 1,
+  "blocks": [
+    {
+      "isCraftable": true,
+      "xCoord": 24,
+      "yCoord": 14,
+      "size": 30,
+      "canFall": false,
+      "imagePath": "wooden_block.jpg",
+      "type": "Plank"
+    },
+    {
+      "isCraftable": false,
+      "xCoord": 25,
+      "yCoord": 14,
+      "size": 30,
+      "canFall": false,
+      "imagePath": "dirt_block.jpg",
+      "type": "Dirt"
+    },
+    {
+      "isCraftable": true,
+      "xCoord": 26,
+      "yCoord": 14,
+      "size": 30,
+      "canFall": false,
+      "imagePath": "stone_block.jpg",
+      "type": "Stone"
+    },
+    {
+      "isCraftable": false,
+      "xCoord": 27,
+      "yCoord": 14,
+      "size": 30,
+      "canFall": true,
+      "imagePath": "gravel_block.jpg",
+      "type": "Gravel"
+    },
+    {
+      "isCraftable": false,
+      "xCoord": 0,
+      "yCoord": 27,
+      "size": 30,
+      "canFall": false,
+      "imagePath": "dirt_block.jpg",
+      "type": "Dirt"
+    },
+    {
+      "isCraftable": false,
+      "xCoord": 1,
+      "yCoord": 27,
+      "size": 30,
+      "canFall": false,
+      "imagePath": "dirt_block.jpg",
+      "type": "Dirt"
+    },
+    {
+      "isCraftable": false,
+      "xCoord": 2,
+      "yCoord": 27,
+      "size": 30,
+      "canFall": false,
+      "imagePath": "dirt_block.jpg",
+      "type": "Dirt"
+    },
+    {
+      "isCraftable": false,
+      "xCoord": 3,
+      "yCoord": 27,
+      "size": 30,
+      "canFall": false,
+      "imagePath": "dirt_block.jpg",
+      "type": "Dirt"
+    },
+    {
+      "isCraftable": false,
+      "xCoord": 4,
+      "yCoord": 27,
+      "size": 30,
+      "canFall": false,
+      "imagePath": "dirt_block.jpg",
+      "type": "Dirt"
+    },
+    {
+      "isCraftable": false,
+      "xCoord": 5,
+      "yCoord": 27,
+      "size": 30,
+      "canFall": false,
+      "imagePath": "dirt_block.jpg",
+      "type": "Dirt"
+    },
+    {
+      "isCraftable": false,
+      "xCoord": 6,
+      "yCoord": 27,
+      "size": 30,
+      "canFall": false,
+      "imagePath": "dirt_block.jpg",
+      "type": "Dirt"
+    },
+    {
+      "isCraftable": false,
+      "xCoord": 7,
+      "yCoord": 27,
+      "size": 30,
+      "canFall": false,
+      "imagePath": "dirt_block.jpg",
+      "type": "Dirt"
+    },
+    {
+      "isCraftable": false,
+      "xCoord": 8,
+      "yCoord": 27,
+      "size": 30,
+      "canFall": false,
+      "imagePath": "dirt_block.jpg",
+      "type": "Dirt"
+    },
+    {
+      "isCraftable": false,
+      "xCoord": 9,
+      "yCoord": 27,
+      "size": 30,
+      "canFall": false,
+      "imagePath": "dirt_block.jpg",
+      "type": "Dirt"
+    },
+    {
+      "isCraftable": false,
+      "xCoord": 10,
+      "yCoord": 27,
+      "size": 30,
+      "canFall": false,
+      "imagePath": "dirt_block.jpg",
+      "type": "Dirt"
+    },
+    {
+      "isCraftable": false,
+      "xCoord": 11,
+      "yCoord": 27,
+      "size": 30,
+      "canFall": false,
+      "imagePath": "dirt_block.jpg",
+      "type": "Dirt"
+    },
+    {
+      "isCraftable": false,
+      "xCoord": 12,
+      "yCoord": 27,
+      "size": 30,
+      "canFall": false,
+      "imagePath": "dirt_block.jpg",
+      "type": "Dirt"
+    },
+    {
+      "isCraftable": false,
+      "xCoord": 13,
+      "yCoord": 27,
+      "size": 30,
+      "canFall": false,
+      "imagePath": "dirt_block.jpg",
+      "type": "Dirt"
+    },
+    {
+      "isCraftable": false,
+      "xCoord": 14,
+      "yCoord": 27,
+      "size": 30,
+      "canFall": false,
+      "imagePath": "dirt_block.jpg",
+      "type": "Dirt"
+    },
+    {
+      "isCraftable": false,
+      "xCoord": 15,
+      "yCoord": 27,
+      "size": 30,
+      "canFall": false,
+      "imagePath": "dirt_block.jpg",
+      "type": "Dirt"
+    },
+    {
+      "isCraftable": false,
+      "xCoord": 16,
+      "yCoord": 27,
+      "size": 30,
+      "canFall": false,
+      "imagePath": "dirt_block.jpg",
+      "type": "Dirt"
+    },
+    {
+      "isCraftable": false,
+      "xCoord": 17,
+      "yCoord": 27,
+      "size": 30,
+      "canFall": false,
+      "imagePath": "dirt_block.jpg",
+      "type": "Dirt"
+    },
+    {
+      "isCraftable": false,
+      "xCoord": 19,
+      "yCoord": 27,
+      "size": 30,
+      "canFall": false,
+      "imagePath": "dirt_block.jpg",
+      "type": "Dirt"
+    },
+    {
+      "isCraftable": false,
+      "xCoord": 20,
+      "yCoord": 27,
+      "size": 30,
+      "canFall": false,
+      "imagePath": "dirt_block.jpg",
+      "type": "Dirt"
+    },
+    {
+      "isCraftable": false,
+      "xCoord": 21,
+      "yCoord": 27,
+      "size": 30,
+      "canFall": false,
+      "imagePath": "dirt_block.jpg",
+      "type": "Dirt"
+    },
+    {
+      "isCraftable": false,
+      "xCoord": 22,
+      "yCoord": 27,
+      "size": 30,
+      "canFall": false,
+      "imagePath": "dirt_block.jpg",
+      "type": "Dirt"
+    },
+    {
+      "isCraftable": false,
+      "xCoord": 23,
+      "yCoord": 27,
+      "size": 30,
+      "canFall": false,
+      "imagePath": "dirt_block.jpg",
+      "type": "Dirt"
+    },
+    {
+      "isCraftable": false,
+      "xCoord": 24,
+      "yCoord": 27,
+      "size": 30,
+      "canFall": false,
+      "imagePath": "dirt_block.jpg",
+      "type": "Dirt"
+    },
+    {
+      "isCraftable": false,
+      "xCoord": 25,
+      "yCoord": 27,
+      "size": 30,
+      "canFall": false,
+      "imagePath": "dirt_block.jpg",
+      "type": "Dirt"
+    },
+    {
+      "isCraftable": false,
+      "xCoord": 26,
+      "yCoord": 27,
+      "size": 30,
+      "canFall": false,
+      "imagePath": "dirt_block.jpg",
+      "type": "Dirt"
+    },
+    {
+      "isCraftable": false,
+      "xCoord": 27,
+      "yCoord": 27,
+      "size": 30,
+      "canFall": false,
+      "imagePath": "dirt_block.jpg",
+      "type": "Dirt"
+    },
+    {
+      "isCraftable": false,
+      "xCoord": 28,
+      "yCoord": 27,
+      "size": 30,
+      "canFall": false,
+      "imagePath": "dirt_block.jpg",
+      "type": "Dirt"
+    },
+    {
+      "isCraftable": false,
+      "xCoord": 29,
+      "yCoord": 27,
+      "size": 30,
+      "canFall": false,
+      "imagePath": "dirt_block.jpg",
+      "type": "Dirt"
+    },
+    {
+      "isCraftable": false,
+      "xCoord": 30,
+      "yCoord": 27,
+      "size": 30,
+      "canFall": false,
+      "imagePath": "dirt_block.jpg",
+      "type": "Dirt"
+    },
+    {
+      "isCraftable": false,
+      "xCoord": 31,
+      "yCoord": 27,
+      "size": 30,
+      "canFall": false,
+      "imagePath": "dirt_block.jpg",
+      "type": "Dirt"
+    },
+    {
+      "isCraftable": false,
+      "xCoord": 32,
+      "yCoord": 27,
+      "size": 30,
+      "canFall": false,
+      "imagePath": "dirt_block.jpg",
+      "type": "Dirt"
+    },
+    {
+      "isCraftable": false,
+      "xCoord": 33,
+      "yCoord": 27,
+      "size": 30,
+      "canFall": false,
+      "imagePath": "dirt_block.jpg",
+      "type": "Dirt"
+    },
+    {
+      "isCraftable": false,
+      "xCoord": 34,
+      "yCoord": 27,
+      "size": 30,
+      "canFall": false,
+      "imagePath": "dirt_block.jpg",
+      "type": "Dirt"
+    },
+    {
+      "isCraftable": false,
+      "xCoord": 35,
+      "yCoord": 27,
+      "size": 30,
+      "canFall": false,
+      "imagePath": "dirt_block.jpg",
+      "type": "Dirt"
+    },
+    {
+      "isCraftable": false,
+      "xCoord": 36,
+      "yCoord": 27,
+      "size": 30,
+      "canFall": false,
+      "imagePath": "dirt_block.jpg",
+      "type": "Dirt"
+    },
+    {
+      "isCraftable": false,
+      "xCoord": 18,
+      "yCoord": 27,
+      "size": 30,
+      "canFall": false,
+      "imagePath": "dirt_block.jpg",
+      "type": "Dirt"
+    },
+    {
+      "isCraftable": false,
+      "xCoord": 37,
+      "yCoord": 27,
+      "size": 30,
+      "canFall": false,
+      "imagePath": "dirt_block.jpg",
+      "type": "Dirt"
+    },
+    {
+      "isCraftable": false,
+      "xCoord": 38,
+      "yCoord": 27,
+      "size": 30,
+      "canFall": false,
+      "imagePath": "dirt_block.jpg",
+      "type": "Dirt"
+    },
+    {
+      "isCraftable": false,
+      "xCoord": 39,
+      "yCoord": 27,
+      "size": 30,
+      "canFall": false,
+      "imagePath": "dirt_block.jpg",
+      "type": "Dirt"
+    },
+    {
+      "isCraftable": false,
+      "xCoord": 40,
+      "yCoord": 27,
+      "size": 30,
+      "canFall": false,
+      "imagePath": "dirt_block.jpg",
+      "type": "Dirt"
+    },
+    {
+      "isCraftable": false,
+      "xCoord": 41,
+      "yCoord": 27,
+      "size": 30,
+      "canFall": false,
+      "imagePath": "dirt_block.jpg",
+      "type": "Dirt"
+    },
+    {
+      "isCraftable": false,
+      "xCoord": 42,
+      "yCoord": 27,
+      "size": 30,
+      "canFall": false,
+      "imagePath": "dirt_block.jpg",
+      "type": "Dirt"
+    },
+    {
+      "isCraftable": false,
+      "xCoord": 43,
+      "yCoord": 27,
+      "size": 30,
+      "canFall": false,
+      "imagePath": "dirt_block.jpg",
+      "type": "Dirt"
+    },
+    {
+      "isCraftable": false,
+      "xCoord": 44,
+      "yCoord": 27,
+      "size": 30,
+      "canFall": false,
+      "imagePath": "dirt_block.jpg",
+      "type": "Dirt"
+    },
+    {
+      "isCraftable": false,
+      "xCoord": 45,
+      "yCoord": 27,
+      "size": 30,
+      "canFall": false,
+      "imagePath": "dirt_block.jpg",
+      "type": "Dirt"
+    },
+    {
+      "isCraftable": false,
+      "xCoord": 46,
+      "yCoord": 27,
+      "size": 30,
+      "canFall": false,
+      "imagePath": "dirt_block.jpg",
+      "type": "Dirt"
+    },
+    {
+      "isCraftable": false,
+      "xCoord": 47,
+      "yCoord": 27,
+      "size": 30,
+      "canFall": false,
+      "imagePath": "dirt_block.jpg",
+      "type": "Dirt"
+    },
+    {
+      "isCraftable": false,
+      "xCoord": 48,
+      "yCoord": 27,
+      "size": 30,
+      "canFall": false,
+      "imagePath": "dirt_block.jpg",
+      "type": "Dirt"
+    },
+    {
+      "isCraftable": false,
+      "xCoord": 0,
+      "yCoord": 26,
+      "size": 30,
+      "canFall": false,
+      "imagePath": "dirt_block.jpg",
+      "type": "Dirt"
+    },
+    {
+      "isCraftable": false,
+      "xCoord": 1,
+      "yCoord": 26,
+      "size": 30,
+      "canFall": false,
+      "imagePath": "dirt_block.jpg",
+      "type": "Dirt"
+    },
+    {
+      "isCraftable": false,
+      "xCoord": 2,
+      "yCoord": 26,
+      "size": 30,
+      "canFall": false,
+      "imagePath": "dirt_block.jpg",
+      "type": "Dirt"
+    },
+    {
+      "isCraftable": false,
+      "xCoord": 3,
+      "yCoord": 26,
+      "size": 30,
+      "canFall": false,
+      "imagePath": "dirt_block.jpg",
+      "type": "Dirt"
+    },
+    {
+      "isCraftable": false,
+      "xCoord": 4,
+      "yCoord": 26,
+      "size": 30,
+      "canFall": false,
+      "imagePath": "dirt_block.jpg",
+      "type": "Dirt"
+    },
+    {
+      "isCraftable": false,
+      "xCoord": 5,
+      "yCoord": 26,
+      "size": 30,
+      "canFall": false,
+      "imagePath": "dirt_block.jpg",
+      "type": "Dirt"
+    },
+    {
+      "isCraftable": false,
+      "xCoord": 6,
+      "yCoord": 26,
+      "size": 30,
+      "canFall": false,
+      "imagePath": "dirt_block.jpg",
+      "type": "Dirt"
+    },
+    {
+      "isCraftable": false,
+      "xCoord": 7,
+      "yCoord": 26,
+      "size": 30,
+      "canFall": false,
+      "imagePath": "dirt_block.jpg",
+      "type": "Dirt"
+    },
+    {
+      "isCraftable": false,
+      "xCoord": 8,
+      "yCoord": 26,
+      "size": 30,
+      "canFall": false,
+      "imagePath": "dirt_block.jpg",
+      "type": "Dirt"
+    },
+    {
+      "isCraftable": false,
+      "xCoord": 9,
+      "yCoord": 26,
+      "size": 30,
+      "canFall": false,
+      "imagePath": "dirt_block.jpg",
+      "type": "Dirt"
+    },
+    {
+      "isCraftable": false,
+      "xCoord": 10,
+      "yCoord": 26,
+      "size": 30,
+      "canFall": false,
+      "imagePath": "dirt_block.jpg",
+      "type": "Dirt"
+    },
+    {
+      "isCraftable": false,
+      "xCoord": 11,
+      "yCoord": 26,
+      "size": 30,
+      "canFall": false,
+      "imagePath": "dirt_block.jpg",
+      "type": "Dirt"
+    },
+    {
+      "isCraftable": false,
+      "xCoord": 12,
+      "yCoord": 26,
+      "size": 30,
+      "canFall": false,
+      "imagePath": "dirt_block.jpg",
+      "type": "Dirt"
+    },
+    {
+      "isCraftable": false,
+      "xCoord": 13,
+      "yCoord": 26,
+      "size": 30,
+      "canFall": false,
+      "imagePath": "dirt_block.jpg",
+      "type": "Dirt"
+    },
+    {
+      "isCraftable": false,
+      "xCoord": 14,
+      "yCoord": 26,
+      "size": 30,
+      "canFall": false,
+      "imagePath": "dirt_block.jpg",
+      "type": "Dirt"
+    },
+    {
+      "isCraftable": false,
+      "xCoord": 15,
+      "yCoord": 26,
+      "size": 30,
+      "canFall": false,
+      "imagePath": "dirt_block.jpg",
+      "type": "Dirt"
+    },
+    {
+      "isCraftable": false,
+      "xCoord": 16,
+      "yCoord": 26,
+      "size": 30,
+      "canFall": false,
+      "imagePath": "dirt_block.jpg",
+      "type": "Dirt"
+    },
+    {
+      "isCraftable": false,
+      "xCoord": 17,
+      "yCoord": 26,
+      "size": 30,
+      "canFall": false,
+      "imagePath": "dirt_block.jpg",
+      "type": "Dirt"
+    },
+    {
+      "isCraftable": false,
+      "xCoord": 19,
+      "yCoord": 26,
+      "size": 30,
+      "canFall": false,
+      "imagePath": "dirt_block.jpg",
+      "type": "Dirt"
+    },
+    {
+      "isCraftable": false,
+      "xCoord": 20,
+      "yCoord": 26,
+      "size": 30,
+      "canFall": false,
+      "imagePath": "dirt_block.jpg",
+      "type": "Dirt"
+    },
+    {
+      "isCraftable": false,
+      "xCoord": 21,
+      "yCoord": 26,
+      "size": 30,
+      "canFall": false,
+      "imagePath": "dirt_block.jpg",
+      "type": "Dirt"
+    },
+    {
+      "isCraftable": false,
+      "xCoord": 22,
+      "yCoord": 26,
+      "size": 30,
+      "canFall": false,
+      "imagePath": "dirt_block.jpg",
+      "type": "Dirt"
+    },
+    {
+      "isCraftable": false,
+      "xCoord": 23,
+      "yCoord": 26,
+      "size": 30,
+      "canFall": false,
+      "imagePath": "dirt_block.jpg",
+      "type": "Dirt"
+    },
+    {
+      "isCraftable": false,
+      "xCoord": 24,
+      "yCoord": 26,
+      "size": 30,
+      "canFall": false,
+      "imagePath": "dirt_block.jpg",
+      "type": "Dirt"
+    },
+    {
+      "isCraftable": false,
+      "xCoord": 25,
+      "yCoord": 26,
+      "size": 30,
+      "canFall": false,
+      "imagePath": "dirt_block.jpg",
+      "type": "Dirt"
+    },
+    {
+      "isCraftable": false,
+      "xCoord": 26,
+      "yCoord": 26,
+      "size": 30,
+      "canFall": false,
+      "imagePath": "dirt_block.jpg",
+      "type": "Dirt"
+    },
+    {
+      "isCraftable": false,
+      "xCoord": 27,
+      "yCoord": 26,
+      "size": 30,
+      "canFall": false,
+      "imagePath": "dirt_block.jpg",
+      "type": "Dirt"
+    },
+    {
+      "isCraftable": false,
+      "xCoord": 28,
+      "yCoord": 26,
+      "size": 30,
+      "canFall": false,
+      "imagePath": "dirt_block.jpg",
+      "type": "Dirt"
+    },
+    {
+      "isCraftable": false,
+      "xCoord": 29,
+      "yCoord": 26,
+      "size": 30,
+      "canFall": false,
+      "imagePath": "dirt_block.jpg",
+      "type": "Dirt"
+    },
+    {
+      "isCraftable": false,
+      "xCoord": 30,
+      "yCoord": 26,
+      "size": 30,
+      "canFall": false,
+      "imagePath": "dirt_block.jpg",
+      "type": "Dirt"
+    },
+    {
+      "isCraftable": false,
+      "xCoord": 31,
+      "yCoord": 26,
+      "size": 30,
+      "canFall": false,
+      "imagePath": "dirt_block.jpg",
+      "type": "Dirt"
+    },
+    {
+      "isCraftable": false,
+      "xCoord": 32,
+      "yCoord": 26,
+      "size": 30,
+      "canFall": false,
+      "imagePath": "dirt_block.jpg",
+      "type": "Dirt"
+    },
+    {
+      "isCraftable": false,
+      "xCoord": 33,
+      "yCoord": 26,
+      "size": 30,
+      "canFall": false,
+      "imagePath": "dirt_block.jpg",
+      "type": "Dirt"
+    },
+    {
+      "isCraftable": false,
+      "xCoord": 34,
+      "yCoord": 26,
+      "size": 30,
+      "canFall": false,
+      "imagePath": "dirt_block.jpg",
+      "type": "Dirt"
+    },
+    {
+      "isCraftable": false,
+      "xCoord": 35,
+      "yCoord": 26,
+      "size": 30,
+      "canFall": false,
+      "imagePath": "dirt_block.jpg",
+      "type": "Dirt"
+    },
+    {
+      "isCraftable": false,
+      "xCoord": 36,
+      "yCoord": 26,
+      "size": 30,
+      "canFall": false,
+      "imagePath": "dirt_block.jpg",
+      "type": "Dirt"
+    },
+    {
+      "isCraftable": false,
+      "xCoord": 18,
+      "yCoord": 26,
+      "size": 30,
+      "canFall": false,
+      "imagePath": "dirt_block.jpg",
+      "type": "Dirt"
+    },
+    {
+      "isCraftable": false,
+      "xCoord": 37,
+      "yCoord": 26,
+      "size": 30,
+      "canFall": false,
+      "imagePath": "dirt_block.jpg",
+      "type": "Dirt"
+    },
+    {
+      "isCraftable": false,
+      "xCoord": 38,
+      "yCoord": 26,
+      "size": 30,
+      "canFall": false,
+      "imagePath": "dirt_block.jpg",
+      "type": "Dirt"
+    },
+    {
+      "isCraftable": false,
+      "xCoord": 39,
+      "yCoord": 26,
+      "size": 30,
+      "canFall": false,
+      "imagePath": "dirt_block.jpg",
+      "type": "Dirt"
+    },
+    {
+      "isCraftable": false,
+      "xCoord": 40,
+      "yCoord": 26,
+      "size": 30,
+      "canFall": false,
+      "imagePath": "dirt_block.jpg",
+      "type": "Dirt"
+    },
+    {
+      "isCraftable": false,
+      "xCoord": 41,
+      "yCoord": 26,
+      "size": 30,
+      "canFall": false,
+      "imagePath": "dirt_block.jpg",
+      "type": "Dirt"
+    },
+    {
+      "isCraftable": false,
+      "xCoord": 42,
+      "yCoord": 26,
+      "size": 30,
+      "canFall": false,
+      "imagePath": "dirt_block.jpg",
+      "type": "Dirt"
+    },
+    {
+      "isCraftable": false,
+      "xCoord": 43,
+      "yCoord": 26,
+      "size": 30,
+      "canFall": false,
+      "imagePath": "dirt_block.jpg",
+      "type": "Dirt"
+    },
+    {
+      "isCraftable": false,
+      "xCoord": 44,
+      "yCoord": 26,
+      "size": 30,
+      "canFall": false,
+      "imagePath": "dirt_block.jpg",
+      "type": "Dirt"
+    },
+    {
+      "isCraftable": false,
+      "xCoord": 45,
+      "yCoord": 26,
+      "size": 30,
+      "canFall": false,
+      "imagePath": "dirt_block.jpg",
+      "type": "Dirt"
+    },
+    {
+      "isCraftable": false,
+      "xCoord": 46,
+      "yCoord": 26,
+      "size": 30,
+      "canFall": false,
+      "imagePath": "dirt_block.jpg",
+      "type": "Dirt"
+    },
+    {
+      "isCraftable": false,
+      "xCoord": 47,
+      "yCoord": 26,
+      "size": 30,
+      "canFall": false,
+      "imagePath": "dirt_block.jpg",
+      "type": "Dirt"
+    },
+    {
+      "isCraftable": false,
+      "xCoord": 48,
+      "yCoord": 26,
+      "size": 30,
+      "canFall": false,
+      "imagePath": "dirt_block.jpg",
+      "type": "Dirt"
+    },
+    {
+      "isCraftable": true,
+      "xCoord": 1,
+      "yCoord": 25,
+      "size": 30,
+      "canFall": false,
+      "group": "Block",
+      "imagePath": "dirt_block.jpg",
+      "type": "Dirt"
+    },
+    {
+      "isCraftable": true,
+      "xCoord": 2,
+      "yCoord": 25,
+      "size": 30,
+      "canFall": false,
+      "group": "Block",
+      "imagePath": "dirt_block.jpg",
+      "type": "Dirt"
+    },
+    {
+      "isCraftable": true,
+      "xCoord": 3,
+      "yCoord": 25,
+      "size": 30,
+      "canFall": false,
+      "group": "Block",
+      "imagePath": "dirt_block.jpg",
+      "type": "Dirt"
+    },
+    {
+      "isCraftable": true,
+      "xCoord": 4,
+      "yCoord": 25,
+      "size": 30,
+      "canFall": false,
+      "group": "Block",
+      "imagePath": "dirt_block.jpg",
+      "type": "Dirt"
+    },
+    {
+      "isCraftable": true,
+      "xCoord": 5,
+      "yCoord": 25,
+      "size": 30,
+      "canFall": false,
+      "group": "Block",
+      "imagePath": "dirt_block.jpg",
+      "type": "Dirt"
+    },
+    {
+      "isCraftable": true,
+      "xCoord": 6,
+      "yCoord": 25,
+      "size": 30,
+      "canFall": false,
+      "group": "Block",
+      "imagePath": "dirt_block.jpg",
+      "type": "Dirt"
+    },
+    {
+      "isCraftable": true,
+      "xCoord": 7,
+      "yCoord": 25,
+      "size": 30,
+      "canFall": false,
+      "group": "Block",
+      "imagePath": "dirt_block.jpg",
+      "type": "Dirt"
+    },
+    {
+      "isCraftable": true,
+      "xCoord": 8,
+      "yCoord": 25,
+      "size": 30,
+      "canFall": false,
+      "group": "Block",
+      "imagePath": "dirt_block.jpg",
+      "type": "Dirt"
+    },
+    {
+      "isCraftable": true,
+      "xCoord": 9,
+      "yCoord": 25,
+      "size": 30,
+      "canFall": false,
+      "group": "Block",
+      "imagePath": "dirt_block.jpg",
+      "type": "Dirt"
+    },
+    {
+      "isCraftable": true,
+      "xCoord": 10,
+      "yCoord": 25,
+      "size": 30,
+      "canFall": false,
+      "group": "Block",
+      "imagePath": "dirt_block.jpg",
+      "type": "Dirt"
+    },
+    {
+      "isCraftable": true,
+      "xCoord": 11,
+      "yCoord": 25,
+      "size": 30,
+      "canFall": false,
+      "group": "Block",
+      "imagePath": "dirt_block.jpg",
+      "type": "Dirt"
+    },
+    {
+      "isCraftable": true,
+      "xCoord": 12,
+      "yCoord": 25,
+      "size": 30,
+      "canFall": false,
+      "group": "Block",
+      "imagePath": "dirt_block.jpg",
+      "type": "Dirt"
+    },
+    {
+      "isCraftable": true,
+      "xCoord": 13,
+      "yCoord": 25,
+      "size": 30,
+      "canFall": false,
+      "group": "Block",
+      "imagePath": "dirt_block.jpg",
+      "type": "Dirt"
+    },
+    {
+      "isCraftable": true,
+      "xCoord": 14,
+      "yCoord": 25,
+      "size": 30,
+      "canFall": false,
+      "group": "Block",
+      "imagePath": "dirt_block.jpg",
+      "type": "Dirt"
+    },
+    {
+      "isCraftable": true,
+      "xCoord": 15,
+      "yCoord": 25,
+      "size": 30,
+      "canFall": false,
+      "group": "Block",
+      "imagePath": "dirt_block.jpg",
+      "type": "Dirt"
+    },
+    {
+      "isCraftable": true,
+      "xCoord": 16,
+      "yCoord": 25,
+      "size": 30,
+      "canFall": false,
+      "group": "Block",
+      "imagePath": "dirt_block.jpg",
+      "type": "Dirt"
+    },
+    {
+      "isCraftable": true,
+      "xCoord": 17,
+      "yCoord": 25,
+      "size": 30,
+      "canFall": false,
+      "group": "Block",
+      "imagePath": "dirt_block.jpg",
+      "type": "Dirt"
+    },
+    {
+      "isCraftable": true,
+      "xCoord": 18,
+      "yCoord": 25,
+      "size": 30,
+      "canFall": false,
+      "group": "Block",
+      "imagePath": "dirt_block.jpg",
+      "type": "Dirt"
+    },
+    {
+      "isCraftable": true,
+      "xCoord": 19,
+      "yCoord": 25,
+      "size": 30,
+      "canFall": false,
+      "group": "Block",
+      "imagePath": "dirt_block.jpg",
+      "type": "Dirt"
+    },
+    {
+      "isCraftable": true,
+      "xCoord": 20,
+      "yCoord": 25,
+      "size": 30,
+      "canFall": false,
+      "group": "Block",
+      "imagePath": "dirt_block.jpg",
+      "type": "Dirt"
+    },
+    {
+      "isCraftable": true,
+      "xCoord": 21,
+      "yCoord": 25,
+      "size": 30,
+      "canFall": false,
+      "group": "Block",
+      "imagePath": "dirt_block.jpg",
+      "type": "Dirt"
+    },
+    {
+      "isCraftable": true,
+      "xCoord": 22,
+      "yCoord": 25,
+      "size": 30,
+      "canFall": false,
+      "group": "Block",
+      "imagePath": "dirt_block.jpg",
+      "type": "Dirt"
+    },
+    {
+      "isCraftable": true,
+      "xCoord": 23,
+      "yCoord": 25,
+      "size": 30,
+      "canFall": false,
+      "group": "Block",
+      "imagePath": "dirt_block.jpg",
+      "type": "Dirt"
+    },
+    {
+      "isCraftable": true,
+      "xCoord": 24,
+      "yCoord": 25,
+      "size": 30,
+      "canFall": false,
+      "group": "Block",
+      "imagePath": "dirt_block.jpg",
+      "type": "Dirt"
+    },
+    {
+      "isCraftable": true,
+      "xCoord": 25,
+      "yCoord": 25,
+      "size": 30,
+      "canFall": false,
+      "group": "Block",
+      "imagePath": "dirt_block.jpg",
+      "type": "Dirt"
+    },
+    {
+      "isCraftable": true,
+      "xCoord": 26,
+      "yCoord": 25,
+      "size": 30,
+      "canFall": false,
+      "group": "Block",
+      "imagePath": "dirt_block.jpg",
+      "type": "Dirt"
+    },
+    {
+      "isCraftable": true,
+      "xCoord": 27,
+      "yCoord": 25,
+      "size": 30,
+      "canFall": false,
+      "group": "Block",
+      "imagePath": "dirt_block.jpg",
+      "type": "Dirt"
+    },
+    {
+      "isCraftable": true,
+      "xCoord": 28,
+      "yCoord": 25,
+      "size": 30,
+      "canFall": false,
+      "group": "Block",
+      "imagePath": "dirt_block.jpg",
+      "type": "Dirt"
+    },
+    {
+      "isCraftable": true,
+      "xCoord": 29,
+      "yCoord": 25,
+      "size": 30,
+      "canFall": false,
+      "group": "Block",
+      "imagePath": "dirt_block.jpg",
+      "type": "Dirt"
+    },
+    {
+      "isCraftable": true,
+      "xCoord": 30,
+      "yCoord": 25,
+      "size": 30,
+      "canFall": false,
+      "group": "Block",
+      "imagePath": "dirt_block.jpg",
+      "type": "Dirt"
+    },
+    {
+      "isCraftable": true,
+      "xCoord": 31,
+      "yCoord": 25,
+      "size": 30,
+      "canFall": false,
+      "group": "Block",
+      "imagePath": "dirt_block.jpg",
+      "type": "Dirt"
+    },
+    {
+      "isCraftable": true,
+      "xCoord": 32,
+      "yCoord": 25,
+      "size": 30,
+      "canFall": false,
+      "group": "Block",
+      "imagePath": "dirt_block.jpg",
+      "type": "Dirt"
+    },
+    {
+      "isCraftable": true,
+      "xCoord": 33,
+      "yCoord": 25,
+      "size": 30,
+      "canFall": false,
+      "group": "Block",
+      "imagePath": "dirt_block.jpg",
+      "type": "Dirt"
+    },
+    {
+      "isCraftable": true,
+      "xCoord": 34,
+      "yCoord": 25,
+      "size": 30,
+      "canFall": false,
+      "group": "Block",
+      "imagePath": "dirt_block.jpg",
+      "type": "Dirt"
+    },
+    {
+      "isCraftable": true,
+      "xCoord": 35,
+      "yCoord": 25,
+      "size": 30,
+      "canFall": false,
+      "group": "Block",
+      "imagePath": "dirt_block.jpg",
+      "type": "Dirt"
+    },
+    {
+      "isCraftable": true,
+      "xCoord": 36,
+      "yCoord": 25,
+      "size": 30,
+      "canFall": false,
+      "group": "Block",
+      "imagePath": "dirt_block.jpg",
+      "type": "Dirt"
+    },
+    {
+      "isCraftable": true,
+      "xCoord": 37,
+      "yCoord": 25,
+      "size": 30,
+      "canFall": false,
+      "group": "Block",
+      "imagePath": "dirt_block.jpg",
+      "type": "Dirt"
+    },
+    {
+      "isCraftable": true,
+      "xCoord": 38,
+      "yCoord": 25,
+      "size": 30,
+      "canFall": false,
+      "group": "Block",
+      "imagePath": "dirt_block.jpg",
+      "type": "Dirt"
+    },
+    {
+      "isCraftable": true,
+      "xCoord": 39,
+      "yCoord": 25,
+      "size": 30,
+      "canFall": false,
+      "group": "Block",
+      "imagePath": "dirt_block.jpg",
+      "type": "Dirt"
+    },
+    {
+      "isCraftable": true,
+      "xCoord": 40,
+      "yCoord": 25,
+      "size": 30,
+      "canFall": false,
+      "group": "Block",
+      "imagePath": "dirt_block.jpg",
+      "type": "Dirt"
+    },
+    {
+      "isCraftable": true,
+      "xCoord": 41,
+      "yCoord": 25,
+      "size": 30,
+      "canFall": false,
+      "group": "Block",
+      "imagePath": "dirt_block.jpg",
+      "type": "Dirt"
+    },
+    {
+      "isCraftable": true,
+      "xCoord": 42,
+      "yCoord": 25,
+      "size": 30,
+      "canFall": false,
+      "group": "Block",
+      "imagePath": "dirt_block.jpg",
+      "type": "Dirt"
+    },
+    {
+      "isCraftable": true,
+      "xCoord": 43,
+      "yCoord": 25,
+      "size": 30,
+      "canFall": false,
+      "group": "Block",
+      "imagePath": "dirt_block.jpg",
+      "type": "Dirt"
+    },
+    {
+      "isCraftable": true,
+      "xCoord": 44,
+      "yCoord": 25,
+      "size": 30,
+      "canFall": false,
+      "group": "Block",
+      "imagePath": "dirt_block.jpg",
+      "type": "Dirt"
+    },
+    {
+      "isCraftable": true,
+      "xCoord": 45,
+      "yCoord": 25,
+      "size": 30,
+      "canFall": false,
+      "group": "Block",
+      "imagePath": "dirt_block.jpg",
+      "type": "Dirt"
+    },
+    {
+      "isCraftable": true,
+      "xCoord": 46,
+      "yCoord": 25,
+      "size": 30,
+      "canFall": false,
+      "group": "Block",
+      "imagePath": "dirt_block.jpg",
+      "type": "Dirt"
+    },
+    {
+      "isCraftable": true,
+      "xCoord": 47,
+      "yCoord": 25,
+      "size": 30,
+      "canFall": false,
+      "group": "Block",
+      "imagePath": "dirt_block.jpg",
+      "type": "Dirt"
+    },
+    {
+      "isCraftable": true,
+      "xCoord": 48,
+      "yCoord": 25,
+      "size": 30,
+      "canFall": false,
+      "group": "Block",
+      "imagePath": "dirt_block.jpg",
+      "type": "Dirt"
+    },
+    {
+      "isCraftable": true,
+      "xCoord": 0,
+      "yCoord": 25,
+      "size": 30,
+      "canFall": false,
+      "group": "Block",
+      "imagePath": "dirt_block.jpg",
+      "type": "Dirt"
+    }
+  ],
+  "mobs": [],
+  "backgroundImagePath": "overworld_background_hd.jpg"
+}

@@ -1,0 +1,8 @@
+.text {
+    -fx-font-size: 18px;
+}
+
+.button {
+    -fx-font-size: 14px;
+    -fx-pref-width: 200px;
+}
