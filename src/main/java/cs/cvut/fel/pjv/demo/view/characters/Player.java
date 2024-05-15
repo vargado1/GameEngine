@@ -11,10 +11,10 @@ public class Player {
     private Direction direction = Direction.RIGHT;
     @Expose
     private int speed;
+//    @Expose
+//    private Item[] inventory = new Item[32];
     @Expose
-    private Item[] inventory;
-    @Expose
-    private Item[] hotBar;
+    private Item[] hotBar = new Item[9];
 //    @Expose
 //    ArrayList<Block> inventoryBlocks = new ArrayList<>();
 //    @Expose
@@ -30,7 +30,7 @@ public class Player {
 //    @Expose
 //    int lastIndex = 0;
     @Expose
-    private Item selectetItem = null;
+    private Item selectetItem = hotBar[0];
     @Expose
     private String playerImage = "player.png";
     @Expose
@@ -46,8 +46,6 @@ public class Player {
         this.xCoords = xCoords;
         this.yCoords = yCoords;
         this.HP = HP;
-        this.inventory = new Item[32];
-        this.hotBar = new Item[10];
     }
 
     /**
@@ -96,9 +94,9 @@ public class Player {
      *
      * @param item
      */
-    public void addToInvenory(Item item, int position){
-        inventory[position] = item;
-    }
+//    public void addToInvenory(Item item, int position){
+//        inventory[position] = item;
+//    }
 //
 //    /**
 //     * Metóda na pridanie bloku do inventára hráča.
@@ -313,9 +311,9 @@ public class Player {
         return HP;
     }
 
-    public Item[] getInventory() {
-        return inventory;
-    }
+//    public Item[] getInventory() {
+//        return inventory;
+//    }
 
     public Item[] getHotBar() {
         return hotBar;
@@ -353,6 +351,13 @@ public class Player {
 //        return lastIndex;
 //    }
 
+    public void setxCoords(int xCoords) {
+        this.xCoords = xCoords;
+    }
+
+    public void setyCoords(int yCoords) {
+        this.yCoords = yCoords;
+    }
 
     public Direction getDirection() {
         return direction;

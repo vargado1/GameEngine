@@ -14,6 +14,8 @@ public class Block extends Item{
     private final int size = 30;
     @Expose
     private boolean canFall;
+//    @Expose
+//    String group = "Block";
     public boolean isPlaced = false;
 
     public Block(boolean isCraftable, boolean canFall, String type, String imagePath, String group) {
@@ -87,5 +89,15 @@ public class Block extends Item{
 
     }
 
+    public int getxCoord() {
+        return xCoord;
+    }
 
+    public int getyCoord() {
+        return yCoord;
+    }
+
+    public boolean isPlaced() {
+        return isPlaced;
+    }
 }
