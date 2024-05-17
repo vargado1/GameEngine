@@ -12,6 +12,7 @@ import cs.cvut.fel.pjv.demo.view.tools.Sword;
 import javafx.animation.PauseTransition;
 import javafx.application.Application;
 import javafx.event.EventHandler;
+import javafx.geometry.Point2D;
 import javafx.geometry.Pos;
 import javafx.scene.Cursor;
 import javafx.scene.ImageCursor;
@@ -32,6 +33,7 @@ import java.awt.*;
 import java.io.IOException;
 import java.nio.file.Files;
 import java.nio.file.Paths;
+import java.util.ArrayList;
 
 public class OdysseyOfRealms extends Application {
     Realm world;
@@ -41,8 +43,10 @@ public class OdysseyOfRealms extends Application {
     Controller controller;
     ImageView playerIMG;
     ImageView hotbarFocus;
-    ImageView selectedItemIcon;
+    ArrayList<ImageView> hotbarNodes = new ArrayList<>();
+    int hotBarNumber = 0;
     boolean isPaused = false;
+    int[] backgroundDimensions = new int[2];
 
     /**
      * adds block to screen and to the realms map
@@ -50,27 +54,29 @@ public class OdysseyOfRealms extends Application {
      * @param root
      * @param xIndex x coords of the block on scene
      * @param yIndex y coords of the block on sceneq
-     * @param blockSize size of block
-     * @param map map of realm
      */
-    private void addBlockToScreen(Block block, StackPane root, int xIndex, int yIndex, int blockSize, Realm map) {
-        int[] coords = model.getCoordsFromScreenToList(xIndex, yIndex, block.getSize(), map);
+    private void addBlockToScreen(Block block, StackPane root, int xIndex, int yIndex) {
+        xIndex = 30 * Math.round(xIndex / 30.0f);
+        yIndex = 30 * Math.round(yIndex / 30.0f);
 
-        if (map.map[coords[0]][coords[1]] != null) {
+        int[] coords = model.getCoordsFromScreenToList(xIndex, yIndex, block.getSize(), world);
+
+        if (world.map[coords[0]][coords[1]] != null) {
             return;
         }
 
-        map.map[coords[0]][coords[1]] = block;
+        world.map[coords[0]][coords[1]] = block;
 
         Image blockImage = new Image(block.getImagePath());
         ImageView blockImageView = new ImageView(blockImage);
         blockImageView.setTranslateX(xIndex);
         blockImageView.setTranslateY(yIndex);
         root.getChildren().add(blockImageView);
+        blockImageView.toFront();
 
         block.setCoords(coords[0], coords[1]);
         block.isPlaced = true;
-        map.addBlock(block);
+        world.addBlock(block);
     }
 
     private void viewPlayer(StackPane root, int xCoord, int yCoords) {
@@ -219,9 +225,18 @@ public class OdysseyOfRealms extends Application {
         this.player = loadedPlayer;
     }
 
+    private void clearHotbar(StackPane root) {
+        for (ImageView node : hotbarNodes) {
+            root.getChildren().remove(node);
+        }
+        hotbarNodes.clear();
+    }
+
     private void fillHotbar(StackPane root) {
         String texture;
         int count = -200;
+
+        clearHotbar(root);
 
         for (Item item : player.getHotBar()) {
             if (item == null) {
@@ -239,6 +254,8 @@ public class OdysseyOfRealms extends Application {
 
             blockView.toFront();
             count = count + 50;
+
+            hotbarNodes.add(blockView);
         }
     }
 
@@ -289,6 +306,8 @@ public class OdysseyOfRealms extends Application {
         root.getChildren().add(hotbarFocus);
 
         player.setSelectetItem(player.getHotBar()[hotNum]);
+
+        this.hotBarNumber = hotNum;
     }
 
     private void setSelectedItemIcon(StackPane root) {
@@ -317,6 +336,9 @@ public class OdysseyOfRealms extends Application {
         ImageView backgroundImageView = new ImageView(backgroundImage);
 
         StackPane root = new StackPane(backgroundImageView);
+
+        backgroundDimensions[0] = (int) backgroundImage.getWidth();
+        backgroundDimensions[1] = (int) backgroundImage.getHeight();
 
         Scene scene = new Scene(root, 1440,810);
 
@@ -376,7 +398,10 @@ public class OdysseyOfRealms extends Application {
         });
 
         PauseTransition fall = new PauseTransition(Duration.seconds(0.3));
-        fall.setOnFinished(event -> isFalling(root));
+        fall.setOnFinished(event -> {
+            isFalling(root);
+            player.setMoving(false);
+        });
 
         scene.setOnKeyPressed(new EventHandler<KeyEvent>() {
             @Override
@@ -385,6 +410,7 @@ public class OdysseyOfRealms extends Application {
                 switch (event.getCode()) {
                     case A:
                         player.setDirection(Direction.LEFT);
+                        player.setMoving(true);
 
                         if (model.isCollision(world, player)) {
                             break;
@@ -399,6 +425,7 @@ public class OdysseyOfRealms extends Application {
                         break;
                     case D:
                         player.setDirection(Direction.RIGHT);
+                        player.setMoving(true);
 
                         if (model.isCollision(world, player)) {
                             break;
@@ -422,9 +449,23 @@ public class OdysseyOfRealms extends Application {
                             root.getChildren().remove(playerIMG);
                             coords = controller.moveUp();
                             viewPlayer(root, coords[0], coords[1]);
+                            player.setMoving(true);
+                            if (model.isCollision(world, player)) {
+                                isPaused = false;
+                                player.setMoving(false);
+                                break;
+                            }
                             isPaused = true;
                             pause.play();
+                            player.setMoving(false);
                         }
+
+//                        if (world.map[player.getxCoord()][player.getyCoord()] != null) {
+//                            root.getChildren().remove(playerIMG);
+//                            coords = controller.moveUp();
+//                            viewPlayer(root, coords[0], coords[1]);
+//                        }
+
                         break;
                     case W:
                         root.getChildren().remove(playerIMG);
@@ -480,23 +521,30 @@ public class OdysseyOfRealms extends Application {
         scene.setOnMouseClicked(new EventHandler<MouseEvent>() {
             @Override
             public void handle(MouseEvent event) {
-                if (event.getButton() == MouseButton.SECONDARY & player.getSelectetItem() != null & player.getSelectetItem().getGroup() == "Block") {
-                    double sceneX = event.getSceneX();
-                    double sceneY = event.getSceneY();
-                    Item item = player.getSelectetItem();
+                if (event.getButton() == MouseButton.SECONDARY && player.getSelectetItem() != null && "Block".equals(player.getSelectetItem().getGroup())) {
+
+                    double sceneX = event.getX();
+                    double sceneY = event.getY();
+
+                    sceneX = sceneX - (backgroundDimensions[0]/2);
+                    sceneY = sceneY - (backgroundDimensions[1]/2);
+
+                    Block block = (Block) player.getSelectetItem();
 
 
+                    System.out.println(sceneX);
+                    System.out.println(sceneY);
+                    addBlockToScreen(block, root,(int) sceneX, (int) sceneY);
 
-//                    addBlockToScreen(, root,(int) sceneX, (int) sceneY, 30, world);
+
+                    player.setSelectetItem(null);
+                    player.addToHotBar(null, hotBarNumber);
+                    fillHotbar(root);
+                    root.setCursor(Cursor.DEFAULT);
                 }
             }
         });
 
-//        scene.setOnMouseClicked(event -> {
-//            double x = event.getSceneX();
-//            double y = event.getSceneY();
-//            System.out.println("Pozícia kurzora: x = " + x + ", y = " + y);
-//        });
     }
 
     public void stop() throws IOException {

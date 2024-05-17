@@ -366,4 +366,8 @@ public class Player {
     public int getSpeed() {
         return speed;
     }
+
+    public void setMoving(boolean moving) {
+        isMoving = moving;
+    }
 }

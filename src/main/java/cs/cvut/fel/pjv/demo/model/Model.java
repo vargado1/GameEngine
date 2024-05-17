@@ -48,7 +48,7 @@ public class Model {
             }
             case JUMP ->
             {
-                if (realm.map[playerXCoord][playerYCoord - 2] != null) {
+                if (realm.map[playerXCoord][playerYCoord - 2] != null || (realm.map[playerXCoord][playerYCoord + 1] != null && player.isPlayerMoving())) {
                     return true;
                 }
                 break;
@@ -75,7 +75,8 @@ public class Model {
         yCoord = yCoord/size;
 
         xCoord = xCoord + realm.getXMaxCoords()/2;
-        yCoord = (yCoord * (-1)) + (realm.getXMaxCoords()/2);
+//        yCoord = (yCoord * (-1)) + (realm.getYMaxCoords()/2);
+        yCoord = yCoord + (realm.getYMaxCoords()/2);
 
         int[] coords = new int[]{xCoord,yCoord};
 

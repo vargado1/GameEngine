@@ -4,14 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8eadbd22-06de-4bc4-b067-10e6afc5eb32" name="Changes" comment="Vytvorenie kolizii a padania ak neni nic pod hracom">
+    <list default="true" id="8eadbd22-06de-4bc4-b067-10e6afc5eb32" name="Changes" comment="hotbar + zaciatok stavania">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/overworld.json" beforeDir="false" afterPath="$PROJECT_DIR$/overworld.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/player.json" beforeDir="false" afterPath="$PROJECT_DIR$/player.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/cs/cvut/fel/pjv/demo/OdysseyOfRealms.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cs/cvut/fel/pjv/demo/OdysseyOfRealms.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/cs/cvut/fel/pjv/demo/view/Block.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cs/cvut/fel/pjv/demo/view/Block.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/cs/cvut/fel/pjv/demo/model/Model.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cs/cvut/fel/pjv/demo/model/Model.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/cs/cvut/fel/pjv/demo/view/characters/Player.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cs/cvut/fel/pjv/demo/view/characters/Player.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/module-info.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/module-info.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -54,35 +52,35 @@
     <option name="openDirectoriesWithSingleClick" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Application.HelloApplication.executor": "Run",
-    "Application.LevelEdit.executor": "Run",
-    "Application.MainApp.executor": "Run",
-    "Application.OdysseyOfRealms.executor": "Run",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "git-widget-placeholder": "master",
-    "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/Users/domco/Documents/Škola/informatika/Java the Hutt/wörk files/testing1",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "project.structure.last.edited": "Project",
-    "project.structure.proportion": "0.0",
-    "project.structure.side.proportion": "0.2",
-    "settings.editor.selected.configurable": "reference.settings.project.maven.repository.indices",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Application.HelloApplication.executor&quot;: &quot;Run&quot;,
+    &quot;Application.LevelEdit.executor&quot;: &quot;Run&quot;,
+    &quot;Application.MainApp.executor&quot;: &quot;Run&quot;,
+    &quot;Application.OdysseyOfRealms.executor&quot;: &quot;Debug&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/domco/Documents/Škola/informatika/Java the Hutt/wörk files/testing1&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;reference.settings.project.maven.repository.indices&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   },
-  "keyToStringList": {
-    "com.intellij.ide.scratch.ScratchImplUtil$2/New Scratch File": [
-      "JSON"
+  &quot;keyToStringList&quot;: {
+    &quot;com.intellij.ide.scratch.ScratchImplUtil$2/New Scratch File&quot;: [
+      &quot;JSON&quot;
     ]
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\domco\Documents\Škola\informatika\Java the Hutt\wörk files\demo" />
@@ -176,7 +174,12 @@
       <workItem from="1715682102611" duration="6184000" />
       <workItem from="1715703800909" duration="6172000" />
       <workItem from="1715718842327" duration="6075000" />
-      <workItem from="1715726798444" duration="4695000" />
+      <workItem from="1715726798444" duration="7126000" />
+      <workItem from="1715813071293" duration="703000" />
+      <workItem from="1715814059642" duration="2132000" />
+      <workItem from="1715816220083" duration="1560000" />
+      <workItem from="1715884736833" duration="3216000" />
+      <workItem from="1715900366588" duration="3954000" />
     </task>
     <task id="LOCAL-00001" summary="Objektový návrh">
       <option name="closed" value="true" />
@@ -226,7 +229,15 @@
       <option name="project" value="LOCAL" />
       <updated>1715639458959</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="hotbar + zaciatok stavania">
+      <option name="closed" value="true" />
+      <created>1715732397438</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1715732397438</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -249,9 +260,19 @@
     <MESSAGE value="Objektový návrh 1.1" />
     <MESSAGE value="Nacitanie, ulozenie svetu a hraca;&#10;Zakladne pohybovanie" />
     <MESSAGE value="Vytvorenie kolizii a padania ak neni nic pod hracom" />
-    <option name="LAST_COMMIT_MESSAGE" value="Vytvorenie kolizii a padania ak neni nic pod hracom" />
+    <MESSAGE value="hotbar + zaciatok stavania" />
+    <option name="LAST_COMMIT_MESSAGE" value="hotbar + zaciatok stavania" />
   </component>
   <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/cs/cvut/fel/pjv/demo/OdysseyOfRealms.java</url>
+          <line>291</line>
+          <option name="timeStamp" value="7" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
     <pin-to-top-manager>
       <pinned-members>
         <PinnedItemInfo parentTag="cs.cvut.fel.pjv.demo.view.Realm" memberName="blocks" />

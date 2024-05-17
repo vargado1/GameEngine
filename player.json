@@ -1,6 +1,6 @@
 {
   "isMoving": false,
-  "direction": "RIGHT",
+  "direction": "JUMP",
   "speed": 1,
   "hotBar": [
     {
@@ -13,16 +13,7 @@
       "imagePath": "wooden_block.jpg",
       "type": "Plank"
     },
-    {
-      "isCraftable": false,
-      "xCoord": 0,
-      "yCoord": 0,
-      "size": 30,
-      "canFall": false,
-      "group": "Block",
-      "imagePath": "dirt_block.jpg",
-      "type": "Dirt"
-    },
+    null,
     {
       "isCraftable": true,
       "xCoord": 0,
@@ -56,11 +47,11 @@
     "size": 30,
     "canFall": false,
     "group": "Block",
-    "imagePath": "stone_block.jpg",
-    "type": "Stone"
+    "imagePath": "wooden_block.jpg",
+    "type": "Plank"
   },
   "playerImage": "player.png",
-  "xCoords": 26,
-  "yCoords": 13,
+  "xCoords": 25,
+  "yCoords": 24,
   "HP": 100
 }
