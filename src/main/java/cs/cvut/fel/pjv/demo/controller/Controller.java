@@ -3,6 +3,7 @@ package cs.cvut.fel.pjv.demo.controller;
 import cs.cvut.fel.pjv.demo.model.Model;
 import cs.cvut.fel.pjv.demo.view.Block;
 import cs.cvut.fel.pjv.demo.view.Realm;
+import cs.cvut.fel.pjv.demo.view.characters.NPC;
 import cs.cvut.fel.pjv.demo.view.characters.Player;
 import javafx.event.EventHandler;
 import javafx.scene.input.KeyEvent;
@@ -81,4 +82,11 @@ public class Controller {
      * Metóda pre obsluhu udalosti odomknutia portálu.
      */
     public void unlockPortal(){}
+
+    public String interactWithObject(NPC npc) {
+        if (model.isNearObject(player, npc.getxCoords(), npc.getyCoords())) {
+            return npc.interact();
+        }
+        return "";
+    }
 }

@@ -13,7 +13,6 @@ import cs.cvut.fel.pjv.demo.view.tools.Sword;
 import javafx.animation.PauseTransition;
 import javafx.application.Application;
 import javafx.event.EventHandler;
-import javafx.geometry.Point2D;
 import javafx.geometry.Pos;
 import javafx.scene.Cursor;
 import javafx.scene.ImageCursor;
@@ -24,17 +23,20 @@ import javafx.scene.input.KeyEvent;
 import javafx.scene.input.MouseButton;
 import javafx.scene.input.MouseEvent;
 import javafx.scene.layout.StackPane;
+import javafx.scene.paint.Color;
+import javafx.scene.text.Font;
 import javafx.stage.Stage;
 import com.fasterxml.jackson.core.JsonPointer;
 import com.fasterxml.jackson.databind.JsonNode;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import javafx.util.Duration;
-
-import java.awt.*;
 import java.io.IOException;
 import java.nio.file.Files;
 import java.nio.file.Paths;
 import java.util.ArrayList;
+import javafx.scene.control.Label;
+import javafx.scene.text.Text;
+
 
 public class OdysseyOfRealms extends Application {
     Realm world;
@@ -235,6 +237,7 @@ public class OdysseyOfRealms extends Application {
         int[] coords = new int[2];
 
         NPC NPC = new NPC("","Player's Helper", 30, 24, "npc_helper.png");
+        NPC.setRiddle("Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris ut imperdiet risus. Nunc laoreet lectus a dictum aliquet. Suspendisse vel ultricies mauris, at consectetur lectus. Nulla elementum elit eget tincidunt interdum. Maecenas elementum eget elit non efficitur. Morbi id finibus lorem. Proin facilisis nisl lacinia arcu suscipit fermentum. Nunc vitae risus nec enim euismod dignissim id vitae lacus. Nam interdum accumsan dignissim. Vivamus nec enim in ex hendrerit sodales. Nulla congue bibendum velit at efficitur. Donec fermentum sit amet risus id vulputate. Fusce lobortis sollicitudin lacus. Phasellus nibh enim, tempor ac purus in, ultricies euismod mi.");
 
         Image NPCimage = new Image(NPC.getImg());
         ImageView NPCimageView = new ImageView(NPCimage);
@@ -247,6 +250,17 @@ public class OdysseyOfRealms extends Application {
         NPCimageView.setTranslateY(coords[1] - 15);
 
         root.getChildren().add(NPCimageView);
+
+        Label pressELabel = new Label("Press E");
+
+        pressELabel.setFont(new Font("Arial", 16));
+
+        pressELabel.setTranslateX(NPCimageView.getTranslateX());
+        pressELabel.setTranslateY(NPCimageView.getTranslateY() - 50);
+
+        pressELabel.setTextFill(Color.valueOf("Black"));
+
+        root.getChildren().add(pressELabel);
 
         NPCs.add(NPC);
 
@@ -286,6 +300,33 @@ public class OdysseyOfRealms extends Application {
         }
     }
 
+    private void showTextBubble(NPC npc, StackPane root) {
+        String text = npc.getRiddle();
+        Label textLabel = new Label(text);
+        javafx.geometry.Insets insets = new javafx.geometry.Insets(10,10,10,10);
+        Font font = new Font("Arial", 14);
+
+        textLabel.setPadding(insets);
+        textLabel.setFont(font);
+        textLabel.setStyle("-fx-background-color: white; -fx-border-color: black; -fx-border-radius: 10; -fx-background-radius: 10;");
+        textLabel.setWrapText(true);
+
+        textLabel.setMinWidth(100);
+        textLabel.setMaxWidth(300);
+
+        double x = npc.getImageView().getTranslateX();
+        double y = npc.getImageView().getTranslateY() - npc.getImageView().getBoundsInParent().getHeight() - 30;
+
+        textLabel.setTranslateX(x);
+        textLabel.setTranslateY(y);
+
+        root.getChildren().add(textLabel);
+
+        PauseTransition pause = new PauseTransition(Duration.seconds(8));
+        pause.setOnFinished(event -> root.getChildren().remove(textLabel));
+        pause.play();
+    }
+
     private void saveGame() throws IOException {
         serializer.serializeToFile(world, "overworld.json");
         serializer.serializeToFile(player, "player.json");
@@ -314,6 +355,7 @@ public class OdysseyOfRealms extends Application {
         selectorView.toFront();
 
         this.hotbarFocus = selectorView;
+
     }
 
     private void isFalling(StackPane root) {
@@ -495,6 +537,15 @@ public class OdysseyOfRealms extends Application {
                         viewPlayer(root, coords[0], coords[1]);
 
                         break;
+                    case E:
+                        NPC npc = NPCs.get(0);
+                        String riddle = controller.interactWithObject(npc);
+
+                        if (!riddle.isEmpty()) {
+                            showTextBubble(npc, root);
+                        }
+
+                        break;
                     case DIGIT1:
                         setFocusOnHotbar(root, 0);
                         setSelectedItemIcon(root);
@@ -554,11 +605,7 @@ public class OdysseyOfRealms extends Application {
 
                     Block block = (Block) player.getSelectetItem();
 
-
-                    System.out.println(sceneX);
-                    System.out.println(sceneY);
                     addBlockToScreen(block, root,(int) sceneX, (int) sceneY);
-
 
                     player.setSelectetItem(null);
                     player.addToHotBar(null, hotBarNumber);

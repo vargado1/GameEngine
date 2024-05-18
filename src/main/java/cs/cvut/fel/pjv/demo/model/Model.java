@@ -84,4 +84,17 @@ public class Model {
 
     }
 
+    public boolean isNearObject(Player player, int xCoords, int yCoords) {
+        int playerXCoord = player.getxCoord();
+        int playerYCoord = player.getyCoord();
+
+        if ((playerXCoord == xCoords && playerYCoord == yCoords)
+                || ((playerXCoord - 1) == xCoords && playerYCoord == yCoords)
+                || ((playerXCoord + 1) == xCoords && playerYCoord == yCoords))
+        {
+            return true;
+        }
+        return false;
+    }
+
 }

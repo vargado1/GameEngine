@@ -23,8 +23,26 @@
       "imagePath": "stone_block.jpg",
       "type": "Stone"
     },
-    null,
-    null,
+    {
+      "isCraftable": false,
+      "xCoord": 0,
+      "yCoord": 0,
+      "size": 30,
+      "canFall": true,
+      "group": "Block",
+      "imagePath": "gravel_block.jpg",
+      "type": "Gravel"
+    },
+    {
+      "isCraftable": false,
+      "xCoord": 0,
+      "yCoord": 0,
+      "size": 30,
+      "canFall": true,
+      "group": "Block",
+      "imagePath": "gravel_block.jpg",
+      "type": "Gravel"
+    },
     null,
     null,
     null,
@@ -42,7 +60,7 @@
     "type": "Plank"
   },
   "playerImage": "player.png",
-  "xCoords": 25,
+  "xCoords": 29,
   "yCoords": 24,
   "HP": 100
 }

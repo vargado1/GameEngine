@@ -83,4 +83,8 @@ public class NPC {
     public void setImageView(ImageView imageView) {
         this.imageView = imageView;
     }
+
+    public String interact(){
+        return riddle;
+    }
 }

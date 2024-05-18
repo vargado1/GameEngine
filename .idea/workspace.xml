@@ -4,12 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8eadbd22-06de-4bc4-b067-10e6afc5eb32" name="Changes" comment="nicenie blockov hotove">
+    <list default="true" id="8eadbd22-06de-4bc4-b067-10e6afc5eb32" name="Changes" comment="nicenie blockov opravene">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/overworld.json" beforeDir="false" afterPath="$PROJECT_DIR$/overworld.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/player.json" beforeDir="false" afterPath="$PROJECT_DIR$/player.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/cs/cvut/fel/pjv/demo/OdysseyOfRealms.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cs/cvut/fel/pjv/demo/OdysseyOfRealms.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/cs/cvut/fel/pjv/demo/view/Realm.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cs/cvut/fel/pjv/demo/view/Realm.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/cs/cvut/fel/pjv/demo/controller/Controller.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cs/cvut/fel/pjv/demo/controller/Controller.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/cs/cvut/fel/pjv/demo/model/Model.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cs/cvut/fel/pjv/demo/model/Model.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/cs/cvut/fel/pjv/demo/view/characters/NPC.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cs/cvut/fel/pjv/demo/view/characters/NPC.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -58,7 +58,7 @@
     "Application.HelloApplication.executor": "Run",
     "Application.LevelEdit.executor": "Run",
     "Application.MainApp.executor": "Run",
-    "Application.OdysseyOfRealms.executor": "Run",
+    "Application.OdysseyOfRealms.executor": "Debug",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
@@ -184,7 +184,7 @@
       <workItem from="1715980315240" duration="2907000" />
       <workItem from="1715988942997" duration="601000" />
       <workItem from="1715990024087" duration="3707000" />
-      <workItem from="1716033331096" duration="1545000" />
+      <workItem from="1716033331096" duration="5221000" />
     </task>
     <task id="LOCAL-00001" summary="Objektový návrh">
       <option name="closed" value="true" />
@@ -258,7 +258,15 @@
       <option name="project" value="LOCAL" />
       <updated>1715990777592</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="nicenie blockov opravene">
+      <option name="closed" value="true" />
+      <created>1716042052884</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1716042052884</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -284,7 +292,8 @@
     <MESSAGE value="hotbar + zaciatok stavania" />
     <MESSAGE value="stavanie hotove" />
     <MESSAGE value="nicenie blockov hotove" />
-    <option name="LAST_COMMIT_MESSAGE" value="nicenie blockov hotove" />
+    <MESSAGE value="nicenie blockov opravene" />
+    <option name="LAST_COMMIT_MESSAGE" value="nicenie blockov opravene" />
   </component>
   <component name="XDebuggerManager">
     <pin-to-top-manager>

@@ -1413,26 +1413,6 @@
       "group": "Block",
       "imagePath": "dirt_block.jpg",
       "type": "Dirt"
-    },
-    {
-      "isCraftable": false,
-      "xCoord": 33,
-      "yCoord": 19,
-      "size": 30,
-      "canFall": true,
-      "group": "Block",
-      "imagePath": "gravel_block.jpg",
-      "type": "Gravel"
-    },
-    {
-      "isCraftable": false,
-      "xCoord": 34,
-      "yCoord": 19,
-      "size": 30,
-      "canFall": true,
-      "group": "Block",
-      "imagePath": "gravel_block.jpg",
-      "type": "Gravel"
     }
   ],
   "mobs": [],
