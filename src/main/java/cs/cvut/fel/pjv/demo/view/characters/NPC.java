@@ -2,23 +2,23 @@ package cs.cvut.fel.pjv.demo.view.characters;
 
 import com.google.gson.annotations.Expose;
 import cs.cvut.fel.pjv.demo.view.Material;
+import javafx.scene.image.ImageView;
 
-public class NPC{
+public class NPC {
     private String riddle;
     private Material reward;
     private String NpcName;
-    @Expose
     private int xCoords;
-    @Expose
     private int yCoords;
+    private String img;
+    private ImageView imageView;
 
-
-    public NPC(String riddle, Material reward, String npcName, int xCoords, int yCoords) {
+    public NPC(String riddle, String npcName, int xCoords, int yCoords, String img) {
         this.xCoords = xCoords;
         this.yCoords = yCoords;
         this.riddle = riddle;
-        this.reward = reward;
-        NpcName = npcName;
+        this.NpcName = npcName;
+        this.img = img;
     }
 
     /**
@@ -48,16 +48,39 @@ public class NPC{
         return NpcName;
     }
 
-    /**
-     * NPC sa nebude môcť hýbať
-     */
-
-    void moveRIGHT() {
-
+    public int getxCoords() {
+        return xCoords;
     }
 
+    public int getyCoords() {
+        return yCoords;
+    }
 
-    void moveLEFT() {
+    public String getImg() {
+        return img;
+    }
 
+    public ImageView getImageView() {
+        return imageView;
+    }
+
+    public void setRiddle(String riddle) {
+        this.riddle = riddle;
+    }
+
+    public void setReward(Material reward) {
+        this.reward = reward;
+    }
+
+    public void setxCoords(int xCoords) {
+        this.xCoords = xCoords;
+    }
+
+    public void setyCoords(int yCoords) {
+        this.yCoords = yCoords;
+    }
+
+    public void setImageView(ImageView imageView) {
+        this.imageView = imageView;
     }
 }

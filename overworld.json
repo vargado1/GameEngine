@@ -1415,14 +1415,24 @@
       "type": "Dirt"
     },
     {
-      "isCraftable": true,
-      "xCoord": 24,
-      "yCoord": 24,
+      "isCraftable": false,
+      "xCoord": 33,
+      "yCoord": 19,
       "size": 30,
-      "canFall": false,
+      "canFall": true,
       "group": "Block",
-      "imagePath": "wooden_block.jpg",
-      "type": "Plank"
+      "imagePath": "gravel_block.jpg",
+      "type": "Gravel"
+    },
+    {
+      "isCraftable": false,
+      "xCoord": 34,
+      "yCoord": 19,
+      "size": 30,
+      "canFall": true,
+      "group": "Block",
+      "imagePath": "gravel_block.jpg",
+      "type": "Gravel"
     }
   ],
   "mobs": [],

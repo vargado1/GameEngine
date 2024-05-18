@@ -113,4 +113,8 @@ public class Realm {
     public ArrayList<Block> getBlocks() {
         return blocks;
     }
+
+    public void removeBlock(Block block){
+        blocks.remove(block);
+    }
 }

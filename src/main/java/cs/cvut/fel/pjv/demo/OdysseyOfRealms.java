@@ -5,6 +5,7 @@ import cs.cvut.fel.pjv.demo.controller.Controller;
 import cs.cvut.fel.pjv.demo.model.DataSerializer;
 import cs.cvut.fel.pjv.demo.model.Model;
 import cs.cvut.fel.pjv.demo.view.*;
+import cs.cvut.fel.pjv.demo.view.characters.NPC;
 import cs.cvut.fel.pjv.demo.view.characters.Player;
 import cs.cvut.fel.pjv.demo.view.tools.Picaxe;
 import cs.cvut.fel.pjv.demo.view.tools.Showel;
@@ -48,6 +49,7 @@ public class OdysseyOfRealms extends Application {
     int hotBarNumber = 0;
     boolean isPaused = false;
     int[] backgroundDimensions = new int[2];
+    ArrayList<NPC> NPCs = new ArrayList<>();
 
     /**
      * adds block to screen and to the realms map
@@ -229,6 +231,27 @@ public class OdysseyOfRealms extends Application {
         this.player = loadedPlayer;
     }
 
+    private void loadNPC(StackPane root) {
+        int[] coords = new int[2];
+
+        NPC NPC = new NPC("","Player's Helper", 30, 24, "npc_helper.png");
+
+        Image NPCimage = new Image(NPC.getImg());
+        ImageView NPCimageView = new ImageView(NPCimage);
+
+        NPC.setImageView(NPCimageView);
+
+        coords = model.getCoordsFromListToScreen(NPC.getxCoords(), NPC.getyCoords(), 30, world);
+
+        NPCimageView.setTranslateX(coords[0]);
+        NPCimageView.setTranslateY(coords[1] - 15);
+
+        root.getChildren().add(NPCimageView);
+
+        NPCs.add(NPC);
+
+    }
+
     private void clearHotbar(StackPane root) {
         for (ImageView node : hotbarNodes) {
             root.getChildren().remove(node);
@@ -272,6 +295,7 @@ public class OdysseyOfRealms extends Application {
     private void loadGame(StackPane root) throws IOException {
         loadOverworldFromSave(root);
         loadPlayer(root);
+        loadNPC(root);
 
         Image hotbarImage = new Image("hotbar.png");
         ImageView hotbarImageView = new ImageView(hotbarImage);
@@ -464,12 +488,6 @@ public class OdysseyOfRealms extends Application {
                             player.setMoving(false);
                         }
 
-//                        if (world.map[player.getxCoord()][player.getyCoord()] != null) {
-//                            root.getChildren().remove(playerIMG);
-//                            coords = controller.moveUp();
-//                            viewPlayer(root, coords[0], coords[1]);
-//                        }
-
                         break;
                     case W:
                         root.getChildren().remove(playerIMG);
@@ -521,6 +539,7 @@ public class OdysseyOfRealms extends Application {
                 }
             }
         });
+
 
         scene.setOnMouseClicked(new EventHandler<MouseEvent>() {
             @Override
@@ -576,7 +595,9 @@ public class OdysseyOfRealms extends Application {
                                 fillHotbar(root);
 
                                 if (worldNodes.remove(imageView)){
+
                                     world.map[coords[0]][coords[1]] = null;
+                                    world.removeBlock(block);
                                 }
 
                                 break;
