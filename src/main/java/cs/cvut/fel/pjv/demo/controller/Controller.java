@@ -5,10 +5,7 @@ import cs.cvut.fel.pjv.demo.view.Block;
 import cs.cvut.fel.pjv.demo.view.Realm;
 import cs.cvut.fel.pjv.demo.view.characters.NPC;
 import cs.cvut.fel.pjv.demo.view.characters.Player;
-import javafx.event.EventHandler;
-import javafx.scene.input.KeyEvent;
-import javafx.scene.input.MouseDragEvent;
-import javafx.scene.input.MouseEvent;
+
 
 public class Controller {
     Player player;
@@ -51,12 +48,6 @@ public class Controller {
         return model.getCoordsFromListToScreen(coords[0], coords[1], 30, realm);
     }
 
-    /**
-     * Metóda pre obsluhu udalosti stavby.
-     */
-    public void build(){
-
-    }
 
     /**
      * Metóda pre obsluhu udalosti výroby predmetu.
@@ -88,5 +79,9 @@ public class Controller {
             return npc.interact();
         }
         return "";
+    }
+
+    public boolean interactWithObject(SpecialBlock block) {
+
     }
 }

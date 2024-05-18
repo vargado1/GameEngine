@@ -6,43 +6,6 @@
   "difficulty": 1,
   "blocks": [
     {
-      "isCraftable": true,
-      "xCoord": 24,
-      "yCoord": 14,
-      "size": 30,
-      "canFall": false,
-      "group": "Block",
-      "imagePath": "wooden_block.jpg",
-      "type": "Plank"
-    },
-    {
-      "isCraftable": false,
-      "xCoord": 25,
-      "yCoord": 14,
-      "size": 30,
-      "canFall": false,
-      "imagePath": "dirt_block.jpg",
-      "type": "Dirt"
-    },
-    {
-      "isCraftable": true,
-      "xCoord": 26,
-      "yCoord": 14,
-      "size": 30,
-      "canFall": false,
-      "imagePath": "stone_block.jpg",
-      "type": "Stone"
-    },
-    {
-      "isCraftable": false,
-      "xCoord": 27,
-      "yCoord": 14,
-      "size": 30,
-      "canFall": true,
-      "imagePath": "gravel_block.jpg",
-      "type": "Gravel"
-    },
-    {
       "isCraftable": false,
       "xCoord": 0,
       "yCoord": 27,

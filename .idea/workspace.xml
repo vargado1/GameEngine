@@ -4,13 +4,18 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8eadbd22-06de-4bc4-b067-10e6afc5eb32" name="Changes" comment="nicenie blockov opravene">
+    <list default="true" id="8eadbd22-06de-4bc4-b067-10e6afc5eb32" name="Changes" comment="interagovanie s NPC">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/overworld.json" beforeDir="false" afterPath="$PROJECT_DIR$/overworld.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/player.json" beforeDir="false" afterPath="$PROJECT_DIR$/player.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/cs/cvut/fel/pjv/demo/OdysseyOfRealms.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cs/cvut/fel/pjv/demo/OdysseyOfRealms.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/cs/cvut/fel/pjv/demo/controller/Controller.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cs/cvut/fel/pjv/demo/controller/Controller.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/cs/cvut/fel/pjv/demo/model/Model.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cs/cvut/fel/pjv/demo/model/Model.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/cs/cvut/fel/pjv/demo/view/characters/NPC.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cs/cvut/fel/pjv/demo/view/characters/NPC.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/cs/cvut/fel/pjv/demo/view/Block.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cs/cvut/fel/pjv/demo/view/Block.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/cs/cvut/fel/pjv/demo/view/Material.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cs/cvut/fel/pjv/demo/view/Material.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/cs/cvut/fel/pjv/demo/view/SpecialBlock.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cs/cvut/fel/pjv/demo/view/SpecialBlock.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/cs/cvut/fel/pjv/demo/view/characters/Player.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cs/cvut/fel/pjv/demo/view/characters/Player.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/gravel_block.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/gravel_block.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/stone_block.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/stone_block.jpg" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -53,35 +58,35 @@
     <option name="openDirectoriesWithSingleClick" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Application.HelloApplication.executor": "Run",
-    "Application.LevelEdit.executor": "Run",
-    "Application.MainApp.executor": "Run",
-    "Application.OdysseyOfRealms.executor": "Debug",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "git-widget-placeholder": "master",
-    "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/Users/domco/Documents/Škola/informatika/Java the Hutt/wörk files/testing1",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "project.structure.last.edited": "Project",
-    "project.structure.proportion": "0.0",
-    "project.structure.side.proportion": "0.2",
-    "settings.editor.selected.configurable": "reference.settings.project.maven.repository.indices",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Application.HelloApplication.executor&quot;: &quot;Run&quot;,
+    &quot;Application.LevelEdit.executor&quot;: &quot;Run&quot;,
+    &quot;Application.MainApp.executor&quot;: &quot;Run&quot;,
+    &quot;Application.OdysseyOfRealms.executor&quot;: &quot;Debug&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/domco/Documents/Škola/informatika/Java the Hutt/wörk files/testing1&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;reference.settings.project.maven.repository.indices&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   },
-  "keyToStringList": {
-    "com.intellij.ide.scratch.ScratchImplUtil$2/New Scratch File": [
-      "JSON"
+  &quot;keyToStringList&quot;: {
+    &quot;com.intellij.ide.scratch.ScratchImplUtil$2/New Scratch File&quot;: [
+      &quot;JSON&quot;
     ]
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\domco\Documents\Škola\informatika\Java the Hutt\wörk files\demo" />
@@ -184,7 +189,10 @@
       <workItem from="1715980315240" duration="2907000" />
       <workItem from="1715988942997" duration="601000" />
       <workItem from="1715990024087" duration="3707000" />
-      <workItem from="1716033331096" duration="5221000" />
+      <workItem from="1716033331096" duration="6219000" />
+      <workItem from="1716052360278" duration="5585000" />
+      <workItem from="1716072595632" duration="989000" />
+      <workItem from="1716073619662" duration="897000" />
     </task>
     <task id="LOCAL-00001" summary="Objektový návrh">
       <option name="closed" value="true" />
@@ -266,7 +274,15 @@
       <option name="project" value="LOCAL" />
       <updated>1716042052884</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="interagovanie s NPC">
+      <option name="closed" value="true" />
+      <created>1716045981243</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1716045981243</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -293,7 +309,8 @@
     <MESSAGE value="stavanie hotove" />
     <MESSAGE value="nicenie blockov hotove" />
     <MESSAGE value="nicenie blockov opravene" />
-    <option name="LAST_COMMIT_MESSAGE" value="nicenie blockov opravene" />
+    <MESSAGE value="interagovanie s NPC" />
+    <option name="LAST_COMMIT_MESSAGE" value="interagovanie s NPC" />
   </component>
   <component name="XDebuggerManager">
     <pin-to-top-manager>
@@ -304,6 +321,7 @@
     <watches-manager>
       <configuration name="Application">
         <watch expression="realm" language="JAVA" />
+        <watch expression="((java.util.ArrayList)((OdysseyOfRealms)this.this$0).worldNodes).get(146)" custom="javafx.event.EventHandler,cs.cvut.fel.pjv.demo.OdysseyOfRealms,java.util.ArrayList" />
       </configuration>
     </watches-manager>
   </component>

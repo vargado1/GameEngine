@@ -52,6 +52,7 @@ public class OdysseyOfRealms extends Application {
     boolean isPaused = false;
     int[] backgroundDimensions = new int[2];
     ArrayList<NPC> NPCs = new ArrayList<>();
+    ImageView selectedItemView;
 
     /**
      * adds block to screen and to the realms map
@@ -226,7 +227,7 @@ public class OdysseyOfRealms extends Application {
 
         ImageView playerImageView = new ImageView(loadedPlayer.getPlayerImage());
         playerImageView.setTranslateX(coords[0]);
-        playerImageView.setTranslateY(coords[1]);
+        playerImageView.setTranslateY(coords[1] - 15);
         root.getChildren().add((playerImageView));
 
         this.playerIMG = playerImageView;
@@ -390,9 +391,9 @@ public class OdysseyOfRealms extends Application {
         Image image = new Image(player.getSelectetItem().getImagePath());
         ImageView imageView = new ImageView(image);
 
-        root.getChildren().add(imageView);
         root.setCursor(new ImageCursor(image));
 
+        selectedItemView = imageView;
     }
 
     @Override
@@ -424,8 +425,8 @@ public class OdysseyOfRealms extends Application {
 //
 //        Block wooden_block = new Block(true, false, "Plank", "wooden_block.jpg", "Block");
 //        Block dirt_block = new Block(false, false, "Dirt", "dirt_block.jpg", "Block");
-//        Block stone_block = new Block(true, false, "Stone", "stone_block.jpg", "Block");
-//        Block gravel_block = new Block(false, true, "Gravel", "gravel_block.jpg", "Block");
+//        Block stone_block = new Block(true, false, "Stone", "gravel_block.jpg", "Block");
+//        Block gravel_block = new Block(false, true, "Gravel", "stone_block.jpg", "Block");
 //
 //        player.addToInvenory(wooden_block, 0);
 //        player.addToInvenory(dirt_block, 1);
@@ -452,6 +453,14 @@ public class OdysseyOfRealms extends Application {
 //            world.addBlock(block);
 //            serializer.serializeToFile(world, "overworld.json");
 //        }
+//
+//        Material stone = new Material("stone", "Material", "stone_material.png");
+//        player.addToHotBar(stone,3);
+//
+//        Material stick = new Material("stick", "Material", "stick.png");
+//        player.addToHotBar(stick, 4);
+//        Material iron = new Material("iron", "Material", "iron_ingot.png");
+//        player.addToHotBar(iron, 5);
 
         stage.setTitle("Odyssey Of Realms");
         stage.setScene(scene);
@@ -544,6 +553,8 @@ public class OdysseyOfRealms extends Application {
                         if (!riddle.isEmpty()) {
                             showTextBubble(npc, root);
                         }
+
+
 
                         break;
                     case DIGIT1:

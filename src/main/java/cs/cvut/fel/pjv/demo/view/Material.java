@@ -10,6 +10,6 @@ public class Material extends Item {
      * @param type Typ materiálu.
      */
     public Material(String type, String group, String imagePath) {
-        super(group, type, imagePath);
+        super(group, imagePath, type);
     }
 }

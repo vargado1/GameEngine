@@ -5,8 +5,8 @@
   "hotBar": [
     {
       "isCraftable": true,
-      "xCoord": 0,
-      "yCoord": 0,
+      "xCoord": 34,
+      "yCoord": 15,
       "size": 30,
       "canFall": false,
       "group": "Block",
@@ -34,33 +34,26 @@
       "type": "Gravel"
     },
     {
-      "isCraftable": false,
-      "xCoord": 0,
-      "yCoord": 0,
-      "size": 30,
-      "canFall": true,
-      "group": "Block",
-      "imagePath": "gravel_block.jpg",
-      "type": "Gravel"
+      "group": "Material",
+      "imagePath": "stone_material.png",
+      "type": "stone_material.png"
     },
-    null,
-    null,
+    {
+      "group": "Material",
+      "imagePath": "stick.png",
+      "type": "stick.png"
+    },
+    {
+      "group": "Material",
+      "imagePath": "iron_ingot.png",
+      "type": "iron_ingot.png"
+    },
     null,
     null,
     null
   ],
-  "selectetItem": {
-    "isCraftable": true,
-    "xCoord": 0,
-    "yCoord": 0,
-    "size": 30,
-    "canFall": false,
-    "group": "Block",
-    "imagePath": "wooden_block.jpg",
-    "type": "Plank"
-  },
   "playerImage": "player.png",
-  "xCoords": 29,
+  "xCoords": 36,
   "yCoords": 24,
   "HP": 100
 }

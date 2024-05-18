@@ -67,11 +67,6 @@ public class Player {
     }
 
     /**
-     * Metóda na zastavenie pohybu hráča.
-     */
-    public void stopMoving(){}
-
-    /**
      * Metóda na nastavenie smeru pohybu hráča.
      *
      * @param direction Smer pohybu hráča.
@@ -202,15 +197,6 @@ public class Player {
     public void punch(Tool usedTool){}
 
     /**
-     * Metóda na umiestnenie bloku na zadaných súradniciach.
-     *
-     * @param block    Blok, ktorý sa má umiestniť.
-     * @param xCoords  X-ová súradnica umiestnenia.
-     * @param yCoords  Y-ová súradnica umiestnenia.
-     */
-    public void placeBlock(Block block, int xCoords, int yCoords){}
-
-    /**
      * Metóda na rozbíjanie bloku s použitím nástroja.
      *
      * @param blockToDestroy   Blok, ktorý sa má rozbíjať.
@@ -226,18 +212,13 @@ public class Player {
     }
 
     /**
-     * Metóda na interakciu s nehráčovskou postavou.
-     *
-     * @param npc NPC postava, s ktorou hráč interaguje.
-     */
-    public void interactWithNPC(NPC npc){}
-
-    /**
      * Metóda na použitie špeciálneho bloku.
      *
      * @param block Špeciálny blok, ktorý sa má použiť.
      */
-    public void useBlock(SpecialBlock block){}
+    public void useBlock(SpecialBlock block){
+
+    }
 
     /**
      * Metóda na vytvorenie bloku zo zadaných materiálov.
