@@ -1,6 +1,7 @@
 package cs.cvut.fel.pjv.demo.controller;
 
 import cs.cvut.fel.pjv.demo.model.Model;
+import cs.cvut.fel.pjv.demo.view.Block;
 import cs.cvut.fel.pjv.demo.view.Realm;
 import cs.cvut.fel.pjv.demo.view.characters.Player;
 import javafx.event.EventHandler;
@@ -69,7 +70,12 @@ public class Controller {
     /**
      * Metóda pre obsluhu udalosti odstránenia bloku.
      */
-    public void removeBlock(){}
+    public boolean removeBlock(Block block){
+        if (player.breakBlock(block)) {
+            return true;
+        }
+        return false;
+    }
 
     /**
      * Metóda pre obsluhu udalosti odomknutia portálu.

@@ -1413,6 +1413,16 @@
       "group": "Block",
       "imagePath": "dirt_block.jpg",
       "type": "Dirt"
+    },
+    {
+      "isCraftable": true,
+      "xCoord": 24,
+      "yCoord": 24,
+      "size": 30,
+      "canFall": false,
+      "group": "Block",
+      "imagePath": "wooden_block.jpg",
+      "type": "Plank"
     }
   ],
   "mobs": [],

@@ -213,10 +213,17 @@ public class Player {
     /**
      * Metóda na rozbíjanie bloku s použitím nástroja.
      *
-     * @param usedTool         Použitý nástroj na rozbíjanie.
      * @param blockToDestroy   Blok, ktorý sa má rozbíjať.
      */
-    public void breakBlock(Tool usedTool, Block blockToDestroy){}
+    public boolean breakBlock(Block blockToDestroy){
+        for (int i = 0; i < hotBar.length; i++) {
+            if (hotBar[i] == null) {
+                addToHotBar(blockToDestroy, i);
+                return true;
+            }
+        }
+        return false;
+    }
 
     /**
      * Metóda na interakciu s nehráčovskou postavou.

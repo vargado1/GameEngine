@@ -44,6 +44,7 @@ public class OdysseyOfRealms extends Application {
     ImageView playerIMG;
     ImageView hotbarFocus;
     ArrayList<ImageView> hotbarNodes = new ArrayList<>();
+    ArrayList<ImageView> worldNodes = new ArrayList<>();
     int hotBarNumber = 0;
     boolean isPaused = false;
     int[] backgroundDimensions = new int[2];
@@ -77,6 +78,7 @@ public class OdysseyOfRealms extends Application {
         block.setCoords(coords[0], coords[1]);
         block.isPlaced = true;
         world.addBlock(block);
+        worldNodes.add(blockImageView);
     }
 
     private void viewPlayer(StackPane root, int xCoord, int yCoords) {
@@ -110,6 +112,8 @@ public class OdysseyOfRealms extends Application {
             blockImageView.setTranslateX(coords[0]);
             blockImageView.setTranslateY(coords[1]);
             root.getChildren().add(blockImageView);
+
+            worldNodes.add(blockImageView);
         }
 
     }
@@ -541,6 +545,45 @@ public class OdysseyOfRealms extends Application {
                     player.addToHotBar(null, hotBarNumber);
                     fillHotbar(root);
                     root.setCursor(Cursor.DEFAULT);
+                }
+                if (event.getButton() == MouseButton.PRIMARY) {
+
+                    double sceneX = event.getX();
+                    double sceneY = event.getY();
+
+                    sceneX = sceneX - (backgroundDimensions[0]/2);
+                    sceneY = sceneY - (backgroundDimensions[1]/2);
+
+                    sceneX = 30 * Math.round(sceneX / 30.0f);
+                    sceneY = 30 * Math.round(sceneY / 30.0f);
+
+
+                    int[] coords = model.getCoordsFromScreenToList((int) sceneX, (int) sceneY, 30, world);
+
+                    if (world.map[coords[0]][coords[1]] == null) {
+                        return;
+                    }
+
+                    Block block = world.map[coords[0]][coords[1]];
+                    if (controller.removeBlock(block)) {
+                        for (ImageView imageView: worldNodes) {
+                            double indeX = imageView.getTranslateX();
+                            double indexY = imageView.getTranslateY();
+
+                            if (indeX == sceneX && indexY == sceneY){
+                                root.getChildren().remove(imageView);
+
+                                fillHotbar(root);
+
+                                if (worldNodes.remove(imageView)){
+                                    world.map[coords[0]][coords[1]] = null;
+                                }
+
+                                break;
+                            }
+                        }
+                    }
+
                 }
             }
         });
