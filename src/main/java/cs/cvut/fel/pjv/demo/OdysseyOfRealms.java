@@ -571,6 +571,27 @@ public class OdysseyOfRealms extends Application {
         return null;
     }
 
+    public void fillChest(StackPane root, SpecialBlock specialBlock) {
+        int count = 0;
+        int x = (0 - (3 * 50) + 25);
+        int y = -200;
+
+        for (int i = 0; i < specialBlock.getInventory().size(); i++) {
+            if (count == 6) {
+                count = 0;
+                y = y + 50;
+            }
+            ImageView imageView = new ImageView(specialBlock.getInventory().get(i).getImagePath());
+
+            imageView.setTranslateX(x + (count * 50));
+            imageView.setTranslateY(y);
+
+            imageView.setId("chestItem");
+
+            root.getChildren().add(imageView);
+
+        }
+    }
 
     private int countItem(List<Item> items, Item item) {
         int count = 0;
@@ -596,7 +617,7 @@ public class OdysseyOfRealms extends Application {
                 emptySlotView.setFitHeight(50);
 
                 emptySlotView.setTranslateX(x + (j * 50));
-                emptySlotView.setTranslateY(-200 + (i * 50));
+                emptySlotView.setTranslateY(y + (i * 50));
 
                 emptySlotView.setId("emptySlot");
 
@@ -636,6 +657,7 @@ public class OdysseyOfRealms extends Application {
             case "chest.png":
                 slots = 36;
                 fillEmptySlots(root, slots);
+                fillChest(root, specialBlock);
         }
 
 
@@ -649,6 +671,10 @@ public class OdysseyOfRealms extends Application {
 
                 sceneX = 50 * Math.round(sceneX / 50.0f);
                 sceneY = 50 * Math.round(sceneY / 50.0f);
+
+                if (specialBlockImagePath.equals("chest.png")) {
+                    sceneX = sceneX + 25;
+                }
 
                 if (player.getSelectetItem() != null) {
                     Item item = player.getSelectetItem();
@@ -674,7 +700,7 @@ public class OdysseyOfRealms extends Application {
                 }
 
             }
-            if (event.getButton() == MouseButton.SECONDARY) {
+            if (event.getButton() == MouseButton.SECONDARY && specialBlockImagePath.equals("crafting_table.png")) {
                 ImageView resultImageView = null;
                 double sceneX = event.getX();
                 double sceneY = event.getY();
@@ -722,6 +748,30 @@ public class OdysseyOfRealms extends Application {
 
                 root.getChildren().remove(resultImageView);
                 worldNodes.remove(resultImageView);
+            }
+            if (event.getButton() == MouseButton.SECONDARY && specialBlockImagePath.equals("chest.png")) {
+                ImageView itemImageView = null;
+
+                double sceneX = event.getX();
+                double sceneY = event.getY();
+
+                sceneX = sceneX - (backgroundDimensions[0]/2);
+                sceneY = sceneY - (backgroundDimensions[1]/2);
+
+                sceneX = 50 * Math.round(sceneX / 50.0f);
+                sceneY = 50 * Math.round(sceneY / 50.0f);
+
+                for (Node imageView: root.getChildren()) {
+                    if (imageView.getId() != null) {
+                        if (imageView.getId().equals("chestItem") && imageView.getTranslateY() == sceneY && imageView.getTranslateX() == sceneX) {
+                            itemImageView = (ImageView) imageView;
+                        }
+                    }
+                }
+
+                root.getChildren().remove(itemImageView);
+
+
             }
         });
 
@@ -862,6 +912,9 @@ public class OdysseyOfRealms extends Application {
 //
 //        SpecialBlock crafting = new SpecialBlock(false, false, "craftingTable", "crafting_table.png", "Block");
 //        addBlockToScreen(crafting, root, 420, 300);
+//        SpecialBlock chest = new SpecialBlock(false, false, "chest", "chest.png", "Block");
+//        addBlockToScreen(chest, root, -150, 300);
+
 
         stage.setTitle("Odyssey Of Realms");
         stage.setScene(scene);

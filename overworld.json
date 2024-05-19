@@ -1378,6 +1378,7 @@
       "type": "Dirt"
     },
     {
+      "inventory": [],
       "isCraftable": false,
       "xCoord": 38,
       "yCoord": 24,
@@ -1385,6 +1386,17 @@
       "canFall": false,
       "group": "Block",
       "imagePath": "crafting_table.png",
+      "type": "specialBlock"
+    },
+    {
+      "inventory": [],
+      "isCraftable": false,
+      "xCoord": 19,
+      "yCoord": 24,
+      "size": 30,
+      "canFall": false,
+      "group": "Block",
+      "imagePath": "chest.png",
       "type": "specialBlock"
     }
   ],

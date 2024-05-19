@@ -75,7 +75,7 @@
     "type": "Plank"
   },
   "playerImage": "player.png",
-  "xCoords": 36,
+  "xCoords": 20,
   "yCoords": 24,
   "HP": 100
 }
