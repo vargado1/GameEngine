@@ -117,4 +117,54 @@ public class Realm {
     public void removeBlock(Block block){
         blocks.remove(block);
     }
+
+    public SpecialBlock findNearestSpecialBlock(Player player) {
+        int playerxCoords = player.getxCoord();
+        int playeryCoords = player.getyCoord();
+        int count = 1;
+        boolean isOutOfSpaceRight = false;
+        boolean isOutOfSpaceLeft = false;
+
+        for (int i = playerxCoords; i < map.length;) {
+
+            if (map[i][playeryCoords] != null) {
+                if (map[i][playeryCoords].getType().equals("specialBlock")) {
+                    return (SpecialBlock) map[i][playeryCoords];
+                }
+
+            } else if (map[i][playeryCoords - 1] != null) {
+                if (map[i][playeryCoords - 1].getType().equals("specialBlock")) {
+                    return (SpecialBlock) map[i][playeryCoords - 1];
+                }
+
+            } else if (map[i][playeryCoords + 1] != null) {
+                if (map[i][playeryCoords + 1].getType().equals("specialBlock")) {
+                    return (SpecialBlock) map[i][playeryCoords + 1];
+                }
+
+            } else if ((map[i][playeryCoords - 2] != null)) {
+                if (map[i][playeryCoords - 2].getType().equals("specialBlock")) {
+                    return (SpecialBlock) map[i][playeryCoords - 2];
+                }
+
+            }
+
+            if (i == 0) {
+                isOutOfSpaceLeft = true;
+            }
+            if (i == map.length) {
+                isOutOfSpaceRight = true;
+            }
+
+            if (i % 2 == 0 && !isOutOfSpaceLeft) {
+                i = i - count;
+            } else if (!isOutOfSpaceRight) {
+                i = i + count;
+            }
+
+            count++;
+        }
+
+        return null;
+    }
 }

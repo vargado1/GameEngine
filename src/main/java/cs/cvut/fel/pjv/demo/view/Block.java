@@ -51,4 +51,12 @@ public class Block extends Item {
     public boolean isPlaced() {
         return isPlaced;
     }
+
+    public int getxCoord() {
+        return xCoord;
+    }
+
+    public int getyCoord() {
+        return yCoord;
+    }
 }

@@ -1376,6 +1376,16 @@
       "group": "Block",
       "imagePath": "dirt_block.jpg",
       "type": "Dirt"
+    },
+    {
+      "isCraftable": false,
+      "xCoord": 38,
+      "yCoord": 24,
+      "size": 30,
+      "canFall": false,
+      "group": "Block",
+      "imagePath": "crafting_table.png",
+      "type": "specialBlock"
     }
   ],
   "mobs": [],

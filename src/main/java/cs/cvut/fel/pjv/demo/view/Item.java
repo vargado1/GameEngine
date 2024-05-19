@@ -1,6 +1,7 @@
 package cs.cvut.fel.pjv.demo.view;
 
 import com.google.gson.annotations.Expose;
+import javafx.scene.image.Image;
 
 public class Item {
     @Expose

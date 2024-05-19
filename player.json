@@ -1,12 +1,12 @@
 {
   "isMoving": false,
-  "direction": "RIGHT",
+  "direction": "LEFT",
   "speed": 1,
   "hotBar": [
     {
       "isCraftable": true,
-      "xCoord": 34,
-      "yCoord": 15,
+      "xCoord": 0,
+      "yCoord": 0,
       "size": 30,
       "canFall": false,
       "group": "Block",
@@ -36,22 +36,44 @@
     {
       "group": "Material",
       "imagePath": "stone_material.png",
-      "type": "stone_material.png"
+      "type": "stone"
+    },
+    {
+      "group": "Material",
+      "imagePath": "stone_material.png",
+      "type": "stone"
+    },
+    {
+      "group": "Material",
+      "imagePath": "stone_material.png",
+      "type": "stone"
+    },
+    {
+      "group": "Material",
+      "imagePath": "stone_material.png",
+      "type": "stone"
     },
     {
       "group": "Material",
       "imagePath": "stick.png",
-      "type": "stick.png"
+      "type": "stick"
     },
     {
       "group": "Material",
-      "imagePath": "iron_ingot.png",
-      "type": "iron_ingot.png"
-    },
-    null,
-    null,
-    null
+      "imagePath": "stick.png",
+      "type": "stick"
+    }
   ],
+  "selectetItem": {
+    "isCraftable": true,
+    "xCoord": 0,
+    "yCoord": 0,
+    "size": 30,
+    "canFall": false,
+    "group": "Block",
+    "imagePath": "wooden_block.jpg",
+    "type": "Plank"
+  },
   "playerImage": "player.png",
   "xCoords": 36,
   "yCoords": 24,

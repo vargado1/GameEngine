@@ -311,34 +311,6 @@ public class Player {
         return selectetItem;
     }
 
-//    public ArrayList<Block> getInventoryBlocks() {
-//        return inventoryBlocks;
-//    }
-//
-//    public ArrayList<Key> getInventoryKeys() {
-//        return inventoryKeys;
-//    }
-//
-//    public ArrayList<Material> getInventoryMaterials() {
-//        return inventoryMaterials;
-//    }
-//
-//    public ArrayList<Picaxe> getInventoryPicaxes() {
-//        return inventoryPicaxes;
-//    }
-//
-//    public ArrayList<Showel> getInventoryShowels() {
-//        return inventoryShowels;
-//    }
-//
-//    public ArrayList<Sword> getInventorySwords() {
-//        return inventorySwords;
-//    }
-//
-//    public int getLastIndex() {
-//        return lastIndex;
-//    }
-
     public void setxCoords(int xCoords) {
         this.xCoords = xCoords;
     }
@@ -358,4 +330,5 @@ public class Player {
     public void setMoving(boolean moving) {
         isMoving = moving;
     }
+
 }

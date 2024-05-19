@@ -13,16 +13,18 @@ import cs.cvut.fel.pjv.demo.view.tools.Sword;
 import javafx.animation.PauseTransition;
 import javafx.application.Application;
 import javafx.event.EventHandler;
+import javafx.geometry.Insets;
 import javafx.geometry.Pos;
 import javafx.scene.Cursor;
 import javafx.scene.ImageCursor;
+import javafx.scene.Node;
 import javafx.scene.Scene;
 import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
-import javafx.scene.input.KeyEvent;
-import javafx.scene.input.MouseButton;
-import javafx.scene.input.MouseEvent;
+import javafx.scene.input.*;
+import javafx.scene.layout.GridPane;
 import javafx.scene.layout.StackPane;
+import javafx.scene.layout.VBox;
 import javafx.scene.paint.Color;
 import javafx.scene.text.Font;
 import javafx.stage.Stage;
@@ -34,6 +36,10 @@ import java.io.IOException;
 import java.nio.file.Files;
 import java.nio.file.Paths;
 import java.util.ArrayList;
+import java.util.Iterator;
+import java.util.List;
+import java.util.Map;
+
 import javafx.scene.control.Label;
 import javafx.scene.text.Text;
 
@@ -53,6 +59,7 @@ public class OdysseyOfRealms extends Application {
     int[] backgroundDimensions = new int[2];
     ArrayList<NPC> NPCs = new ArrayList<>();
     ImageView selectedItemView;
+    Item resultItem;
 
     /**
      * adds block to screen and to the realms map
@@ -101,8 +108,20 @@ public class OdysseyOfRealms extends Application {
         Realm data = serializer.deserializeFromFile("overworld.json", Realm.class);
         this.world = new Realm(data.getName(), data.getBossName(), data.getDifficulty(), data.getBackgroundImagePath(), data.getXMaxCoords(), data.getYMaxCoords());
         int[] coords;
+        int x;
+        int y;
 
         for (Block i: data.getBlocks()) {
+
+            if (i.getType().equals("specialBlock")) {
+                x = i.getXCoord();
+                y = i.getYCoord();
+
+                i = new SpecialBlock(false, false, i.getType(), i.getImagePath(), i.getGroup());
+
+                i.setCoords(x,y);
+            }
+
             world.addBlock(i);
 
             world.map[i.getXCoord()][i.getYCoord()] = i;
@@ -155,14 +174,18 @@ public class OdysseyOfRealms extends Application {
                     String imagePathBL = rootNode.at(JsonPointer.compile("/hotBar/" + i + "/imagePath")).asText();
                     String groupBL = rootNode.at(JsonPointer.compile("/hotBar/" + i + "/group")).asText();
 
-                    Block block = new Block(isCraftable, canFall, typeBL, imagePathBL, groupBL);
-
-                    loadedPlayer.addToHotBar(block, i);
+                    if (typeBL.equals("specialBlock")) {
+                        SpecialBlock block = new SpecialBlock(isCraftable,canFall, typeBL, imagePathBL, groupBL);
+                        loadedPlayer.addToHotBar(block, i);
+                    } else {
+                        Block block = new Block(isCraftable, canFall, typeBL, imagePathBL, groupBL);
+                        loadedPlayer.addToHotBar(block, i);
+                    }
 
                     break;
 
                 case "Key":
-                    String typeKey = rootNode.at(JsonPointer.compile("/hotBar/" + i + "/imagePath")).asText();
+                    String typeKey = rootNode.at(JsonPointer.compile("/hotBar/" + i + "/type")).asText();
                     String groupKey = rootNode.at(JsonPointer.compile("/hotBar/" + i + "/group")).asText();
                     String imagePathKey = rootNode.at(JsonPointer.compile("/hotBar/" + i + "/imagePath")).asText();
 
@@ -173,17 +196,17 @@ public class OdysseyOfRealms extends Application {
                     break;
 
                 case "Material":
-                    String typeMT = rootNode.at(JsonPointer.compile("/hotBar/" + i + "/imagePath")).asText();
+                    String typeMT = rootNode.at(JsonPointer.compile("/hotBar/" + i + "/type")).asText();
                     String groupMT = rootNode.at(JsonPointer.compile("/hotBar/" + i + "/group")).asText();
                     String imagePathMT = rootNode.at(JsonPointer.compile("/hotBar/" + i + "/imagePath")).asText();
 
-                    Material material = new Material(typeMT, groupMT,imagePathMT);
+                    Material material = new Material(typeMT, groupMT, imagePathMT);
 
                     loadedPlayer.addToHotBar(material, i);
 
                     break;
                 case "Sword":
-                    String typeSW = rootNode.at(JsonPointer.compile("/hotBar/" + i + "/imagePath")).asText();
+                    String typeSW = rootNode.at(JsonPointer.compile("/hotBar/" + i + "/type")).asText();
                     String groupSW = rootNode.at(JsonPointer.compile("/hotBar/" + i + "/group")).asText();
                     String imagePathSW = rootNode.at(JsonPointer.compile("/hotBar/" + i + "/imagePath")).asText();
 
@@ -194,7 +217,7 @@ public class OdysseyOfRealms extends Application {
                     break;
 
                 case "Picaxe":
-                    String typePI = rootNode.at(JsonPointer.compile("/hotBar/" + i + "/imagePath")).asText();
+                    String typePI = rootNode.at(JsonPointer.compile("/hotBar/" + i + "/type")).asText();
                     String groupPI = rootNode.at(JsonPointer.compile("/hotBar/" + i + "/group")).asText();
                     String imagePathPI = rootNode.at(JsonPointer.compile("/hotBar/" + i + "/imagePath")).asText();
 
@@ -205,7 +228,7 @@ public class OdysseyOfRealms extends Application {
                     break;
 
                 case "Showel":
-                    String typeSH = rootNode.at(JsonPointer.compile("/hotBar/" + i + "/imagePath")).asText();
+                    String typeSH = rootNode.at(JsonPointer.compile("/hotBar/" + i + "/type")).asText();
                     String groupSH = rootNode.at(JsonPointer.compile("/hotBar/" + i + "/group")).asText();
                     String imagePathSH = rootNode.at(JsonPointer.compile("/hotBar/" + i + "/imagePath")).asText();
 
@@ -304,7 +327,7 @@ public class OdysseyOfRealms extends Application {
     private void showTextBubble(NPC npc, StackPane root) {
         String text = npc.getRiddle();
         Label textLabel = new Label(text);
-        javafx.geometry.Insets insets = new javafx.geometry.Insets(10,10,10,10);
+        Insets insets = new Insets(10,10,10,10);
         Font font = new Font("Arial", 14);
 
         textLabel.setPadding(insets);
@@ -396,6 +419,383 @@ public class OdysseyOfRealms extends Application {
         selectedItemView = imageView;
     }
 
+//    private void checkRecipesAndCraft(Material[] craftingInventory, ImageView resultSlot) {
+//        for (Recipes recipe : Recipes.values()) {
+//            boolean recipeMatch = true;
+//            for (Map.Entry<Item, Integer> entry : recipe.getIngredients().entrySet()) {
+//                Item ingredient = entry.getKey();
+//                int requiredCount = entry.getValue();
+//                int actualCount = countItem(craftingInventory, ingredient);
+//                if (actualCount < requiredCount) {
+//                    recipeMatch = false;
+//                    System.out.println("recipes doesnt match");
+//                    break;
+//                }
+//            }
+//            if (recipeMatch) {
+//                // Vytvoríme výstupný predmet podľa receptu
+//                Item result = recipe.getResult();
+//                // Zobrazíme výstupný predmet výstupnom slote
+//                resultSlot.setImage(new Image(result.getImagePath()));
+//                System.out.println("recipes match");
+//                break; // Ak sme našli recept, nemusíme kontrolovať ďalšie recepty
+//            }
+//        }
+//    }
+//
+//    private int countItem(Material[] craftingInventory, Item item) {
+//        int count = 0;
+//        for (Material material : craftingInventory) {
+//            if (material != null && material.equals(item)) {
+//                count++;
+//            }
+//        }
+//        return count;
+//    }
+//    private void addRightClickFunctionality(ImageView slot, Material[] craftingInventory, int slotIndex, StackPane root, ImageView resultSlot) {
+//        slot.setOnMouseClicked(event -> {
+//            if (event.getButton() == MouseButton.SECONDARY) {
+//                if (craftingInventory[slotIndex] == null) {
+//                    for (int i = 0; i < craftingInventory.length; i++) {
+//                        if (craftingInventory[i] != null && craftingInventory[i].equals(player.getSelectetItem())) {
+//                            System.out.println("Tento materiál je už pridaný na iný slot v craftingu!");
+//                            return;
+//                        }
+//                    }
+//
+//                    craftingInventory[slotIndex] = (Material) player.getSelectetItem();
+//                    slot.setImage(new Image(player.getSelectetItem().getImagePath()));
+//
+//                    System.out.println("Materiál pridaný do craftingu: " + player.getSelectetItem().getType());
+//                    System.out.println("Index slotu craftingu: " + slotIndex);
+//
+//                    player.addToHotBar(null, hotBarNumber);
+//                    fillHotbar(root);
+//                    root.setCursor(Cursor.DEFAULT);
+//
+//                    // Kontrola receptov a vytvorenie výstupného predmetu
+//                    checkRecipesAndCraft(craftingInventory, resultSlot);
+//                } else {
+//                    System.out.println("Slot v craftingu je už obsadený!");
+//                }
+//            }
+//        });
+//    }
+//
+//    private ImageView createSlot() {
+//        ImageView slot = new ImageView(new Image("empty_slot.png"));
+//        slot.setFitWidth(50);
+//        slot.setFitHeight(50);
+//        return slot;
+//    }
+//    private void showCraftingGUI(StackPane root) {
+//        StackPane craftingRoot = new StackPane();
+//
+//        craftingRoot.setAlignment(Pos.CENTER);
+//
+//        craftingRoot.setStyle("-fx-background-color: rgba(0, 0, 0, 0.8); -fx-padding: 20;");
+//
+//        GridPane craftingGrid = new GridPane();
+//        craftingGrid.setHgap(10);
+//        craftingGrid.setVgap(10);
+//        Material[] craftingInventory = new Material[9];
+//        ImageView resultSlot = createSlot();
+//
+//        for (int i = 0; i < 3; i++) {
+//            for (int j = 0; j < 3; j++) {
+//                ImageView slot = createSlot();
+//                addRightClickFunctionality(slot, craftingInventory, i * 3 + j, root, resultSlot);
+//                craftingGrid.add(slot, j, i);
+//            }
+//        }
+//
+//
+//
+//        craftingRoot.getChildren().addAll(craftingGrid, resultSlot);
+//
+//        root.getChildren().add(craftingRoot);
+//
+//        craftingRoot.setMaxWidth(root.getWidth());
+//        craftingRoot.setMaxHeight(root.getHeight());
+//
+//        craftingRoot.setOnMouseClicked(event -> {
+//            if (event.getButton() == MouseButton.PRIMARY) {
+//                root.getChildren().remove(craftingRoot);
+//            }
+//        });
+//    }
+
+    public int countDifferentMaterials(Recipes recipe) {
+        int count = 0;
+        Map<Item, Integer> ingredients = recipe.getIngredients();
+
+        for (Item ingredient : ingredients.keySet()) {
+            count++;
+        }
+
+        return count;
+    }
+    public Item checkForRecipe(SpecialBlock specialBlock) {
+        boolean firstCheckmark = false;
+        boolean secondCheckemark = false;
+        Boolean[] checkmarks = new Boolean[]{firstCheckmark, secondCheckemark};
+        int count = 0;
+
+        for (Recipes recipe : Recipes.values()) {
+            count = 0;
+            checkmarks[0] = false;
+            checkmarks[1] = false;
+            if (countDifferentMaterials(recipe) <= 1){
+                checkmarks[1] = true;
+            }
+
+
+            for (Map.Entry<Item, Integer> entry : recipe.getIngredients().entrySet()) {
+
+                Item ingredient = entry.getKey();
+                int requiredCount = entry.getValue();
+                int actualCount = countItem(specialBlock.getInventory(), ingredient);
+                if (actualCount == requiredCount) {
+                    checkmarks[count] = true;
+                    count++;
+                }
+            }
+
+
+            if (checkmarks[0] && checkmarks[1]) {
+                return recipe.getResult();
+            }
+        }
+
+
+        return null;
+    }
+
+
+    private int countItem(List<Item> items, Item item) {
+        int count = 0;
+        for (Item currentItem : items) {
+            if (currentItem.getImagePath().equals(item.getImagePath())) {
+                count++;
+            }
+        }
+        return count;
+    }
+    public void fillEmptySlots(StackPane root, double numberOfSlots){
+        numberOfSlots = Math.sqrt(numberOfSlots);
+        int x = (int) (0 - ((numberOfSlots/2) * 50) + 25);
+        int y = -200;
+
+
+        for (int i = 0; i < numberOfSlots; i++) {
+            for (int j = 0; j < numberOfSlots; j++) {
+
+                ImageView emptySlotView = new ImageView("empty_slot.png");
+
+                emptySlotView.setFitWidth(50);
+                emptySlotView.setFitHeight(50);
+
+                emptySlotView.setTranslateX(x + (j * 50));
+                emptySlotView.setTranslateY(-200 + (i * 50));
+
+                emptySlotView.setId("emptySlot");
+
+                root.getChildren().add(emptySlotView);
+
+            }
+
+        }
+
+    }
+
+    public void showCraftingGUI(StackPane root, SpecialBlock specialBlock) {
+        int slots;
+        String specialBlockImagePath = specialBlock.getImagePath();
+        ImageView resultSlotImageView = new ImageView("empty_slot.png");
+
+
+        switch (specialBlockImagePath) {
+            case "crafting_table.png":
+                slots = 9;
+
+                resultSlotImageView.setFitHeight(50);
+                resultSlotImageView.setFitWidth(50);
+
+                resultSlotImageView.setTranslateX(0);
+                resultSlotImageView.setTranslateY(0);
+
+                resultSlotImageView.setId("resultSlot");
+
+                root.getChildren().add(resultSlotImageView);
+
+                worldNodes.add(resultSlotImageView);
+
+                fillEmptySlots(root, slots);
+                break;
+
+            case "chest.png":
+                slots = 36;
+                fillEmptySlots(root, slots);
+        }
+
+
+        root.setOnMouseClicked(event -> {
+            if (event.getButton() == MouseButton.PRIMARY) {
+                double sceneX = event.getX();
+                double sceneY = event.getY();
+
+                sceneX = sceneX - (backgroundDimensions[0]/2);
+                sceneY = sceneY - (backgroundDimensions[1]/2);
+
+                sceneX = 50 * Math.round(sceneX / 50.0f);
+                sceneY = 50 * Math.round(sceneY / 50.0f);
+
+                if (player.getSelectetItem() != null) {
+                    Item item = player.getSelectetItem();
+
+                    player.addToHotBar(null, hotBarNumber);
+                    fillHotbar(root);
+
+                    ImageView itemImageView = new ImageView(item.getImagePath());
+
+                    itemImageView.setTranslateX(sceneX);
+                    itemImageView.setTranslateY(sceneY);
+
+                    itemImageView.setId("usedItem");
+
+                    root.getChildren().add(itemImageView);
+
+                    root.setCursor(Cursor.DEFAULT);
+
+                    specialBlock.addToInventory(item);
+
+                    player.setSelectetItem(null);
+
+                }
+
+            }
+            if (event.getButton() == MouseButton.SECONDARY) {
+                ImageView resultImageView = null;
+                double sceneX = event.getX();
+                double sceneY = event.getY();
+
+                sceneX = sceneX - (backgroundDimensions[0]/2);
+                sceneY = sceneY - (backgroundDimensions[1]/2);
+
+                sceneX = 50 * Math.round(sceneX / 50.0f);
+                sceneY = 50 * Math.round(sceneY / 50.0f);
+
+                for (ImageView imageView: worldNodes) {
+                    if (imageView.getId() != null) {
+                        if (imageView.getId().equals("itemResult")) {
+                            resultImageView = imageView;
+                            break;
+                        }
+                    }
+                }
+
+                switch (resultItem.getGroup()) {
+                    case "Block":
+                        resultItem = new Block(true, false, resultItem.getType(), resultItem.getImagePath(), resultItem.getGroup());
+                        break;
+                    case "Picaxe":
+                        resultItem = new Picaxe(resultItem.getImagePath(), resultItem.getGroup(), resultItem.getType());
+                        break;
+                    case "Showel":
+                        resultItem = new Showel(resultItem.getImagePath(), resultItem.getGroup(), resultItem.getType());
+                        break;
+                    case "Sword":
+                        resultItem = new Sword(resultItem.getImagePath(), resultItem.getGroup(), resultItem.getType());
+
+                }
+
+                if ((sceneX == 0 && sceneY == 0) && resultImageView != null) {
+                    for (int i = 0; i < player.getHotBar().length; i++) {
+                        if (player.getHotBar()[i] == null){
+                            player.addToHotBar(resultItem, i);
+                            break;
+                        }
+                    }
+                }
+
+                fillHotbar(root);
+
+                root.getChildren().remove(resultImageView);
+                worldNodes.remove(resultImageView);
+            }
+        });
+
+// Zatvorenie special Blocku na esc
+        root.getScene().addEventHandler(KeyEvent.KEY_PRESSED, event -> {
+            if (event.getCode() == KeyCode.ESCAPE && specialBlockImagePath.equals("crafting_table.png")) {
+                specialBlock.getInventory();
+                int count = 0;
+
+                root.getChildren().remove(resultSlotImageView);
+
+                Iterator<ImageView> worldNodesIterator = worldNodes.iterator();
+                while (worldNodesIterator.hasNext()) {
+                    ImageView imageView = worldNodesIterator.next();
+                    if (imageView.getId() != null) {
+                        if (imageView.getId().equals("resultSlot") || imageView.getId().equals("emptySlot") || imageView.getId().equals("usedItem")) {
+                            worldNodesIterator.remove();
+                        }
+                    }
+                }
+
+                Iterator<Node> rootChildrenIterator = root.getChildren().iterator();
+                while (rootChildrenIterator.hasNext()) {
+                    Node node = rootChildrenIterator.next();
+                    if (node.getId() != null) {
+                        if (node.getId().equals("resultSlot") || node.getId().equals("emptySlot") || node.getId().equals("usedItem")) {
+                            rootChildrenIterator.remove();
+                        }
+                    }
+                }
+
+                for (int i = 0; i < player.getHotBar().length; i++) {
+                    if (count >= specialBlock.getInventory().size()) {
+                        break;
+                    }
+
+                    Item item = specialBlock.getInventory().get(count);
+
+                    if (player.getHotBar()[i] == null) {
+                        player.addToHotBar(item, i);
+                        count++;
+                    }
+
+                }
+
+                fillHotbar(root);
+
+                specialBlock.getInventory().clear();
+            }
+            if (event.getCode() == KeyCode.ENTER && specialBlockImagePath.equals("crafting_table.png")) {
+                Item item = checkForRecipe(specialBlock);
+
+                if (item != null) {
+
+                    resultItem = item;
+
+                    ImageView imageView = new ImageView(item.getImagePath());
+                    imageView.setTranslateX(0);
+                    imageView.setTranslateY(0);
+
+                    imageView.setId("itemResult");
+
+                    root.getChildren().add(imageView);
+                    worldNodes.add(imageView);
+
+                    specialBlock.getInventory().clear();
+
+
+
+                }
+            }
+        });
+    }
+
     @Override
     public void start(Stage stage) throws IOException {
 
@@ -415,8 +815,6 @@ public class OdysseyOfRealms extends Application {
 
 
         loadGame(root);
-
-
 
 //        this.player = new Player(0,0, 100);
 //        player.setPlayerSpeed(1);
@@ -461,6 +859,9 @@ public class OdysseyOfRealms extends Application {
 //        player.addToHotBar(stick, 4);
 //        Material iron = new Material("iron", "Material", "iron_ingot.png");
 //        player.addToHotBar(iron, 5);
+//
+//        SpecialBlock crafting = new SpecialBlock(false, false, "craftingTable", "crafting_table.png", "Block");
+//        addBlockToScreen(crafting, root, 420, 300);
 
         stage.setTitle("Odyssey Of Realms");
         stage.setScene(scene);
@@ -549,12 +950,21 @@ public class OdysseyOfRealms extends Application {
                     case E:
                         NPC npc = NPCs.get(0);
                         String riddle = controller.interactWithObject(npc);
+                        SpecialBlock nearestSpecialBlock = world.findNearestSpecialBlock(player);
+                        Item item = controller.interactWithObject(nearestSpecialBlock);
 
-                        if (!riddle.isEmpty()) {
+                        if (!riddle.isEmpty() && !isPaused) {
+                            isPaused = true;
                             showTextBubble(npc, root);
                         }
 
+                        if (model.isNearObject(player, nearestSpecialBlock.getXCoord(), nearestSpecialBlock.getYCoord()) && !isPaused) {
+                            //Vymysli interface ktory sa zobrazi a ako tam hrac nahadze matros
+                            isPaused = true;
+                            showCraftingGUI(root, nearestSpecialBlock);
+                        }
 
+                        isPaused = false;
 
                         break;
                     case DIGIT1:
@@ -615,6 +1025,10 @@ public class OdysseyOfRealms extends Application {
                     sceneY = sceneY - (backgroundDimensions[1]/2);
 
                     Block block = (Block) player.getSelectetItem();
+
+                    if (block.getType().equals("specialBlock")) {
+                        block = new SpecialBlock(block.isCraftable(), block.isCanFall(), block.getType(), block.getImagePath(), block.getGroup());
+                    }
 
                     addBlockToScreen(block, root,(int) sceneX, (int) sceneY);
 
