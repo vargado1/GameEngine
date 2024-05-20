@@ -1,6 +1,6 @@
 {
   "isMoving": false,
-  "direction": "RIGHT",
+  "direction": "LEFT",
   "speed": 1,
   "hotBar": [
     {
@@ -10,7 +10,20 @@
       "sceneXCoord": 0,
       "sceneYCoord": 0
     },
-    null,
+    {
+      "group": "Picaxe",
+      "imagePath": "stone_picaxe.png",
+      "type": "stone",
+      "sceneXCoord": 0,
+      "sceneYCoord": 0
+    },
+    {
+      "group": "Showel",
+      "imagePath": "stone_shovel.png",
+      "type": "stone",
+      "sceneXCoord": 0,
+      "sceneYCoord": 0
+    },
     {
       "isCraftable": false,
       "xCoord": 0,
@@ -25,26 +38,43 @@
     },
     {
       "group": "Material",
-      "imagePath": "stone_material.png",
-      "type": "stone",
+      "imagePath": "iron_ingot.png",
+      "type": "iron",
       "sceneXCoord": 0,
       "sceneYCoord": 0
     },
-    null,
-    null,
-    null,
-    null,
+    {
+      "group": "Material",
+      "imagePath": "iron_ingot.png",
+      "type": "iron",
+      "sceneXCoord": 0,
+      "sceneYCoord": 0
+    },
+    {
+      "group": "Material",
+      "imagePath": "stick.png",
+      "type": "stick",
+      "sceneXCoord": 0,
+      "sceneYCoord": 0
+    },
+    {
+      "group": "Material",
+      "imagePath": "stick.png",
+      "type": "stick",
+      "sceneXCoord": 0,
+      "sceneYCoord": 0
+    },
     null
   ],
   "selectetItem": {
     "group": "Sword",
-    "imagePath": "stone",
-    "type": "stone_sword.png",
+    "imagePath": "stone_sword.png",
+    "type": "stone",
     "sceneXCoord": 0,
     "sceneYCoord": 0
   },
   "playerImage": "player.png",
-  "xCoords": 14,
+  "xCoords": 25,
   "yCoords": 24,
   "HP": 100
 }

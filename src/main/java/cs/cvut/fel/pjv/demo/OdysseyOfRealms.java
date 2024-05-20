@@ -74,17 +74,21 @@ public class OdysseyOfRealms extends Application {
      * @param yIndex y coordination's of place where the block should be placed
      */
     private void addBlockToScreen(Block block, StackPane root, int xIndex, int yIndex) {
+        //rounds coords to nearest multiple of 30
         xIndex = 30 * Math.round(xIndex / 30.0f);
         yIndex = 30 * Math.round(yIndex / 30.0f);
 
+        // gets coords for realm system
         int[] coords = model.getCoordsFromScreenToList(xIndex, yIndex, block.getSize(), world);
 
         if (world.map[coords[0]][coords[1]] != null) {
             return;
         }
 
+        //if block is not null then it will be added to realm map
         world.map[coords[0]][coords[1]] = block;
 
+        //creates new ImageView sets up coords
         Image blockImage = new Image(block.getImagePath());
         ImageView blockImageView = new ImageView(blockImage);
         blockImageView.setTranslateX(xIndex);
@@ -92,6 +96,7 @@ public class OdysseyOfRealms extends Application {
         root.getChildren().add(blockImageView);
         blockImageView.toFront();
 
+        //sets up coords in block and adds block to world list of blocks
         block.setCoords(coords[0], coords[1]);
         block.isPlaced = true;
         world.addBlock(block);
@@ -108,16 +113,20 @@ public class OdysseyOfRealms extends Application {
     private void revivePlayer(StackPane root) {
         int[] coords;
 
+        //removes players imageView
         root.getChildren().remove(playerIMG);
         player = null;
 
+        //creates new player and its ImageView
         player = new Player(24, 12, 100);
         player.setPlayerSpeed(1);
         ImageView pImageView = new ImageView("player.png");
         playerIMG = pImageView;
 
+        //calculates coords from world map to screen
         coords = model.getCoordsFromListToScreen(player.getxCoord(), player.getyCoord(), 30, world);
 
+        //sets up screen coords
         playerIMG.setTranslateX(coords[0]);
         playerIMG.setTranslateY(coords[1] - 15);
 
@@ -126,6 +135,7 @@ public class OdysseyOfRealms extends Application {
         updateHP(root);
 
         controller.setPlayer(player);
+        fillHotbar(root);
 
         LOGGER.info("revived player after loosing all his HP");
     }
@@ -166,8 +176,10 @@ public class OdysseyOfRealms extends Application {
      * @param root main scene
      */
     private void updateHP(StackPane root) {
+        //clear ImageViews of hearts
         clearHP(root);
 
+        //creates new ImageViews of hearts
         for (int i = 0; i < (player.getHP()/20); i++) {
             ImageView heartImageView = new ImageView("heart.png");
 
@@ -193,7 +205,6 @@ public class OdysseyOfRealms extends Application {
         if (enemy == null) {
             return;
         }
-
         root.getChildren().remove(enemy.getImageView());
         world.mobs.remove(enemy);
         enemy = null;
@@ -208,12 +219,16 @@ public class OdysseyOfRealms extends Application {
      * @throws IOException when loading from json fail then it throws this exception
      */
     private void loadOverworldFromSave(StackPane root) throws IOException {
+        //deserialized realm from json
         Realm data = serializer.deserializeFromFile("overworld.json", Realm.class);
+
+        //creating new realm
         this.world = new Realm(data.getName(), data.getBossName(), data.getDifficulty(), data.getBackgroundImagePath(), data.getXMaxCoords(), data.getYMaxCoords());
         int[] coords;
         int x;
         int y;
 
+        //loads blocks from realms list of blocks
         for (Block i: data.getBlocks()) {
 
             if (i.getType().equals("specialBlock")) {
@@ -253,6 +268,7 @@ public class OdysseyOfRealms extends Application {
             worldNodes.add(blockImageView);
         }
 
+        //loads enemies from list of enemies
         for (Enemy enemy: data.mobs) {
             Enemy enemy1 = new Enemy(enemy.getDamage(), enemy.getType(), enemy.getxCoords(), enemy.getyCoords(), enemy.getHP(), enemy.getImagePath());
 
@@ -283,25 +299,31 @@ public class OdysseyOfRealms extends Application {
         int[] coords;
         Item[] inventory;
         Item item;
+
+        //creates new ObjectMapper and JsonNode
         ObjectMapper mapper = new ObjectMapper();
         JsonNode rootNode = mapper.readTree(Files.newBufferedReader(Paths.get("player.json")));
 
+        //deserialize players data
         Player playerData = serializer.deserializeFromFile("player.json", Player.class);
 
-
+        //creates new player
         Player loadedPlayer = new Player(playerData.getxCoord(), playerData.getyCoord(), playerData.getHP());
         coords = model.getCoordsFromListToScreen(loadedPlayer.getxCoord(), loadedPlayer.getyCoord(), 30, world);
 
         inventory = playerData.getHotBar();
 
+        //fills up inventory
         for (int i = 0; i < inventory.length; i++) {
             item = inventory[i];
             if (item == null) {
                 continue;
             }
 
+            //based on items group new item will be created
             switch (item.getGroup()) {
                 case "Block":
+                    //json pointer to specific data of item
                     boolean isCraftable = rootNode.at(JsonPointer.compile("/hotBar/" + i + "/isCraftable")).asBoolean();
                     boolean canFall = rootNode.at(JsonPointer.compile("/hotBar/" + i + "/canFall")).asBoolean();
                     String typeBL = rootNode.at(JsonPointer.compile("/hotBar/" + i + "/type")).asText();
@@ -382,6 +404,7 @@ public class OdysseyOfRealms extends Application {
         loadedPlayer.setPlayerSpeed(playerData.getSpeed());
         loadedPlayer.setSelectetItem(loadedPlayer.getHotBar()[0]);
 
+        //new players ImageView
         ImageView playerImageView = new ImageView(loadedPlayer.getPlayerImage());
         playerImageView.setTranslateX(coords[0]);
         playerImageView.setTranslateY(coords[1] - 15);
@@ -402,6 +425,7 @@ public class OdysseyOfRealms extends Application {
     private void loadNPC(StackPane root) {
         int[] coords = new int[2];
 
+        //creates new NPC and sets up text which is show when interacted with
         NPC NPC = new NPC("","Player's Helper", 30, 24, "npc_helper.png");
         NPC.setRiddle("Tutorial: to move use A or D, to go over block use W + A, to jump over use SPACE + A + A. " +
                 "To select item on your hot bar press any number. " +
@@ -425,6 +449,7 @@ public class OdysseyOfRealms extends Application {
 
         root.getChildren().add(NPCimageView);
 
+        //creates new label of NPC's head to let player know how to interact
         Label pressELabel = new Label("Press E");
 
         pressELabel.setFont(new Font("Arial", 16));
@@ -464,6 +489,7 @@ public class OdysseyOfRealms extends Application {
 
         clearHotbar(root);
 
+        //creates new ImageViews for each item in hot bar
         for (Item item : player.getHotBar()) {
             if (item == null) {
                 count = count + 50;
@@ -498,6 +524,7 @@ public class OdysseyOfRealms extends Application {
         Insets insets = new Insets(10,10,10,10);
         Font font = new Font("Arial", 14);
 
+        //styles for bubble
         textLabel.setPadding(insets);
         textLabel.setFont(font);
         textLabel.setStyle("-fx-background-color: white; -fx-border-color: black; -fx-border-radius: 10; -fx-background-radius: 10;");
@@ -506,6 +533,7 @@ public class OdysseyOfRealms extends Application {
         textLabel.setMinWidth(100);
         textLabel.setMaxWidth(300);
 
+        //position set up
         double x = npc.getImageView().getTranslateX();
         double y = npc.getImageView().getTranslateY() - npc.getImageView().getBoundsInParent().getHeight() - 30;
 
@@ -643,6 +671,7 @@ public class OdysseyOfRealms extends Application {
      * @return item which is outcome of the recipe
      */
     public Item checkForRecipe(SpecialBlock specialBlock) {
+        //list of booleans tha needs to be true to find the correct recipe
         boolean firstCheckmark = false;
         boolean secondCheckemark = false;
         Boolean[] checkmarks = new Boolean[]{firstCheckmark, secondCheckemark};
@@ -650,6 +679,7 @@ public class OdysseyOfRealms extends Application {
         boolean isMoreThanOne = false;
         Item temp = null;
 
+        //checks if there are two or more same materials
         for (Item item: specialBlock.getInventory()) {
             if (temp != null && temp.getImagePath() != item.getImagePath()){
                 isMoreThanOne = true;
@@ -658,6 +688,7 @@ public class OdysseyOfRealms extends Application {
             temp = item;
         }
 
+        //lists through all recipes
         for (Recipes recipe : Recipes.values()) {
             count = 0;
             checkmarks[0] = false;
@@ -678,7 +709,7 @@ public class OdysseyOfRealms extends Application {
                 }
             }
 
-
+            //if both checkmarks are true return recipe
             if (checkmarks[0] && checkmarks[1]) {
                 return recipe.getResult();
             }
@@ -690,7 +721,7 @@ public class OdysseyOfRealms extends Application {
     }
 
     /**
-     * this should fill chest based on its inventory. WIP.
+     * This should fill chest based on its inventory. WIP.
      * @param root main scene
      * @param specialBlock chest to fill
      */
@@ -719,7 +750,7 @@ public class OdysseyOfRealms extends Application {
     }
 
     /**
-     * counts how many of the same items are in crafting table's inventory.
+     * Counts how many of the same items are in crafting table's inventory.
      * @param items list of items (crafting table's inventory)
      * @param item item to compare with
      * @return count of how many are there same items
@@ -742,11 +773,12 @@ public class OdysseyOfRealms extends Application {
      * @param numberOfSlots how many slot are needed
      */
     public void fillEmptySlots(StackPane root, double numberOfSlots){
+        //square root of number of slots so its always square
         numberOfSlots = Math.sqrt(numberOfSlots);
         int x = (int) (0 - ((numberOfSlots/2) * 50) + 25);
         int y = -200;
 
-
+        //creating empty slots
         for (int i = 0; i < numberOfSlots; i++) {
             for (int j = 0; j < numberOfSlots; j++) {
 
@@ -785,6 +817,7 @@ public class OdysseyOfRealms extends Application {
             case "crafting_table.png":
                 slots = 9;
 
+                // creates spare empty slot for result item
                 resultSlotImageView.setFitHeight(50);
                 resultSlotImageView.setFitWidth(50);
 
@@ -812,10 +845,12 @@ public class OdysseyOfRealms extends Application {
 
         root.setOnMouseClicked(event -> {
             if (event.getButton() == MouseButton.PRIMARY) {
+                //enables player to place a material in crafting
                 LOGGER.info("primary button was pressed on mause");
                 double sceneX = event.getX();
                 double sceneY = event.getY();
 
+                //rounds players click to multiply of 50
                 sceneX = sceneX - (backgroundDimensions[0]/2);
                 sceneY = sceneY - (backgroundDimensions[1]/2);
 
@@ -827,6 +862,7 @@ public class OdysseyOfRealms extends Application {
                 }
 
                 if (player.getSelectetItem() != null) {
+                    //process of inserting a material in crafting
                     Item item = player.getSelectetItem();
 
                     item.setSceneXCoord((int) sceneX);
@@ -855,6 +891,8 @@ public class OdysseyOfRealms extends Application {
             }
             if (event.getButton() == MouseButton.SECONDARY && specialBlockImagePath.equals("crafting_table.png")) {
                 LOGGER.info("secondary mose button was pressed");
+
+                //enables player to collect new item
                 ImageView resultImageView = null;
                 double sceneX = event.getX();
                 double sceneY = event.getY();
@@ -874,6 +912,7 @@ public class OdysseyOfRealms extends Application {
                     }
                 }
 
+                //based on group creates new item
                 switch (resultItem.getGroup()) {
                     case "Block":
                         resultItem = new Block(true, false, resultItem.getType(), resultItem.getImagePath(), resultItem.getGroup());
@@ -889,6 +928,7 @@ public class OdysseyOfRealms extends Application {
 
                 }
 
+                //checks if hot bar is empty
                 if ((sceneX == 0 && sceneY == 0) && resultImageView != null) {
                     for (int i = 0; i < player.getHotBar().length; i++) {
                         if (player.getHotBar()[i] == null){
@@ -950,7 +990,7 @@ public class OdysseyOfRealms extends Application {
             }
         });
 
-// Zatvorenie special Blocku na esc
+        // Closing special block interface on escape
         root.getScene().addEventHandler(KeyEvent.KEY_PRESSED, event -> {
             if (event.getCode() == KeyCode.ESCAPE && specialBlockImagePath.equals("crafting_table.png")) {
                 specialBlock.getInventory();
@@ -958,6 +998,7 @@ public class OdysseyOfRealms extends Application {
 
                 root.getChildren().remove(resultSlotImageView);
 
+                //Iterator so items can be deleted during iteration
                 Iterator<ImageView> worldNodesIterator = worldNodes.iterator();
                 while (worldNodesIterator.hasNext()) {
                     ImageView imageView = worldNodesIterator.next();
@@ -978,6 +1019,7 @@ public class OdysseyOfRealms extends Application {
                     }
                 }
 
+                //checks if hot bar has enough space
                 for (int i = 0; i < player.getHotBar().length; i++) {
                     if (count >= specialBlock.getInventory().size()) {
                         break;
@@ -1001,6 +1043,7 @@ public class OdysseyOfRealms extends Application {
             if (event.getCode() == KeyCode.ENTER && specialBlockImagePath.equals("crafting_table.png")) {
                 Item item = checkForRecipe(specialBlock);
 
+                //creates new item
                 if (item != null) {
 
                     resultItem = item;
@@ -1061,6 +1104,7 @@ public class OdysseyOfRealms extends Application {
 
         controller = new Controller(player, model, world);
 
+        //transition so player falls after jumping
         PauseTransition pause = new PauseTransition(Duration.seconds(0.5));
         pause.setOnFinished(jump -> {
             root.getChildren().remove(playerIMG);
@@ -1069,6 +1113,7 @@ public class OdysseyOfRealms extends Application {
             isPaused = false;
         });
 
+        //transition so player falls after moving
         PauseTransition fall = new PauseTransition(Duration.seconds(0.3));
         fall.setOnFinished(event -> {
             isFalling(root);
@@ -1098,12 +1143,14 @@ public class OdysseyOfRealms extends Application {
                             break;
                         }
 
+                        //moves player visually
                         root.getChildren().remove(playerIMG);
                         coords = controller.moveLeft();
                         viewPlayer(root, coords[0], coords[1]);
 
                         fall.play();
 
+                        //if player is near enemies he will take damage
                         for (Enemy enemy: world.mobs) {
                             if (model.isNearObject(player, enemy.getxCoords(), enemy.getyCoords())) {
                                 enemy.attack(player);
@@ -1127,12 +1174,14 @@ public class OdysseyOfRealms extends Application {
                             break;
                         }
 
+                        //moves player visually
                         root.getChildren().remove(playerIMG);
                         coords = controller.moveRight();
                         viewPlayer(root, coords[0], coords[1]);
 
                         fall.play();
 
+                        //if player is near enemies he will take damage
                         for (Enemy enemy: world.mobs) {
                             if (model.isNearObject(player, enemy.getxCoords(), enemy.getyCoords())) {
                                 enemy.attack(player);
@@ -1155,6 +1204,7 @@ public class OdysseyOfRealms extends Application {
                             break;
                         }
 
+                        //inverts isPaused so user can not spam
                         if (!isPaused) {
                             root.getChildren().remove(playerIMG);
                             coords = controller.moveUp();
@@ -1184,6 +1234,7 @@ public class OdysseyOfRealms extends Application {
 
                         break;
                     case E:
+                        //set up necessary variables
                         NPC npc = NPCs.get(0);
                         String riddle = controller.interactWithObject(npc);
                         SpecialBlock nearestSpecialBlock = world.findNearestSpecialBlock(player);
@@ -1269,6 +1320,7 @@ public class OdysseyOfRealms extends Application {
             public void handle(MouseEvent event) {
                 if (event.getButton() == MouseButton.SECONDARY && player.getSelectetItem() != null && "Block".equals(player.getSelectetItem().getGroup())) {
 
+                    //places block from hot bar
                     double sceneX = event.getX();
                     double sceneY = event.getY();
 
@@ -1296,6 +1348,7 @@ public class OdysseyOfRealms extends Application {
                             return;
                         }
                     }
+                    //enables player to destroy block
                     double sceneX = event.getX();
                     double sceneY = event.getY();
 
@@ -1337,6 +1390,7 @@ public class OdysseyOfRealms extends Application {
                     LOGGER.info("a block was destroyed");
                 }
                 if (event.getButton() == MouseButton.PRIMARY && player.getSelectetItem() != null) {
+                    //if player has sword in hand he wil attack
                     Enemy enemyToKill = null;
                     if (!player.getSelectetItem().getGroup().equals("Sword")) {
                         return;
@@ -1363,6 +1417,7 @@ public class OdysseyOfRealms extends Application {
 
 
     public void stop() throws IOException {
+        //after game is closed everything will be saved
         saveGame();
     }
 

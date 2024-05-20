@@ -4,16 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8eadbd22-06de-4bc4-b067-10e6afc5eb32" name="Changes" comment="javadoc komenty">
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+    <list default="true" id="8eadbd22-06de-4bc4-b067-10e6afc5eb32" name="Changes" comment="unit testy">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application.log" beforeDir="false" afterPath="$PROJECT_DIR$/application.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/player.json" beforeDir="false" afterPath="$PROJECT_DIR$/player.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/cs/cvut/fel/pjv/demo/OdysseyOfRealms.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cs/cvut/fel/pjv/demo/OdysseyOfRealms.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/cs/cvut/fel/pjv/demo/controller/Controller.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cs/cvut/fel/pjv/demo/controller/Controller.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/cs/cvut/fel/pjv/demo/model/DataSerializer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cs/cvut/fel/pjv/demo/model/DataSerializer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/cs/cvut/fel/pjv/demo/model/Model.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cs/cvut/fel/pjv/demo/model/Model.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/cs/cvut/fel/pjv/demo/view/characters/Enemy.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cs/cvut/fel/pjv/demo/view/characters/Enemy.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/cs/cvut/fel/pjv/demo/view/characters/Player.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cs/cvut/fel/pjv/demo/view/characters/Player.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/cs/cvut/fel/pjv/demo/view/tools/Sword.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cs/cvut/fel/pjv/demo/view/tools/Sword.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -90,7 +85,7 @@
     "Application.HelloApplication.executor": "Run",
     "Application.LevelEdit.executor": "Run",
     "Application.MainApp.executor": "Run",
-    "Application.OdysseyOfRealms.executor": "Debug",
+    "Application.OdysseyOfRealms.executor": "Run",
     "JUnit.ControllerTest.interactWithObject.executor": "Run",
     "JUnit.ControllerTest.moveDown.executor": "Run",
     "JUnit.ControllerTest.moveRight.executor": "Debug",
@@ -102,6 +97,9 @@
     "JUnit.ModelTest.isBlockUnder.executor": "Run",
     "JUnit.ModelTest.isCollision.executor": "Run",
     "JUnit.ModelTest.isNearObject.executor": "Run",
+    "JUnit.PlayerTest.breakBlock.executor": "Run",
+    "JUnit.PlayerTest.moveLEFT.executor": "Run",
+    "JUnit.PlayerTest.punch.executor": "Run",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
@@ -143,7 +141,7 @@
       <recent name="cs.cvut.fel.pjv.demo.controller" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.PlayerTest.moveLEFT">
+  <component name="RunManager">
     <configuration name="LevelEdit" type="Application" factoryName="Application">
       <option name="MAIN_CLASS_NAME" value="cs.cvut.fel.pjv.demo.editMode.EditMenu" />
       <module name="demo" />
@@ -321,7 +319,7 @@
       <workItem from="1716128076312" duration="42127000" />
       <workItem from="1716170767572" duration="16528000" />
       <workItem from="1716203594770" duration="775000" />
-      <workItem from="1716204602410" duration="6502000" />
+      <workItem from="1716204602410" duration="8927000" />
     </task>
     <task id="LOCAL-00001" summary="Objektový návrh">
       <option name="closed" value="true" />
@@ -467,7 +465,15 @@
       <option name="project" value="LOCAL" />
       <updated>1716187170222</updated>
     </task>
-    <option name="localTasksCounter" value="19" />
+    <task id="LOCAL-00019" summary="unit testy">
+      <option name="closed" value="true" />
+      <created>1716212449119</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1716212449119</updated>
+    </task>
+    <option name="localTasksCounter" value="20" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -501,7 +507,8 @@
     <MESSAGE value="combat system" />
     <MESSAGE value="combat system done" />
     <MESSAGE value="javadoc komenty" />
-    <option name="LAST_COMMIT_MESSAGE" value="javadoc komenty" />
+    <MESSAGE value="unit testy" />
+    <option name="LAST_COMMIT_MESSAGE" value="unit testy" />
   </component>
   <component name="XDebuggerManager">
     <pin-to-top-manager>
