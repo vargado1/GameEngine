@@ -29,28 +29,18 @@ public class Enemy {
         this.imagePath = imagePath;
     }
 
-    /**
-     * Metóda na nastavenie rýchlosti nepriateľa.
-     *
-     * @param speed Rýchlosť nepriateľa.
-     */
     public void setEnemySpeed(int speed) {
         this.speed = speed;
     }
 
-    /**
-     * Metóda na získanie typu nepriateľa.
-     *
-     * @return Typ nepriateľa.
-     */
     public String getEnemyType() {
         return type;
     }
 
     /**
-     * Metóda pre útok nepriateľa na postavu.
+     * takes 20 HP (one heart) from player
      *
-     * @param character Postava, na ktorú sa má vykonať útok.
+     * @param character player
      */
     public void attack(Player character) {
         int HP = character.getHP();

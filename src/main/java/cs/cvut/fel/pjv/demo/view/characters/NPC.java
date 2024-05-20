@@ -21,29 +21,15 @@ public class NPC {
         this.img = img;
     }
 
-    /**
-     * Metóda na získanie riešenej hádanky NPC postavy.
-     *
-     * @return Riešená hádanka NPC postavy.
-     */
+
     public String getRiddle() {
         return riddle;
     }
 
-    /**
-     * Metóda na získanie odmeny za úspešné riešenie hádanky.
-     *
-     * @return Odmena za úspešné riešenie hádanky.
-     */
     public Material getReward() {
         return reward;
     }
 
-    /**
-     * Metóda na získanie mena NPC postavy.
-     *
-     * @return Meno NPC postavy.
-     */
     public String getNpcName() {
         return NpcName;
     }

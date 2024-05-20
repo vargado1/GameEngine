@@ -28,13 +28,6 @@ public class Realm {
     private String backgroundImagePath;
 
 
-    /**
-     * Konštruktor pre vytvorenie inštancie realmov.
-     *
-     * @param name       Názov realmov.
-     * @param bossName   Názov bossa v danom realme.
-     * @param difficulty Obtiažnosť daného realmu.
-     */
     public Realm(RealmTypes name, String bossName, int difficulty, String background_image, int xMaxCoords, int yMaxCoords) {
         this.name = name;
         this.bossName = bossName;
@@ -49,49 +42,23 @@ public class Realm {
         mobs.add(enemy);
     }
 
-    /**
-     * DONE
-     * Metóda vracejúca maximálne súradnice v osi X.
-     *
-     * @return Maximálne súradnice v osi X.
-     */
     public int getXMaxCoords() {
         return xMaxCoords;
     }
 
-    /**
-     * DONE
-     * Metóda vracejúca maximálne súradnice v osi Y.
-     *
-     * @return Maximálne súradnice v osi Y.
-     */
     public int getYMaxCoords() {
         return yMaxCoords;
     }
 
-    /**DONE
-     * Metóda vracejúca názov realmov.
-     *
-     * @return Názov realmu.
-     */
     public RealmTypes getName() {
         return name;
     }
 
-    /**DONE
-     * Metóda vracejúca názov bossa v danom realme.
-     *
-     * @return Názov bossa v danom realmu.
-     */
+
     public String getBossName() {
         return bossName;
     }
 
-    /**DONE
-     * Metóda vracejúca obtiažnosť daného realmu.
-     *
-     * @return Obtiažnosť daného realmu.
-     */
     public int getDifficulty() {
         return difficulty;
     }

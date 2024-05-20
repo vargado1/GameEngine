@@ -64,11 +64,13 @@ public class OdysseyOfRealms extends Application {
     ImageView[] healtImageView = new ImageView[5];
 
     /**
-     * adds block to screen and to the realms map
-     * @param block desired block
-     * @param root
-     * @param xIndex x coords of the block on scene
-     * @param yIndex y coords of the block on sceneq
+     * This method places block on screen. Firstly it converts coordination's from class StackPane to my coordinate system
+     * where are blocks stored. If calculation is successful, new block will be added to by coordination system. Then it will
+     * create new ImageView and set coordinates and place the block to the front
+     * @param block block to place
+     * @param root instance of StackPane and the main scene
+     * @param xIndex x coordination's of place where the block should be placed
+     * @param yIndex y coordination's of place where the block should be placed
      */
     private void addBlockToScreen(Block block, StackPane root, int xIndex, int yIndex) {
         xIndex = 30 * Math.round(xIndex / 30.0f);
@@ -95,13 +97,18 @@ public class OdysseyOfRealms extends Application {
         worldNodes.add(blockImageView);
     }
 
+    /**
+     * When player runs out of HP he will be revived by this method. Firstly it removes player and his ImageView.
+     * Then new player will be created in the middle of screen. Last but not least controller will be updated wth new player
+     * @param root main scene
+     */
     private void revivePlayer(StackPane root) {
         int[] coords;
 
         root.getChildren().remove(playerIMG);
         player = null;
 
-        player = new Player(24, 24, 100);
+        player = new Player(24, 12, 100);
         player.setPlayerSpeed(1);
         ImageView pImageView = new ImageView("player.png");
         playerIMG = pImageView;
@@ -119,16 +126,12 @@ public class OdysseyOfRealms extends Application {
 
     }
 
-    private void banishEnemy(Enemy enemy, StackPane root) {
-        if (enemy == null) {
-            return;
-        }
-
-        root.getChildren().remove(enemy.getImageView());
-        world.mobs.remove(enemy);
-        enemy = null;
-    }
-
+    /**
+     * Method to see the movement of player on the screen. Basically it creates new ImageView to simulate the movement.
+     * @param root main scene
+     * @param xCoord x coordination where player should go
+     * @param yCoords y coordination where player should go
+     */
     private void viewPlayer(StackPane root, int xCoord, int yCoords) {
 
         Image playerImage = new Image(player.getPlayerImage());
@@ -140,12 +143,20 @@ public class OdysseyOfRealms extends Application {
         root.getChildren().add(playerImageView);
     }
 
+    /**
+     * Removes all ImageViews of hearts
+     * @param root main scene
+     */
     private void clearHP(StackPane root) {
         for (ImageView imageView: healtImageView) {
             root.getChildren().remove(imageView);
         }
     }
 
+    /**
+     * Creates new hearts based on players HP
+     * @param root main scene
+     */
     private void updateHP(StackPane root) {
         clearHP(root);
 
@@ -163,6 +174,28 @@ public class OdysseyOfRealms extends Application {
 
     }
 
+    /**
+     * Checks if enemy is not null and if he is not then will remove said enemy
+     * @param enemy enemy to remove
+     * @param root main scene
+     */
+
+    private void banishEnemy(Enemy enemy, StackPane root) {
+        if (enemy == null) {
+            return;
+        }
+
+        root.getChildren().remove(enemy.getImageView());
+        world.mobs.remove(enemy);
+        enemy = null;
+    }
+
+    /**
+     * Loads overworld from json file. Firstly it loads data by GSON library and the creates a new world.
+     * Next it loads all blocks and if the block is special block then loads its inventory. Then loads all mobs.
+     * @param root main scene
+     * @throws IOException when loading from json fail then it throws this exception
+     */
     private void loadOverworldFromSave(StackPane root) throws IOException {
         Realm data = serializer.deserializeFromFile("overworld.json", Realm.class);
         this.world = new Realm(data.getName(), data.getBossName(), data.getDifficulty(), data.getBackgroundImagePath(), data.getXMaxCoords(), data.getYMaxCoords());
@@ -228,6 +261,12 @@ public class OdysseyOfRealms extends Application {
 
     }
 
+    /**
+     * This method loads player from json file. For each item checks its group and based on the group creates new item
+     * by using json pointer
+     * @param root main scene
+     * @throws IOException when loading form json fails then it throws this exception
+     */
     private void loadPlayer(StackPane root) throws IOException {
         int[] coords;
         Item[] inventory;
@@ -252,9 +291,6 @@ public class OdysseyOfRealms extends Application {
             switch (item.getGroup()) {
                 case "Block":
                     boolean isCraftable = rootNode.at(JsonPointer.compile("/hotBar/" + i + "/isCraftable")).asBoolean();
-//                    JsonPointer xCoord =JsonPointer.compile("/inventory/" + i + "/xCoords");
-//                    JsonPointer yCoord =JsonPointer.compile("/inventory/" + i + "/yCoords");
-//                    JsonPointer size =JsonPointer.compile("/inventory/" + i + "/size");
                     boolean canFall = rootNode.at(JsonPointer.compile("/hotBar/" + i + "/canFall")).asBoolean();
                     String typeBL = rootNode.at(JsonPointer.compile("/hotBar/" + i + "/type")).asText();
                     String imagePathBL = rootNode.at(JsonPointer.compile("/hotBar/" + i + "/imagePath")).asText();
@@ -345,11 +381,23 @@ public class OdysseyOfRealms extends Application {
         updateHP(root);
     }
 
+    /**
+     * Loads a NPC and ads a riddle in this case a tutorial. In a standard way it loads NPC to screen
+     * @param root main scene
+     */
     private void loadNPC(StackPane root) {
         int[] coords = new int[2];
 
         NPC NPC = new NPC("","Player's Helper", 30, 24, "npc_helper.png");
-        NPC.setRiddle("Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris ut imperdiet risus. Nunc laoreet lectus a dictum aliquet. Suspendisse vel ultricies mauris, at consectetur lectus. Nulla elementum elit eget tincidunt interdum. Maecenas elementum eget elit non efficitur. Morbi id finibus lorem. Proin facilisis nisl lacinia arcu suscipit fermentum. Nunc vitae risus nec enim euismod dignissim id vitae lacus. Nam interdum accumsan dignissim. Vivamus nec enim in ex hendrerit sodales. Nulla congue bibendum velit at efficitur. Donec fermentum sit amet risus id vulputate. Fusce lobortis sollicitudin lacus. Phasellus nibh enim, tempor ac purus in, ultricies euismod mi.");
+        NPC.setRiddle("Tutorial: to move use A or D, to go over block use W + A, to jump over use SPACE + A + A. " +
+                "To select item on your hot bar press any number. " +
+                "To place a block form your hot bar select a block and right-click where you want " +
+                "to place a block, left-click on block you desire to remove. " +
+                "To craft something you need to stay near crafting table and press E. " +
+                "Then place correct combination of materials to crafting table and press ENTER. " +
+                "If you are successful new item will appear on the empty bottom slot where you wil be able to right-click said item " +
+                "to claim it. " +
+                "To escape from crafting table press ESCAPE");
 
         Image NPCimage = new Image(NPC.getImg());
         ImageView NPCimageView = new ImageView(NPCimage);
@@ -378,6 +426,10 @@ public class OdysseyOfRealms extends Application {
 
     }
 
+    /**
+     * Clears all ImageViews in hot bar
+     * @param root
+     */
     private void clearHotbar(StackPane root) {
         for (ImageView node : hotbarNodes) {
             root.getChildren().remove(node);
@@ -385,6 +437,10 @@ public class OdysseyOfRealms extends Application {
         hotbarNodes.clear();
     }
 
+    /**
+     * Shows how much is players hot bar full. For every item in hot bar creates new ImageView.
+     * @param root main scene
+     */
     private void fillHotbar(StackPane root) {
         String texture;
         int count = -200;
@@ -412,6 +468,11 @@ public class OdysseyOfRealms extends Application {
         }
     }
 
+    /**
+     * When player interacts with NPC this method shows bubble of NPC's riddle.
+     * @param npc NPC to engage
+     * @param root main scene
+     */
     private void showTextBubble(NPC npc, StackPane root) {
         String text = npc.getRiddle();
         Label textLabel = new Label(text);
@@ -434,17 +495,25 @@ public class OdysseyOfRealms extends Application {
 
         root.getChildren().add(textLabel);
 
-        PauseTransition pause = new PauseTransition(Duration.seconds(8));
+        PauseTransition pause = new PauseTransition(Duration.seconds(30));
         pause.setOnFinished(event -> root.getChildren().remove(textLabel));
         pause.play();
     }
 
+    /**
+     * Saves whole game with GSON library.
+     * @throws IOException when writing to json fails
+     */
     private void saveGame() throws IOException {
         serializer.serializeToFile(world, "overworld.json");
         serializer.serializeToFile(player, "player.json");
-
     }
 
+    /**
+     * Method that combines each loading part of the game
+     * @param root main scene
+     * @throws IOException when loading form json fails
+     */
     private void loadGame(StackPane root) throws IOException {
         loadOverworldFromSave(root);
         loadPlayer(root);
@@ -470,6 +539,10 @@ public class OdysseyOfRealms extends Application {
 
     }
 
+    /**
+     * Method that checks if is a block under a player and let player fall till there is block beneath.
+     * @param root main scene
+     */
     private void isFalling(StackPane root) {
         int[] coords;
         while (!model.isBlockUnder(world, player)) {
@@ -479,6 +552,11 @@ public class OdysseyOfRealms extends Application {
         }
     }
 
+    /**
+     * When player selects a new item in hot bar this will move the focus rectangle to correct place on hot bar.
+     * @param root main scene
+     * @param hotNum number which is selected on hot bar
+     */
     private void setFocusOnHotbar(StackPane root, int hotNum) {
         root.getChildren().remove(hotbarFocus);
 
@@ -492,6 +570,10 @@ public class OdysseyOfRealms extends Application {
         this.hotBarNumber = hotNum;
     }
 
+    /**
+     * When player selects item on hot bar this will change cursor to further show player which item did he chose.
+     * @param root main scene
+     */
     private void setSelectedItemIcon(StackPane root) {
         if (player.getSelectetItem() == null) {
             root.setCursor(Cursor.DEFAULT);
@@ -507,6 +589,11 @@ public class OdysseyOfRealms extends Application {
         selectedItemView = imageView;
     }
 
+    /**
+     * This method will count how many different materials are needed for recipe
+     * @param recipe recipe to chceck
+     * @return
+     */
     public int countDifferentMaterials(Recipes recipe) {
         int count = 0;
         Map<Item, Integer> ingredients = recipe.getIngredients();
@@ -517,6 +604,13 @@ public class OdysseyOfRealms extends Application {
 
         return count;
     }
+
+    /**
+     * When there are some items in crafting table, this method will check if there is suitable recipe. It uses different
+     * checkmarks to not use wrong recipe.
+     * @param specialBlock crafting table
+     * @return item which is outcome of the recipe
+     */
     public Item checkForRecipe(SpecialBlock specialBlock) {
         boolean firstCheckmark = false;
         boolean secondCheckemark = false;
@@ -563,6 +657,11 @@ public class OdysseyOfRealms extends Application {
         return null;
     }
 
+    /**
+     * this should fill chest based on its inventory. WIP.
+     * @param root main scene
+     * @param specialBlock chest to fill
+     */
     public void fillChest(StackPane root, SpecialBlock specialBlock) {
         int count = 0;
         int x = (0 - (3 * 50) + 25);
@@ -585,6 +684,12 @@ public class OdysseyOfRealms extends Application {
         }
     }
 
+    /**
+     * counts how many of the same items are in crafting table's inventory
+     * @param items list of items (crafting table's inventory)
+     * @param item item to compare with
+     * @return count of how many are there same items
+     */
     private int countItem(List<Item> items, Item item) {
         int count = 0;
         for (Item currentItem : items) {
@@ -594,6 +699,12 @@ public class OdysseyOfRealms extends Application {
         }
         return count;
     }
+
+    /**
+     * Makes interface for special block. Creates empty slots where player can place items.
+     * @param root main scene
+     * @param numberOfSlots how many slot are needed
+     */
     public void fillEmptySlots(StackPane root, double numberOfSlots){
         numberOfSlots = Math.sqrt(numberOfSlots);
         int x = (int) (0 - ((numberOfSlots/2) * 50) + 25);
@@ -621,6 +732,12 @@ public class OdysseyOfRealms extends Application {
 
     }
 
+    /**
+     * Puts whole crafting interface together. If it is a crafting table creates extra slot for output.
+     * Also uses two event handlers to interact with crafting table.
+     * @param root main scene
+     * @param specialBlock special block that is interacted with
+     */
     public void showCraftingGUI(StackPane root, SpecialBlock specialBlock) {
         int slots;
         String specialBlockImagePath = specialBlock.getImagePath();
@@ -864,10 +981,6 @@ public class OdysseyOfRealms extends Application {
     @Override
     public void start(Stage stage) throws IOException {
 
-//        gsonBuilder.registerTypeAdapter(Avatar.class, new AvatarAdapter());
-
-//        overworld = new Realm(RealmTypes.Overworld, "none", 1, "overworld_background.jpg", 49,28);
-
         Image backgroundImage = new Image("overworld_background.jpg");
         ImageView backgroundImageView = new ImageView(backgroundImage);
 
@@ -881,65 +994,7 @@ public class OdysseyOfRealms extends Application {
 
         loadGame(root);
 
-//        this.player = new Player(0,0, 100);
-//        player.setPlayerSpeed(1);
-//        world.addMob(player);
-//
-//
-//        Block wooden_block = new Block(true, false, "Plank", "wooden_block.jpg", "Block");
-//        Block dirt_block = new Block(false, false, "Dirt", "dirt_block.jpg", "Block");
-//        Block stone_block = new Block(true, false, "Stone", "gravel_block.jpg", "Block");
-//        Block gravel_block = new Block(false, true, "Gravel", "stone_block.jpg", "Block");
-//
-//        player.addToInvenory(wooden_block, 0);
-//        player.addToInvenory(dirt_block, 1);
-//        player.addToInvenory(stone_block,2);
-//        player.addToInvenory(gravel_block,3);
 
-//        addBlockToScreen(wooden_block, root, 0, 0, 30 , overworld);
-//        addBlockToScreen(dirt_block, root, 40, 0, 30, overworld);
-//        addBlockToScreen(stone_block, root, 80, 0, 30, overworld);
-//        addBlockToScreen(gravel_block, root, 120, 0, 30, overworld);
-
-//        Sword sword = new Sword("Diamond", "Sword", "");
-//        Showel showel = new Showel("Diamond", "Showel", "");
-//        Picaxe picaxe = new Picaxe("Diamond", "Picaxe", "");
-//        Picaxe picaxe2 = new Picaxe("Diamond", "Picaxe", "");
-//        player.addToInvenory(sword, 5);
-//        player.addToInvenory(showel, 6);
-//        player.addToInvenory(picaxe, 7);
-//        player.addToInvenory(picaxe2, 8);
-//
-//        for (int i = 1; i < 48; i++) {
-//            Block block = new Block(true, false, "Dirt", "dirt_block.jpg", "Block");
-//            block.setCoords(i,25);
-//            world.addBlock(block);
-//            serializer.serializeToFile(world, "overworld.json");
-//        }
-//
-//        Material stone = new Material("stone", "Material", "stone_material.png");
-//        player.addToHotBar(stone,3);
-//
-//        Material stick = new Material("stick", "Material", "stick.png");
-//        player.addToHotBar(stick, 4);
-//        Material iron = new Material("iron", "Material", "iron_ingot.png");
-//        player.addToHotBar(iron, 5);
-//
-//        SpecialBlock crafting = new SpecialBlock(false, false, "craftingTable", "crafting_table.png", "Block");
-//        addBlockToScreen(crafting, root, 420, 300);
-//        SpecialBlock chest = new SpecialBlock(false, false, "chest", "chest.png", "Block");
-//        addBlockToScreen(chest, root, -150, 300);
-//        Enemy sceleton = new Enemy(20, "Enemy", 12, 23, 20, "enemy1.png");
-//
-//
-//        ImageView scImageView = new ImageView(sceleton.getImagePath());
-//
-//        int[] coords = model.getCoordsFromListToScreen(sceleton.getxCoords(), sceleton.getyCoords(), 30, world);
-//
-//        scImageView.setTranslateX(coords[0]);
-//        scImageView.setTranslateY(coords[1]);
-//        world.addMob(sceleton);
-//        root.getChildren().add(scImageView);
 
         stage.setTitle("Odyssey Of Realms");
         stage.setScene(scene);
@@ -961,6 +1016,10 @@ public class OdysseyOfRealms extends Application {
             player.setMoving(false);
         });
 
+        /**
+         * one of two main event handlers
+         * used for moving the player
+         */
         scene.setOnKeyPressed(new EventHandler<KeyEvent>() {
             @Override
             public void handle(KeyEvent event) {
@@ -1068,7 +1127,6 @@ public class OdysseyOfRealms extends Application {
                         }
 
                         if (model.isNearObject(player, nearestSpecialBlock.getXCoord(), nearestSpecialBlock.getYCoord()) && !isPaused) {
-                            //Vymysli interface ktory sa zobrazi a ako tam hrac nahadze matros
                             isPaused = true;
                             showCraftingGUI(root, nearestSpecialBlock);
                         }
@@ -1121,7 +1179,10 @@ public class OdysseyOfRealms extends Application {
             }
         });
 
-
+        /**
+         * second main event handler
+         * used for building, removing blocks and fighting
+         */
         scene.setOnMouseClicked(new EventHandler<MouseEvent>() {
             @Override
             public void handle(MouseEvent event) {
@@ -1213,6 +1274,7 @@ public class OdysseyOfRealms extends Application {
         });
 
     }
+
 
     public void stop() throws IOException {
         saveGame();

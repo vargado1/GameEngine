@@ -47,6 +47,12 @@ public class SpecialBlock extends Block {
     public int getSize() {
         return super.getSize();
     }
+
+    /**
+     * Attempts to craft an item based on the available recipes and the current inventory.
+     *
+     * @return the crafted item if the recipe's ingredients are available, otherwise null
+     */
     public Item craft() {
         for (Recipes recipe : Recipes.values()) {
             boolean hasIngredients = true;

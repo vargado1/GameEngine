@@ -7,14 +7,14 @@ import cs.cvut.fel.pjv.demo.view.characters.Player;
 import javafx.scene.layout.StackPane;
 
 public class Model {
-    /**
-     * Metóda na overenie receptu.
-     *
-     * @param materials Pole materiálov na overenie receptu.
-     * @return True, ak recept existuje, inak false.
-     */
-    public boolean checkForRecipe(Material[] materials){return false;}
 
+    /**
+     * check if there is a block under the player
+     *
+     * @param realm world where player is placed
+     * @param player player
+     * @return true if there is a block under, false if not
+     */
     public boolean isBlockUnder(Realm realm, Player player) {
         int playerXCoord = player.getxCoord();
         int playerYCoord = player.getyCoord();
@@ -26,6 +26,13 @@ public class Model {
         return true;
     }
 
+    /**
+     * check if there will be colision based on players direction
+     *
+     * @param realm world where player is situated
+     * @param player player
+     * @return true if there will be colision, false if not
+     */
     public boolean isCollision(Realm realm, Player player){
         Direction dir = player.getDirection();
         int playerXCoord = player.getxCoord();
@@ -58,6 +65,15 @@ public class Model {
         return false;
     }
 
+    /**
+     * calculates coordinates from my coordinate system to scene's system
+     *
+     * @param xCoord x coordination in my system
+     * @param yCoord y coordination in my system
+     * @param size size of a block
+     * @param realm world with my coordination system
+     * @return coordination's in the scene
+     */
     public int[] getCoordsFromListToScreen(int xCoord, int yCoord, int size, Realm realm) {
         xCoord = xCoord - (realm.getXMaxCoords()/2);
         yCoord = yCoord - (realm.getYMaxCoords()/2);
@@ -70,12 +86,20 @@ public class Model {
         return coords;
     }
 
+    /**
+     * calculate coordinates from scene to my system
+     *
+     * @param xCoord x coordination on scene
+     * @param yCoord y coordination on scene
+     * @param size size of block
+     * @param realm world with my coordination system
+     * @return coordination's in my system
+     */
     public int[] getCoordsFromScreenToList(int xCoord, int yCoord, int size, Realm realm) {
         xCoord = xCoord/size;
         yCoord = yCoord/size;
 
         xCoord = xCoord + realm.getXMaxCoords()/2;
-//        yCoord = (yCoord * (-1)) + (realm.getYMaxCoords()/2);
         yCoord = yCoord + (realm.getYMaxCoords()/2);
 
         int[] coords = new int[]{xCoord,yCoord};
@@ -84,6 +108,14 @@ public class Model {
 
     }
 
+    /**
+     * checks if player is near any object
+     *
+     * @param player player
+     * @param xCoords x coordination of said object in my system
+     * @param yCoords y coordination of said object in my system
+     * @return true if player is near said object, false if not
+     */
     public boolean isNearObject(Player player, int xCoords, int yCoords) {
         int playerXCoord = player.getxCoord();
         int playerYCoord = player.getyCoord();
