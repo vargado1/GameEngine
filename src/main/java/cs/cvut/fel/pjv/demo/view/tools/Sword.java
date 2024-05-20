@@ -8,9 +8,4 @@ public class Sword extends Item {
         super(group, type, imagePath);
     }
 
-    /**
-     * Metóda na útok mečom.
-     */
-    public void attack(){}
-
 }

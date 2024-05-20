@@ -20,7 +20,7 @@ public class Controller {
     }
 
     /**
-     * tells player to move up
+     * Tells player to move up.
      * @return new coordination's of player which has been already calculated for screen
      */
     public int[] moveUp() {
@@ -30,7 +30,7 @@ public class Controller {
     }
 
     /**
-     * tells player to move down
+     * Tells player to move down.
      * @return new coordination's of player which has been already calculated for screen
      */
     public int[] moveDown() {
@@ -40,7 +40,7 @@ public class Controller {
     }
 
     /**
-     * tells player to move right
+     * Tells player to move right.
      * @return new coordination's of player which has been already calculated for screen
      */
     public int[] moveRight(){
@@ -50,7 +50,7 @@ public class Controller {
     }
 
     /**
-     * tells player to move left
+     * Tells player to move left.
      * @return new coordination's of player which has been already calculated for screen
      */
     public int[] moveLeft(){
@@ -59,7 +59,7 @@ public class Controller {
     }
 
     /**
-     * tells player to destroy a block
+     * Tells player to destroy a block.
      * @param block block to destroy
      * @return if it was successful
      */
@@ -71,7 +71,7 @@ public class Controller {
     }
 
     /**
-     * asks model if player is sufficiently near NPC to interact and if yes then asks NPC to interact
+     * Asks model if player is sufficiently near NPC to interact and if yes then asks NPC to interact.
      * @param npc NPC to interact
      * @return if it was successful ten returns NPC's riddle if not then returns empty string
      */
@@ -83,7 +83,7 @@ public class Controller {
     }
 
     /**
-     * asks model if player is sufficiently near block to interact
+     * Asks model if player is sufficiently near block to interact.
      * @param block block to interact
      * @return if player is near the block returns crafted item if not then returns null
      */

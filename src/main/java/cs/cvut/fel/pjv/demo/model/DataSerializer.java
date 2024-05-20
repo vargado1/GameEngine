@@ -15,7 +15,7 @@ public class DataSerializer {
     }
 
     /**
-     * serializes object into json files
+     * Serializes object into json files.
      *
      * @param data to serialize
      * @param file where to serialize
@@ -28,7 +28,7 @@ public class DataSerializer {
     }
 
     /**
-     * Deserializes objects from file
+     * Deserializes objects from file.
      *
      * @param filePath path to file where data are deserialized from
      * @param type object class that is going to be deserialized

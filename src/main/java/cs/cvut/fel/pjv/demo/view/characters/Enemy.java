@@ -38,7 +38,7 @@ public class Enemy {
     }
 
     /**
-     * takes 20 HP (one heart) from player
+     * Takes 20 HP (one heart) from player.
      *
      * @param character player
      */

@@ -9,7 +9,7 @@ import javafx.scene.layout.StackPane;
 public class Model {
 
     /**
-     * check if there is a block under the player
+     * Check if there is a block under the player.
      *
      * @param realm world where player is placed
      * @param player player
@@ -27,7 +27,7 @@ public class Model {
     }
 
     /**
-     * check if there will be colision based on players direction
+     * Check if there will be colision based on players direction.
      *
      * @param realm world where player is situated
      * @param player player
@@ -66,7 +66,7 @@ public class Model {
     }
 
     /**
-     * calculates coordinates from my coordinate system to scene's system
+     * Calculates coordinates from my coordinate system to scene's system.
      *
      * @param xCoord x coordination in my system
      * @param yCoord y coordination in my system
@@ -87,7 +87,7 @@ public class Model {
     }
 
     /**
-     * calculate coordinates from scene to my system
+     * Calculate coordinates from scene to my system.
      *
      * @param xCoord x coordination on scene
      * @param yCoord y coordination on scene
@@ -109,7 +109,7 @@ public class Model {
     }
 
     /**
-     * checks if player is near any object
+     * Checks if player is near any object.
      *
      * @param player player
      * @param xCoords x coordination of said object in my system

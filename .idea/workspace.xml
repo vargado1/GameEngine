@@ -5,9 +5,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8eadbd22-06de-4bc4-b067-10e6afc5eb32" name="Changes" comment="javadoc komenty">
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/cs/cvut/fel/pjv/demo/OdysseyOfRealms.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cs/cvut/fel/pjv/demo/OdysseyOfRealms.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/module-info.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/module-info.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/cs/cvut/fel/pjv/demo/controller/Controller.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cs/cvut/fel/pjv/demo/controller/Controller.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/cs/cvut/fel/pjv/demo/model/DataSerializer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cs/cvut/fel/pjv/demo/model/DataSerializer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/cs/cvut/fel/pjv/demo/model/Model.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cs/cvut/fel/pjv/demo/model/Model.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/cs/cvut/fel/pjv/demo/view/characters/Enemy.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cs/cvut/fel/pjv/demo/view/characters/Enemy.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/cs/cvut/fel/pjv/demo/view/characters/Player.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cs/cvut/fel/pjv/demo/view/characters/Player.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/cs/cvut/fel/pjv/demo/view/tools/Sword.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cs/cvut/fel/pjv/demo/view/tools/Sword.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -21,14 +27,43 @@
         <option value="package.json" />
         <option value="Enum" />
         <option value="Class" />
+        <option value="JUnit5 Test Class" />
       </list>
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="javadoc" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="GitToolBoxStore">
     <option name="projectConfigVersion" value="5" />
+    <option name="recentBranches">
+      <RecentBranches>
+        <option name="branchesForRepo">
+          <list>
+            <RecentBranchesForRepo>
+              <option name="branches">
+                <list>
+                  <RecentBranch>
+                    <option name="branchName" value="master" />
+                    <option name="lastUsedInstant" value="1716205801" />
+                  </RecentBranch>
+                  <RecentBranch>
+                    <option name="branchName" value="javadoc" />
+                    <option name="lastUsedInstant" value="1716205695" />
+                  </RecentBranch>
+                </list>
+              </option>
+              <option name="repositoryRootUrl" value="file://$PROJECT_DIR$" />
+            </RecentBranchesForRepo>
+          </list>
+        </option>
+      </RecentBranches>
+    </option>
   </component>
   <component name="MavenImportPreferences">
     <option name="generalSettings">
@@ -56,19 +91,32 @@
     "Application.LevelEdit.executor": "Run",
     "Application.MainApp.executor": "Run",
     "Application.OdysseyOfRealms.executor": "Debug",
+    "JUnit.ControllerTest.interactWithObject.executor": "Run",
+    "JUnit.ControllerTest.moveDown.executor": "Run",
+    "JUnit.ControllerTest.moveRight.executor": "Debug",
+    "JUnit.ControllerTest.moveUp.executor": "Run",
+    "JUnit.ControllerTest.removeBlock.executor": "Run",
+    "JUnit.ControllerTest.testInteractWithObject.executor": "Run",
+    "JUnit.ModelTest.getCoordsFromListToScreen.executor": "Run",
+    "JUnit.ModelTest.getCoordsFromScreenToList.executor": "Run",
+    "JUnit.ModelTest.isBlockUnder.executor": "Run",
+    "JUnit.ModelTest.isCollision.executor": "Run",
+    "JUnit.ModelTest.isNearObject.executor": "Run",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary": "JUnit5",
+    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5": "",
     "git-widget-placeholder": "master",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/Users/domco/Documents/Škola/informatika/Java the Hutt/wörk files/testing1",
+    "last_opened_file_path": "C:/JAVADOC",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
-    "project.structure.last.edited": "Project",
-    "project.structure.proportion": "0.0",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.2",
     "settings.editor.selected.configurable": "reference.settings.project.maven.repository.indices",
     "vue.rearranger.settings.migration": "true"
@@ -83,11 +131,19 @@
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\domco\Documents\Škola\informatika\Java the Hutt\wörk files\demo" />
     </key>
+    <key name="CreateTestDialog.Recents.Supers">
+      <recent name="" />
+    </key>
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
       <recent name="cs.cvut.fel.pjv.demo.view" />
     </key>
+    <key name="CreateTestDialog.RecentsKey">
+      <recent name="cs.cvut.fel.pjv.demo.view.characters" />
+      <recent name="cs.cvut.fel.pjv.demo.model" />
+      <recent name="cs.cvut.fel.pjv.demo.controller" />
+    </key>
   </component>
-  <component name="RunManager" selected="Application.OdysseyOfRealms">
+  <component name="RunManager" selected="JUnit.PlayerTest.moveLEFT">
     <configuration name="LevelEdit" type="Application" factoryName="Application">
       <option name="MAIN_CLASS_NAME" value="cs.cvut.fel.pjv.demo.editMode.EditMenu" />
       <module name="demo" />
@@ -95,26 +151,101 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="OdysseyOfRealms" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="cs.cvut.fel.pjv.demo.OdysseyOfRealms" />
+    <configuration name="ModelTest.getCoordsFromScreenToList" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="demo" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="cs.cvut.fel.pjv.demo.editMode.*" />
+          <option name="PATTERN" value="cs.cvut.fel.pjv.demo.model.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
+      <option name="PACKAGE_NAME" value="cs.cvut.fel.pjv.demo.model" />
+      <option name="MAIN_CLASS_NAME" value="cs.cvut.fel.pjv.demo.model.ModelTest" />
+      <option name="METHOD_NAME" value="getCoordsFromScreenToList" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ModelTest.isNearObject" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="demo" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="cs.cvut.fel.pjv.demo.model.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="cs.cvut.fel.pjv.demo.model" />
+      <option name="MAIN_CLASS_NAME" value="cs.cvut.fel.pjv.demo.model.ModelTest" />
+      <option name="METHOD_NAME" value="isNearObject" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="PlayerTest.breakBlock" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="demo" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="cs.cvut.fel.pjv.demo.view.characters.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="cs.cvut.fel.pjv.demo.view.characters" />
+      <option name="MAIN_CLASS_NAME" value="cs.cvut.fel.pjv.demo.view.characters.PlayerTest" />
+      <option name="METHOD_NAME" value="breakBlock" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="PlayerTest.moveLEFT" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="demo" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="cs.cvut.fel.pjv.demo.view.characters.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="cs.cvut.fel.pjv.demo.view.characters" />
+      <option name="MAIN_CLASS_NAME" value="cs.cvut.fel.pjv.demo.view.characters.PlayerTest" />
+      <option name="METHOD_NAME" value="moveLEFT" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="PlayerTest.punch" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="demo" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="cs.cvut.fel.pjv.demo.view.characters.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="cs.cvut.fel.pjv.demo.view.characters" />
+      <option name="MAIN_CLASS_NAME" value="cs.cvut.fel.pjv.demo.view.characters.PlayerTest" />
+      <option name="METHOD_NAME" value="punch" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <list>
       <item itemvalue="Application.LevelEdit" />
-      <item itemvalue="Application.OdysseyOfRealms" />
+      <item itemvalue="JUnit.ModelTest.getCoordsFromScreenToList" />
+      <item itemvalue="JUnit.ModelTest.isNearObject" />
+      <item itemvalue="JUnit.PlayerTest.breakBlock" />
+      <item itemvalue="JUnit.PlayerTest.moveLEFT" />
+      <item itemvalue="JUnit.PlayerTest.punch" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.OdysseyOfRealms" />
+        <item itemvalue="JUnit.PlayerTest.moveLEFT" />
+        <item itemvalue="JUnit.PlayerTest.breakBlock" />
+        <item itemvalue="JUnit.PlayerTest.punch" />
+        <item itemvalue="JUnit.ModelTest.isNearObject" />
+        <item itemvalue="JUnit.ModelTest.getCoordsFromScreenToList" />
       </list>
     </recent_temporary>
   </component>
@@ -188,7 +319,9 @@
       <workItem from="1716074541927" duration="344000" />
       <workItem from="1716074903776" duration="5119000" />
       <workItem from="1716128076312" duration="42127000" />
-      <workItem from="1716170767572" duration="16229000" />
+      <workItem from="1716170767572" duration="16528000" />
+      <workItem from="1716203594770" duration="775000" />
+      <workItem from="1716204602410" duration="6502000" />
     </task>
     <task id="LOCAL-00001" summary="Objektový návrh">
       <option name="closed" value="true" />
@@ -326,7 +459,15 @@
       <option name="project" value="LOCAL" />
       <updated>1716181551224</updated>
     </task>
-    <option name="localTasksCounter" value="18" />
+    <task id="LOCAL-00018" summary="javadoc komenty">
+      <option name="closed" value="true" />
+      <created>1716187170222</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1716187170222</updated>
+    </task>
+    <option name="localTasksCounter" value="19" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

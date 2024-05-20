@@ -85,7 +85,7 @@ public class Player {
     }
 
     /**
-     * Method to move player left
+     * Method to move player left.
      *
      * @return new coordination's of player
      */
@@ -113,7 +113,7 @@ public class Player {
     }
 
     /**
-     * Method to move player up
+     * Method to move player up.
      *
      * @return new coordination's of a player
      */
@@ -125,7 +125,7 @@ public class Player {
     }
 
     /**
-     * Method to move player down
+     * Method to move player down.
      *
      * @return new coordination's of a player
      */

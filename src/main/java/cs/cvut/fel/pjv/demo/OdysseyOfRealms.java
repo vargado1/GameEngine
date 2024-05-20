@@ -20,7 +20,6 @@ import javafx.scene.Cursor;
 import javafx.scene.ImageCursor;
 import javafx.scene.Node;
 import javafx.scene.Scene;
-import javafx.scene.control.Button;
 import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
 import javafx.scene.input.*;
@@ -41,7 +40,6 @@ import java.util.List;
 import java.util.Map;
 import java.util.logging.Level;
 import java.util.logging.Logger;
-
 import javafx.scene.control.Label;
 
 
@@ -69,7 +67,7 @@ public class OdysseyOfRealms extends Application {
     /**
      * This method places block on screen. Firstly it converts coordination's from class StackPane to my coordinate system
      * where are blocks stored. If calculation is successful, new block will be added to by coordination system. Then it will
-     * create new ImageView and set coordinates and place the block to the front
+     * create new ImageView and set coordinates and place the block to the front.
      * @param block block to place
      * @param root instance of StackPane and the main scene
      * @param xIndex x coordination's of place where the block should be placed
@@ -104,7 +102,7 @@ public class OdysseyOfRealms extends Application {
 
     /**
      * When player runs out of HP he will be revived by this method. Firstly it removes player and his ImageView.
-     * Then new player will be created in the middle of screen. Last but not least controller will be updated wth new player
+     * Then new player will be created in the middle of screen. Last but not least controller will be updated wth new player.
      * @param root main scene
      */
     private void revivePlayer(StackPane root) {
@@ -152,7 +150,7 @@ public class OdysseyOfRealms extends Application {
     }
 
     /**
-     * Removes all ImageViews of hearts
+     * Removes all ImageViews of hearts.
      * @param root main scene
      */
     private void clearHP(StackPane root) {
@@ -164,7 +162,7 @@ public class OdysseyOfRealms extends Application {
     }
 
     /**
-     * Creates new hearts based on players HP
+     * Creates new hearts based on players HP.
      * @param root main scene
      */
     private void updateHP(StackPane root) {
@@ -186,7 +184,7 @@ public class OdysseyOfRealms extends Application {
     }
 
     /**
-     * Checks if enemy is not null and if he is not then will remove said enemy
+     * Checks if enemy is not null and if he is not then will remove said enemy.
      * @param enemy enemy to remove
      * @param root main scene
      */
@@ -277,7 +275,7 @@ public class OdysseyOfRealms extends Application {
 
     /**
      * This method loads player from json file. For each item checks its group and based on the group creates new item
-     * by using json pointer
+     * by using json pointer.
      * @param root main scene
      * @throws IOException when loading form json fails then it throws this exception
      */
@@ -398,7 +396,7 @@ public class OdysseyOfRealms extends Application {
     }
 
     /**
-     * Loads a NPC and ads a riddle in this case a tutorial. In a standard way it loads NPC to screen
+     * Loads a NPC and ads a riddle in this case a tutorial. In a standard way it loads NPC to screen.
      * @param root main scene
      */
     private void loadNPC(StackPane root) {
@@ -444,7 +442,7 @@ public class OdysseyOfRealms extends Application {
     }
 
     /**
-     * Clears all ImageViews in hot bar
+     * Clears all ImageViews in hot bar.
      * @param root
      */
     private void clearHotbar(StackPane root) {
@@ -535,7 +533,7 @@ public class OdysseyOfRealms extends Application {
     }
 
     /**
-     * Method that combines each loading part of the game
+     * Method that combines each loading part of the game.
      * @param root main scene
      * @throws IOException when loading form json fails
      */
@@ -622,7 +620,7 @@ public class OdysseyOfRealms extends Application {
     }
 
     /**
-     * This method will count how many different materials are needed for recipe
+     * This method will count how many different materials are needed for recipe.
      * @param recipe recipe to chceck
      * @return
      */
@@ -721,7 +719,7 @@ public class OdysseyOfRealms extends Application {
     }
 
     /**
-     * counts how many of the same items are in crafting table's inventory
+     * counts how many of the same items are in crafting table's inventory.
      * @param items list of items (crafting table's inventory)
      * @param item item to compare with
      * @return count of how many are there same items
