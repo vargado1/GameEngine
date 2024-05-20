@@ -66,4 +66,8 @@ public class Controller {
         }
         return null;
     }
+
+    public void setPlayer(Player player) {
+        this.player = player;
+    }
 }

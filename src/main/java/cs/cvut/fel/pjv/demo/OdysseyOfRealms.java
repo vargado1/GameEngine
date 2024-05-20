@@ -95,6 +95,30 @@ public class OdysseyOfRealms extends Application {
         worldNodes.add(blockImageView);
     }
 
+    private void revivePlayer(StackPane root) {
+        int[] coords;
+
+        root.getChildren().remove(playerIMG);
+        player = null;
+
+        player = new Player(24, 24, 100);
+        player.setPlayerSpeed(1);
+        ImageView pImageView = new ImageView("player.png");
+        playerIMG = pImageView;
+
+        coords = model.getCoordsFromListToScreen(player.getxCoord(), player.getyCoord(), 30, world);
+
+        playerIMG.setTranslateX(coords[0]);
+        playerIMG.setTranslateY(coords[1] - 15);
+
+        root.getChildren().add(playerIMG);
+
+        updateHP(root);
+
+        controller.setPlayer(player);
+
+    }
+
     private void banishEnemy(Enemy enemy, StackPane root) {
         if (enemy == null) {
             return;
@@ -482,112 +506,6 @@ public class OdysseyOfRealms extends Application {
 
         selectedItemView = imageView;
     }
-
-//    private void checkRecipesAndCraft(Material[] craftingInventory, ImageView resultSlot) {
-//        for (Recipes recipe : Recipes.values()) {
-//            boolean recipeMatch = true;
-//            for (Map.Entry<Item, Integer> entry : recipe.getIngredients().entrySet()) {
-//                Item ingredient = entry.getKey();
-//                int requiredCount = entry.getValue();
-//                int actualCount = countItem(craftingInventory, ingredient);
-//                if (actualCount < requiredCount) {
-//                    recipeMatch = false;
-//                    System.out.println("recipes doesnt match");
-//                    break;
-//                }
-//            }
-//            if (recipeMatch) {
-//                // Vytvoríme výstupný predmet podľa receptu
-//                Item result = recipe.getResult();
-//                // Zobrazíme výstupný predmet výstupnom slote
-//                resultSlot.setImage(new Image(result.getImagePath()));
-//                System.out.println("recipes match");
-//                break; // Ak sme našli recept, nemusíme kontrolovať ďalšie recepty
-//            }
-//        }
-//    }
-//
-//    private int countItem(Material[] craftingInventory, Item item) {
-//        int count = 0;
-//        for (Material material : craftingInventory) {
-//            if (material != null && material.equals(item)) {
-//                count++;
-//            }
-//        }
-//        return count;
-//    }
-//    private void addRightClickFunctionality(ImageView slot, Material[] craftingInventory, int slotIndex, StackPane root, ImageView resultSlot) {
-//        slot.setOnMouseClicked(event -> {
-//            if (event.getButton() == MouseButton.SECONDARY) {
-//                if (craftingInventory[slotIndex] == null) {
-//                    for (int i = 0; i < craftingInventory.length; i++) {
-//                        if (craftingInventory[i] != null && craftingInventory[i].equals(player.getSelectetItem())) {
-//                            System.out.println("Tento materiál je už pridaný na iný slot v craftingu!");
-//                            return;
-//                        }
-//                    }
-//
-//                    craftingInventory[slotIndex] = (Material) player.getSelectetItem();
-//                    slot.setImage(new Image(player.getSelectetItem().getImagePath()));
-//
-//                    System.out.println("Materiál pridaný do craftingu: " + player.getSelectetItem().getType());
-//                    System.out.println("Index slotu craftingu: " + slotIndex);
-//
-//                    player.addToHotBar(null, hotBarNumber);
-//                    fillHotbar(root);
-//                    root.setCursor(Cursor.DEFAULT);
-//
-//                    // Kontrola receptov a vytvorenie výstupného predmetu
-//                    checkRecipesAndCraft(craftingInventory, resultSlot);
-//                } else {
-//                    System.out.println("Slot v craftingu je už obsadený!");
-//                }
-//            }
-//        });
-//    }
-//
-//    private ImageView createSlot() {
-//        ImageView slot = new ImageView(new Image("empty_slot.png"));
-//        slot.setFitWidth(50);
-//        slot.setFitHeight(50);
-//        return slot;
-//    }
-//    private void showCraftingGUI(StackPane root) {
-//        StackPane craftingRoot = new StackPane();
-//
-//        craftingRoot.setAlignment(Pos.CENTER);
-//
-//        craftingRoot.setStyle("-fx-background-color: rgba(0, 0, 0, 0.8); -fx-padding: 20;");
-//
-//        GridPane craftingGrid = new GridPane();
-//        craftingGrid.setHgap(10);
-//        craftingGrid.setVgap(10);
-//        Material[] craftingInventory = new Material[9];
-//        ImageView resultSlot = createSlot();
-//
-//        for (int i = 0; i < 3; i++) {
-//            for (int j = 0; j < 3; j++) {
-//                ImageView slot = createSlot();
-//                addRightClickFunctionality(slot, craftingInventory, i * 3 + j, root, resultSlot);
-//                craftingGrid.add(slot, j, i);
-//            }
-//        }
-//
-//
-//
-//        craftingRoot.getChildren().addAll(craftingGrid, resultSlot);
-//
-//        root.getChildren().add(craftingRoot);
-//
-//        craftingRoot.setMaxWidth(root.getWidth());
-//        craftingRoot.setMaxHeight(root.getHeight());
-//
-//        craftingRoot.setOnMouseClicked(event -> {
-//            if (event.getButton() == MouseButton.PRIMARY) {
-//                root.getChildren().remove(craftingRoot);
-//            }
-//        });
-//    }
 
     public int countDifferentMaterials(Recipes recipe) {
         int count = 0;
@@ -1049,6 +967,11 @@ public class OdysseyOfRealms extends Application {
                 int[] coords;
                 switch (event.getCode()) {
                     case A:
+                        if (player.getHP() <= 0) {
+                            revivePlayer(root);
+                            return;
+                        }
+
                         player.setDirection(Direction.LEFT);
                         player.setMoving(true);
 
@@ -1071,6 +994,10 @@ public class OdysseyOfRealms extends Application {
 
                         break;
                     case D:
+                        if (player.getHP() <= 0) {
+                            revivePlayer(root);
+                            return;
+                        }
                         player.setDirection(Direction.RIGHT);
                         player.setMoving(true);
 
@@ -1092,6 +1019,11 @@ public class OdysseyOfRealms extends Application {
                         }
                         break;
                     case SPACE:
+                        if (player.getHP() <= 0) {
+                            revivePlayer(root);
+
+                            return;
+                        }
                         player.setDirection(Direction.JUMP);
 
                         if (model.isCollision(world, player)) {
@@ -1115,6 +1047,10 @@ public class OdysseyOfRealms extends Application {
 
                         break;
                     case W:
+                        if (player.getHP() <= 0) {
+                            revivePlayer(root);
+                            return;
+                        }
                         root.getChildren().remove(playerIMG);
                         coords = controller.moveUp();
                         viewPlayer(root, coords[0], coords[1]);
