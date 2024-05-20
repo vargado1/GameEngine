@@ -4,23 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8eadbd22-06de-4bc4-b067-10e6afc5eb32" name="Changes" comment="combat system done">
+    <list default="true" id="8eadbd22-06de-4bc4-b067-10e6afc5eb32" name="Changes" comment="javadoc komenty">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/cs/cvut/fel/pjv/demo/OdysseyOfRealms.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cs/cvut/fel/pjv/demo/OdysseyOfRealms.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/cs/cvut/fel/pjv/demo/controller/Controller.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cs/cvut/fel/pjv/demo/controller/Controller.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/cs/cvut/fel/pjv/demo/model/DataSerializer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cs/cvut/fel/pjv/demo/model/DataSerializer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/cs/cvut/fel/pjv/demo/model/Model.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cs/cvut/fel/pjv/demo/model/Model.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/cs/cvut/fel/pjv/demo/view/BlockTypes.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/cs/cvut/fel/pjv/demo/view/Key.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cs/cvut/fel/pjv/demo/view/Key.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/cs/cvut/fel/pjv/demo/view/Material.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cs/cvut/fel/pjv/demo/view/Material.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/cs/cvut/fel/pjv/demo/view/Portal.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cs/cvut/fel/pjv/demo/view/Portal.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/cs/cvut/fel/pjv/demo/view/Realm.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cs/cvut/fel/pjv/demo/view/Realm.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/cs/cvut/fel/pjv/demo/view/SpecialBlock.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cs/cvut/fel/pjv/demo/view/SpecialBlock.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/cs/cvut/fel/pjv/demo/view/characters/Enemy.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cs/cvut/fel/pjv/demo/view/characters/Enemy.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/cs/cvut/fel/pjv/demo/view/characters/NPC.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cs/cvut/fel/pjv/demo/view/characters/NPC.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/cs/cvut/fel/pjv/demo/view/characters/Player.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cs/cvut/fel/pjv/demo/view/characters/Player.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/cs/cvut/fel/pjv/demo/view/tools/Showel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cs/cvut/fel/pjv/demo/view/tools/Showel.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/cs/cvut/fel/pjv/demo/view/tools/Tool.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/module-info.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/module-info.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -32,8 +19,8 @@
       <list>
         <option value="Interface" />
         <option value="package.json" />
-        <option value="Class" />
         <option value="Enum" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -201,7 +188,7 @@
       <workItem from="1716074541927" duration="344000" />
       <workItem from="1716074903776" duration="5119000" />
       <workItem from="1716128076312" duration="42127000" />
-      <workItem from="1716170767572" duration="10296000" />
+      <workItem from="1716170767572" duration="16229000" />
     </task>
     <task id="LOCAL-00001" summary="Objektový návrh">
       <option name="closed" value="true" />
@@ -331,7 +318,15 @@
       <option name="project" value="LOCAL" />
       <updated>1716173921019</updated>
     </task>
-    <option name="localTasksCounter" value="17" />
+    <task id="LOCAL-00017" summary="javadoc komenty">
+      <option name="closed" value="true" />
+      <created>1716181551223</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1716181551224</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -364,7 +359,8 @@
     <MESSAGE value="start chest managment" />
     <MESSAGE value="combat system" />
     <MESSAGE value="combat system done" />
-    <option name="LAST_COMMIT_MESSAGE" value="combat system done" />
+    <MESSAGE value="javadoc komenty" />
+    <option name="LAST_COMMIT_MESSAGE" value="javadoc komenty" />
   </component>
   <component name="XDebuggerManager">
     <pin-to-top-manager>

@@ -20,12 +20,11 @@ import javafx.scene.Cursor;
 import javafx.scene.ImageCursor;
 import javafx.scene.Node;
 import javafx.scene.Scene;
+import javafx.scene.control.Button;
 import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
 import javafx.scene.input.*;
-import javafx.scene.layout.GridPane;
 import javafx.scene.layout.StackPane;
-import javafx.scene.layout.VBox;
 import javafx.scene.paint.Color;
 import javafx.scene.text.Font;
 import javafx.stage.Stage;
@@ -40,12 +39,15 @@ import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.List;
 import java.util.Map;
+import java.util.logging.Level;
+import java.util.logging.Logger;
 
 import javafx.scene.control.Label;
-import javafx.scene.text.Text;
 
 
 public class OdysseyOfRealms extends Application {
+    private static final Logger LOGGER = Logger.getLogger(OdysseyOfRealms.class.getName());
+    private boolean loggingEnabled = true;
     Realm world;
     Player player;
     Model model = new Model();
@@ -62,6 +64,7 @@ public class OdysseyOfRealms extends Application {
     ImageView selectedItemView;
     Item resultItem;
     ImageView[] healtImageView = new ImageView[5];
+
 
     /**
      * This method places block on screen. Firstly it converts coordination's from class StackPane to my coordinate system
@@ -95,6 +98,8 @@ public class OdysseyOfRealms extends Application {
         block.isPlaced = true;
         world.addBlock(block);
         worldNodes.add(blockImageView);
+
+        LOGGER.info("Block added to screen to positon" + coords[0] + coords[1]);
     }
 
     /**
@@ -124,6 +129,7 @@ public class OdysseyOfRealms extends Application {
 
         controller.setPlayer(player);
 
+        LOGGER.info("revived player after loosing all his HP");
     }
 
     /**
@@ -141,6 +147,8 @@ public class OdysseyOfRealms extends Application {
 
         this.playerIMG = playerImageView;
         root.getChildren().add(playerImageView);
+
+        LOGGER.info("changed player's view to" + xCoord + yCoords);
     }
 
     /**
@@ -151,6 +159,8 @@ public class OdysseyOfRealms extends Application {
         for (ImageView imageView: healtImageView) {
             root.getChildren().remove(imageView);
         }
+
+        LOGGER.info("cleared all hearts from screen");
     }
 
     /**
@@ -172,6 +182,7 @@ public class OdysseyOfRealms extends Application {
 
         }
 
+        LOGGER.info("updated hearts based on players HP");
     }
 
     /**
@@ -188,6 +199,8 @@ public class OdysseyOfRealms extends Application {
         root.getChildren().remove(enemy.getImageView());
         world.mobs.remove(enemy);
         enemy = null;
+
+        LOGGER.info("banished enemy");
     }
 
     /**
@@ -259,6 +272,7 @@ public class OdysseyOfRealms extends Application {
 
         }
 
+        LOGGER.info("loaded overworld successfully");
     }
 
     /**
@@ -379,6 +393,8 @@ public class OdysseyOfRealms extends Application {
         this.player = loadedPlayer;
 
         updateHP(root);
+
+        LOGGER.info("loaded player successfully");
     }
 
     /**
@@ -424,6 +440,7 @@ public class OdysseyOfRealms extends Application {
 
         NPCs.add(NPC);
 
+        LOGGER.info("loaded NPC successfully");
     }
 
     /**
@@ -435,6 +452,8 @@ public class OdysseyOfRealms extends Application {
             root.getChildren().remove(node);
         }
         hotbarNodes.clear();
+
+        LOGGER.info("cleared images from hot bar");
     }
 
     /**
@@ -466,6 +485,8 @@ public class OdysseyOfRealms extends Application {
 
             hotbarNodes.add(blockView);
         }
+
+        LOGGER.info("filled hot bar with images of player's hot bar");
     }
 
     /**
@@ -498,6 +519,8 @@ public class OdysseyOfRealms extends Application {
         PauseTransition pause = new PauseTransition(Duration.seconds(30));
         pause.setOnFinished(event -> root.getChildren().remove(textLabel));
         pause.play();
+
+        LOGGER.info("showed a text bubble");
     }
 
     /**
@@ -507,6 +530,8 @@ public class OdysseyOfRealms extends Application {
     private void saveGame() throws IOException {
         serializer.serializeToFile(world, "overworld.json");
         serializer.serializeToFile(player, "player.json");
+
+        LOGGER.info("saved game");
     }
 
     /**
@@ -537,6 +562,7 @@ public class OdysseyOfRealms extends Application {
 
         this.hotbarFocus = selectorView;
 
+        LOGGER.info("loaded whole game");
     }
 
     /**
@@ -550,6 +576,8 @@ public class OdysseyOfRealms extends Application {
             coords = controller.moveDown();
             viewPlayer(root, coords[0], coords[1]);
         }
+
+        LOGGER.info("player just falled");
     }
 
     /**
@@ -568,6 +596,8 @@ public class OdysseyOfRealms extends Application {
         player.setSelectetItem(player.getHotBar()[hotNum]);
 
         this.hotBarNumber = hotNum;
+
+        LOGGER.info("new focus is set on hot bar");
     }
 
     /**
@@ -587,6 +617,8 @@ public class OdysseyOfRealms extends Application {
         root.setCursor(new ImageCursor(image));
 
         selectedItemView = imageView;
+
+        LOGGER.info("new cursor is set");
     }
 
     /**
@@ -602,6 +634,7 @@ public class OdysseyOfRealms extends Application {
             count++;
         }
 
+        LOGGER.info("counted how many different materials are there");
         return count;
     }
 
@@ -654,6 +687,7 @@ public class OdysseyOfRealms extends Application {
         }
 
 
+        LOGGER.info("checked if there is suitable recipe");
         return null;
     }
 
@@ -682,6 +716,8 @@ public class OdysseyOfRealms extends Application {
             root.getChildren().add(imageView);
 
         }
+
+        LOGGER.info("filled chest");
     }
 
     /**
@@ -697,6 +733,8 @@ public class OdysseyOfRealms extends Application {
                 count++;
             }
         }
+
+        LOGGER.info("counted how many material are same");
         return count;
     }
 
@@ -730,6 +768,7 @@ public class OdysseyOfRealms extends Application {
 
         }
 
+        LOGGER.info("made empty slots for special block interface");
     }
 
     /**
@@ -768,11 +807,14 @@ public class OdysseyOfRealms extends Application {
 //                slots = 36;
 //                fillEmptySlots(root, slots);
 //                fillChest(root, specialBlock);
+
         }
 
+        LOGGER.info("showed special block interface");
 
         root.setOnMouseClicked(event -> {
             if (event.getButton() == MouseButton.PRIMARY) {
+                LOGGER.info("primary button was pressed on mause");
                 double sceneX = event.getX();
                 double sceneY = event.getY();
 
@@ -811,9 +853,10 @@ public class OdysseyOfRealms extends Application {
                     player.setSelectetItem(null);
 
                 }
-
+                LOGGER.info("added item to crafting");
             }
             if (event.getButton() == MouseButton.SECONDARY && specialBlockImagePath.equals("crafting_table.png")) {
+                LOGGER.info("secondary mose button was pressed");
                 ImageView resultImageView = null;
                 double sceneX = event.getX();
                 double sceneY = event.getY();
@@ -861,6 +904,8 @@ public class OdysseyOfRealms extends Application {
 
                 root.getChildren().remove(resultImageView);
                 worldNodes.remove(resultImageView);
+
+                LOGGER.info("player took new item from crafting");
             }
             if (event.getButton() == MouseButton.SECONDARY && specialBlockImagePath.equals("chest.png")) {
                 ImageView itemImageView = null;
@@ -952,6 +997,8 @@ public class OdysseyOfRealms extends Application {
                 fillHotbar(root);
 
                 specialBlock.getInventory().clear();
+
+                LOGGER.info("player exited crafting");
             }
             if (event.getCode() == KeyCode.ENTER && specialBlockImagePath.equals("crafting_table.png")) {
                 Item item = checkForRecipe(specialBlock);
@@ -974,8 +1021,20 @@ public class OdysseyOfRealms extends Application {
 
 
                 }
+                LOGGER.info("player crafted an item");
             }
         });
+    }
+
+    private void toggleLogging() {
+        loggingEnabled = !loggingEnabled;
+        if (loggingEnabled) {
+            LOGGER.setLevel(Level.INFO);
+            LOGGER.info("Logging enabled");
+        } else {
+            LOGGER.info("Logging disabled");
+            LOGGER.setLevel(Level.OFF);
+        }
     }
 
     @Override
@@ -988,6 +1047,8 @@ public class OdysseyOfRealms extends Application {
 
         backgroundDimensions[0] = (int) backgroundImage.getWidth();
         backgroundDimensions[1] = (int) backgroundImage.getHeight();
+
+
 
         Scene scene = new Scene(root, 1440,810);
 
@@ -1026,6 +1087,7 @@ public class OdysseyOfRealms extends Application {
                 int[] coords;
                 switch (event.getCode()) {
                     case A:
+                        LOGGER.info("A was pressed");
                         if (player.getHP() <= 0) {
                             revivePlayer(root);
                             return;
@@ -1048,11 +1110,14 @@ public class OdysseyOfRealms extends Application {
                             if (model.isNearObject(player, enemy.getxCoords(), enemy.getyCoords())) {
                                 enemy.attack(player);
                                 updateHP(root);
+                                LOGGER.info("player took damage from enemy");
                             }
                         }
 
+                        LOGGER.info("player moved left");
                         break;
                     case D:
+                        LOGGER.info("D was pressed");
                         if (player.getHP() <= 0) {
                             revivePlayer(root);
                             return;
@@ -1074,10 +1139,13 @@ public class OdysseyOfRealms extends Application {
                             if (model.isNearObject(player, enemy.getxCoords(), enemy.getyCoords())) {
                                 enemy.attack(player);
                                 updateHP(root);
+                                LOGGER.info("player took damage from enemy");
                             }
                         }
+                        LOGGER.info("player moved right");
                         break;
                     case SPACE:
+                        LOGGER.info("SPACE was pressed");
                         if (player.getHP() <= 0) {
                             revivePlayer(root);
 
@@ -1103,9 +1171,11 @@ public class OdysseyOfRealms extends Application {
                             pause.play();
                             player.setMoving(false);
                         }
-
+                        LOGGER.info("player jumped");
                         break;
                     case W:
+                        LOGGER.info("W was pressed");
+
                         if (player.getHP() <= 0) {
                             revivePlayer(root);
                             return;
@@ -1133,46 +1203,59 @@ public class OdysseyOfRealms extends Application {
 
                         isPaused = false;
 
+                        LOGGER.info("player moved up");
                         break;
                     case DIGIT1:
+                        LOGGER.info("1 was pressed");
                         setFocusOnHotbar(root, 0);
                         setSelectedItemIcon(root);
                         break;
                     case DIGIT2:
+                        LOGGER.info("2 was pressed");
                         setFocusOnHotbar(root, 1);
                         setSelectedItemIcon(root);
                         break;
                     case DIGIT3:
+                        LOGGER.info("3 was pressed");
                         setFocusOnHotbar(root, 2);
                         setSelectedItemIcon(root);
                         break;
                     case DIGIT4:
+                        LOGGER.info("4 was pressed");
                         setFocusOnHotbar(root, 3);
                         setSelectedItemIcon(root);
                         break;
                     case DIGIT5:
+                        LOGGER.info("5 was pressed");
                         setFocusOnHotbar(root, 4);
                         setSelectedItemIcon(root);
                         break;
                     case DIGIT6:
+                        LOGGER.info("6 was pressed");
                         setFocusOnHotbar(root, 5);
                         setSelectedItemIcon(root);
                         break;
                     case DIGIT7:
+                        LOGGER.info("7 was pressed");
                         setFocusOnHotbar(root, 6);
                         setSelectedItemIcon(root);
                         break;
                     case DIGIT8:
+                        LOGGER.info("8 was pressed");
                         setFocusOnHotbar(root, 7);
                         setSelectedItemIcon(root);
                         break;
                     case DIGIT9:
+                        LOGGER.info("9 was pressed");
                         setFocusOnHotbar(root, 8);
                         setSelectedItemIcon(root);
                         break;
                     case DIGIT0:
+                        LOGGER.info("0 was pressed");
                         root.setCursor(Cursor.DEFAULT);
                         player.setSelectetItem(null);
+                    case L:
+                        toggleLogging();
                     default:
 
                 }
@@ -1206,6 +1289,8 @@ public class OdysseyOfRealms extends Application {
                     player.addToHotBar(null, hotBarNumber);
                     fillHotbar(root);
                     root.setCursor(Cursor.DEFAULT);
+
+                    LOGGER.info("a block was built");
                 }
                 if (event.getButton() == MouseButton.PRIMARY && player.getSelectetItem() == null) {
                     if (player.getSelectetItem() != null) {
@@ -1251,6 +1336,7 @@ public class OdysseyOfRealms extends Application {
                         }
                     }
 
+                    LOGGER.info("a block was destroyed");
                 }
                 if (event.getButton() == MouseButton.PRIMARY && player.getSelectetItem() != null) {
                     Enemy enemyToKill = null;
@@ -1269,6 +1355,8 @@ public class OdysseyOfRealms extends Application {
                     }
 
                     banishEnemy(enemyToKill, root);
+
+                    LOGGER.info("player have attacked an enemy");
                 }
             }
         });
@@ -1281,6 +1369,7 @@ public class OdysseyOfRealms extends Application {
     }
 
     public static void main(String[] args) {
+        LoggerSetup.setupLogger(LOGGER);
         launch();
     }
 }

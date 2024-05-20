@@ -4,6 +4,7 @@ module cs.cvut.fel.pjv.demo {
     requires com.google.gson;
     requires com.fasterxml.jackson.databind;
     requires java.desktop;
+    requires java.logging;
 
 
     opens cs.cvut.fel.pjv.demo to javafx.fxml;
