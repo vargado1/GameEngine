@@ -10,6 +10,10 @@ public class Item {
     protected String imagePath;
     @Expose
     protected String type;
+    @Expose
+    private int sceneXCoord;
+    @Expose
+    private int sceneYCoord;
 
     public Item(String group, String imagePath, String type) {
         this.group = group;
@@ -27,5 +31,21 @@ public class Item {
 
     public String getGroup() {
         return group;
+    }
+
+    public int getSceneXCoord() {
+        return sceneXCoord;
+    }
+
+    public int getSceneYCoord() {
+        return sceneYCoord;
+    }
+
+    public void setSceneXCoord(int sceneXCoord) {
+        this.sceneXCoord = sceneXCoord;
+    }
+
+    public void setSceneYCoord(int sceneYCoord) {
+        this.sceneYCoord = sceneYCoord;
     }
 }

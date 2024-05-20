@@ -5,6 +5,7 @@ import cs.cvut.fel.pjv.demo.controller.Controller;
 import cs.cvut.fel.pjv.demo.model.DataSerializer;
 import cs.cvut.fel.pjv.demo.model.Model;
 import cs.cvut.fel.pjv.demo.view.*;
+import cs.cvut.fel.pjv.demo.view.characters.Enemy;
 import cs.cvut.fel.pjv.demo.view.characters.NPC;
 import cs.cvut.fel.pjv.demo.view.characters.Player;
 import cs.cvut.fel.pjv.demo.view.tools.Picaxe;
@@ -60,6 +61,7 @@ public class OdysseyOfRealms extends Application {
     ArrayList<NPC> NPCs = new ArrayList<>();
     ImageView selectedItemView;
     Item resultItem;
+    ImageView[] healtImageView = new ImageView[5];
 
     /**
      * adds block to screen and to the realms map
@@ -93,6 +95,16 @@ public class OdysseyOfRealms extends Application {
         worldNodes.add(blockImageView);
     }
 
+    private void banishEnemy(Enemy enemy, StackPane root) {
+        if (enemy == null) {
+            return;
+        }
+
+        root.getChildren().remove(enemy.getImageView());
+        world.mobs.remove(enemy);
+        enemy = null;
+    }
+
     private void viewPlayer(StackPane root, int xCoord, int yCoords) {
 
         Image playerImage = new Image(player.getPlayerImage());
@@ -102,6 +114,29 @@ public class OdysseyOfRealms extends Application {
 
         this.playerIMG = playerImageView;
         root.getChildren().add(playerImageView);
+    }
+
+    private void clearHP(StackPane root) {
+        for (ImageView imageView: healtImageView) {
+            root.getChildren().remove(imageView);
+        }
+    }
+
+    private void updateHP(StackPane root) {
+        clearHP(root);
+
+        for (int i = 0; i < (player.getHP()/20); i++) {
+            ImageView heartImageView = new ImageView("heart.png");
+
+            heartImageView.setTranslateX(-705 + i*30);
+            heartImageView.setTranslateY(-390);
+
+            root.getChildren().add(heartImageView);
+
+            healtImageView[i] = heartImageView;
+
+        }
+
     }
 
     private void loadOverworldFromSave(StackPane root) throws IOException {
@@ -117,7 +152,17 @@ public class OdysseyOfRealms extends Application {
                 x = i.getXCoord();
                 y = i.getYCoord();
 
+                ArrayList<Item> items = i.getInventory();
+
                 i = new SpecialBlock(false, false, i.getType(), i.getImagePath(), i.getGroup());
+
+                if (items != null) {
+                    for (Item item: items) {
+                        i.addToInventory(item);
+                    }
+                }
+
+
 
                 i.setCoords(x,y);
             }
@@ -138,6 +183,23 @@ public class OdysseyOfRealms extends Application {
             root.getChildren().add(blockImageView);
 
             worldNodes.add(blockImageView);
+        }
+
+        for (Enemy enemy: data.mobs) {
+            Enemy enemy1 = new Enemy(enemy.getDamage(), enemy.getType(), enemy.getxCoords(), enemy.getyCoords(), enemy.getHP(), enemy.getImagePath());
+
+            ImageView enImageView = new ImageView(enemy1.getImagePath());
+            enemy1.setImageView(enImageView);
+
+            coords = model.getCoordsFromListToScreen(enemy1.getxCoords(), enemy1.getyCoords(), 30, world);
+
+            enImageView.setTranslateX(coords[0]);
+            enImageView.setTranslateY(coords[1] - 15);
+
+            root.getChildren().add(enImageView);
+
+            world.addMob(enemy1);
+
         }
 
     }
@@ -210,7 +272,7 @@ public class OdysseyOfRealms extends Application {
                     String groupSW = rootNode.at(JsonPointer.compile("/hotBar/" + i + "/group")).asText();
                     String imagePathSW = rootNode.at(JsonPointer.compile("/hotBar/" + i + "/imagePath")).asText();
 
-                    Sword sword = new Sword(typeSW, groupSW, imagePathSW);
+                    Sword sword = new Sword(imagePathSW, groupSW, typeSW);
 
                     loadedPlayer.addToHotBar(sword, i);
 
@@ -221,7 +283,7 @@ public class OdysseyOfRealms extends Application {
                     String groupPI = rootNode.at(JsonPointer.compile("/hotBar/" + i + "/group")).asText();
                     String imagePathPI = rootNode.at(JsonPointer.compile("/hotBar/" + i + "/imagePath")).asText();
 
-                    Picaxe picaxe = new Picaxe(typePI, groupPI, imagePathPI);
+                    Picaxe picaxe = new Picaxe(imagePathPI, groupPI, typePI);
 
                     loadedPlayer.addToHotBar(picaxe, i);
 
@@ -232,7 +294,7 @@ public class OdysseyOfRealms extends Application {
                     String groupSH = rootNode.at(JsonPointer.compile("/hotBar/" + i + "/group")).asText();
                     String imagePathSH = rootNode.at(JsonPointer.compile("/hotBar/" + i + "/imagePath")).asText();
 
-                    Showel showel = new Showel(typeSH, groupSH, imagePathSH);
+                    Showel showel = new Showel(imagePathSH, groupSH, typeSH);
 
                     loadedPlayer.addToHotBar(showel, i);
 
@@ -255,6 +317,8 @@ public class OdysseyOfRealms extends Application {
 
         this.playerIMG = playerImageView;
         this.player = loadedPlayer;
+
+        updateHP(root);
     }
 
     private void loadNPC(StackPane root) {
@@ -540,12 +604,22 @@ public class OdysseyOfRealms extends Application {
         boolean secondCheckemark = false;
         Boolean[] checkmarks = new Boolean[]{firstCheckmark, secondCheckemark};
         int count = 0;
+        boolean isMoreThanOne = false;
+        Item temp = null;
+
+        for (Item item: specialBlock.getInventory()) {
+            if (temp != null && temp.getImagePath() != item.getImagePath()){
+                isMoreThanOne = true;
+            }
+
+            temp = item;
+        }
 
         for (Recipes recipe : Recipes.values()) {
             count = 0;
             checkmarks[0] = false;
             checkmarks[1] = false;
-            if (countDifferentMaterials(recipe) <= 1){
+            if (countDifferentMaterials(recipe) <= 1 && !isMoreThanOne){
                 checkmarks[1] = true;
             }
 
@@ -654,10 +728,11 @@ public class OdysseyOfRealms extends Application {
                 fillEmptySlots(root, slots);
                 break;
 
-            case "chest.png":
-                slots = 36;
-                fillEmptySlots(root, slots);
-                fillChest(root, specialBlock);
+//                TODO
+//            case "chest.png":
+//                slots = 36;
+//                fillEmptySlots(root, slots);
+//                fillChest(root, specialBlock);
         }
 
 
@@ -678,6 +753,9 @@ public class OdysseyOfRealms extends Application {
 
                 if (player.getSelectetItem() != null) {
                     Item item = player.getSelectetItem();
+
+                    item.setSceneXCoord((int) sceneX);
+                    item.setSceneYCoord((int) sceneY);
 
                     player.addToHotBar(null, hotBarNumber);
                     fillHotbar(root);
@@ -751,6 +829,7 @@ public class OdysseyOfRealms extends Application {
             }
             if (event.getButton() == MouseButton.SECONDARY && specialBlockImagePath.equals("chest.png")) {
                 ImageView itemImageView = null;
+                Item desiredItem = null;
 
                 double sceneX = event.getX();
                 double sceneY = event.getY();
@@ -761,6 +840,15 @@ public class OdysseyOfRealms extends Application {
                 sceneX = 50 * Math.round(sceneX / 50.0f);
                 sceneY = 50 * Math.round(sceneY / 50.0f);
 
+                for (Item item: specialBlock.getInventory()) {
+                    if (item == null) {
+                        continue;
+                    }
+                    if (item.getSceneXCoord() == sceneX && item.getSceneYCoord() == sceneY) {
+                        desiredItem = item;
+                    }
+                }
+
                 for (Node imageView: root.getChildren()) {
                     if (imageView.getId() != null) {
                         if (imageView.getId().equals("chestItem") && imageView.getTranslateY() == sceneY && imageView.getTranslateX() == sceneX) {
@@ -770,7 +858,16 @@ public class OdysseyOfRealms extends Application {
                 }
 
                 root.getChildren().remove(itemImageView);
+                specialBlock.getInventory().remove(desiredItem);
 
+                for (int i = 0; i < player.getHotBar().length; i++) {
+                    if (player.getHotBar()[i] == null) {
+                        player.addToHotBar(desiredItem, i);
+                        break;
+                    }
+                }
+
+                fillHotbar(root);
 
             }
         });
@@ -914,7 +1011,17 @@ public class OdysseyOfRealms extends Application {
 //        addBlockToScreen(crafting, root, 420, 300);
 //        SpecialBlock chest = new SpecialBlock(false, false, "chest", "chest.png", "Block");
 //        addBlockToScreen(chest, root, -150, 300);
-
+//        Enemy sceleton = new Enemy(20, "Enemy", 12, 23, 20, "enemy1.png");
+//
+//
+//        ImageView scImageView = new ImageView(sceleton.getImagePath());
+//
+//        int[] coords = model.getCoordsFromListToScreen(sceleton.getxCoords(), sceleton.getyCoords(), 30, world);
+//
+//        scImageView.setTranslateX(coords[0]);
+//        scImageView.setTranslateY(coords[1]);
+//        world.addMob(sceleton);
+//        root.getChildren().add(scImageView);
 
         stage.setTitle("Odyssey Of Realms");
         stage.setScene(scene);
@@ -955,6 +1062,13 @@ public class OdysseyOfRealms extends Application {
 
                         fall.play();
 
+                        for (Enemy enemy: world.mobs) {
+                            if (model.isNearObject(player, enemy.getxCoords(), enemy.getyCoords())) {
+                                enemy.attack(player);
+                                updateHP(root);
+                            }
+                        }
+
                         break;
                     case D:
                         player.setDirection(Direction.RIGHT);
@@ -970,6 +1084,12 @@ public class OdysseyOfRealms extends Application {
 
                         fall.play();
 
+                        for (Enemy enemy: world.mobs) {
+                            if (model.isNearObject(player, enemy.getxCoords(), enemy.getyCoords())) {
+                                enemy.attack(player);
+                                updateHP(root);
+                            }
+                        }
                         break;
                     case SPACE:
                         player.setDirection(Direction.JUMP);
@@ -1090,8 +1210,12 @@ public class OdysseyOfRealms extends Application {
                     fillHotbar(root);
                     root.setCursor(Cursor.DEFAULT);
                 }
-                if (event.getButton() == MouseButton.PRIMARY) {
-
+                if (event.getButton() == MouseButton.PRIMARY && player.getSelectetItem() == null) {
+                    if (player.getSelectetItem() != null) {
+                        if (player.getSelectetItem().getGroup().equals("Sword")) {
+                            return;
+                        }
+                    }
                     double sceneX = event.getX();
                     double sceneY = event.getY();
 
@@ -1130,6 +1254,24 @@ public class OdysseyOfRealms extends Application {
                         }
                     }
 
+                }
+                if (event.getButton() == MouseButton.PRIMARY && player.getSelectetItem() != null) {
+                    Enemy enemyToKill = null;
+                    if (!player.getSelectetItem().getGroup().equals("Sword")) {
+                        return;
+                    }
+
+                    for (Enemy enemy: world.mobs) {
+                        if (model.isNearObject(player, enemy.getxCoords(), enemy.getyCoords())) {
+                            player.punch(enemy);
+                            if (enemy.getHP() <= 0) {
+                                enemyToKill = enemy;
+
+                            }
+                        }
+                    }
+
+                    banishEnemy(enemyToKill, root);
                 }
             }
         });

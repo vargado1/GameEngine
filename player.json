@@ -1,28 +1,16 @@
 {
   "isMoving": false,
-  "direction": "LEFT",
+  "direction": "RIGHT",
   "speed": 1,
   "hotBar": [
     {
-      "isCraftable": true,
-      "xCoord": 0,
-      "yCoord": 0,
-      "size": 30,
-      "canFall": false,
-      "group": "Block",
-      "imagePath": "wooden_block.jpg",
-      "type": "Plank"
+      "group": "Sword",
+      "imagePath": "stone_sword.png",
+      "type": "stone",
+      "sceneXCoord": 0,
+      "sceneYCoord": 0
     },
-    {
-      "isCraftable": true,
-      "xCoord": 0,
-      "yCoord": 0,
-      "size": 30,
-      "canFall": false,
-      "group": "Block",
-      "imagePath": "stone_block.jpg",
-      "type": "Stone"
-    },
+    null,
     {
       "isCraftable": false,
       "xCoord": 0,
@@ -31,51 +19,32 @@
       "canFall": true,
       "group": "Block",
       "imagePath": "gravel_block.jpg",
-      "type": "Gravel"
+      "type": "Gravel",
+      "sceneXCoord": 0,
+      "sceneYCoord": 0
     },
     {
       "group": "Material",
       "imagePath": "stone_material.png",
-      "type": "stone"
+      "type": "stone",
+      "sceneXCoord": 0,
+      "sceneYCoord": 0
     },
-    {
-      "group": "Material",
-      "imagePath": "stone_material.png",
-      "type": "stone"
-    },
-    {
-      "group": "Material",
-      "imagePath": "stone_material.png",
-      "type": "stone"
-    },
-    {
-      "group": "Material",
-      "imagePath": "stone_material.png",
-      "type": "stone"
-    },
-    {
-      "group": "Material",
-      "imagePath": "stick.png",
-      "type": "stick"
-    },
-    {
-      "group": "Material",
-      "imagePath": "stick.png",
-      "type": "stick"
-    }
+    null,
+    null,
+    null,
+    null,
+    null
   ],
   "selectetItem": {
-    "isCraftable": true,
-    "xCoord": 0,
-    "yCoord": 0,
-    "size": 30,
-    "canFall": false,
-    "group": "Block",
-    "imagePath": "wooden_block.jpg",
-    "type": "Plank"
+    "group": "Sword",
+    "imagePath": "stone",
+    "type": "stone_sword.png",
+    "sceneXCoord": 0,
+    "sceneYCoord": 0
   },
   "playerImage": "player.png",
-  "xCoords": 20,
+  "xCoords": 14,
   "yCoords": 24,
   "HP": 100
 }

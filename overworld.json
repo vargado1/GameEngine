@@ -12,7 +12,9 @@
       "size": 30,
       "canFall": false,
       "imagePath": "dirt_block.jpg",
-      "type": "Dirt"
+      "type": "Dirt",
+      "sceneXCoord": 0,
+      "sceneYCoord": 0
     },
     {
       "isCraftable": false,
@@ -21,7 +23,9 @@
       "size": 30,
       "canFall": false,
       "imagePath": "dirt_block.jpg",
-      "type": "Dirt"
+      "type": "Dirt",
+      "sceneXCoord": 0,
+      "sceneYCoord": 0
     },
     {
       "isCraftable": false,
@@ -30,7 +34,9 @@
       "size": 30,
       "canFall": false,
       "imagePath": "dirt_block.jpg",
-      "type": "Dirt"
+      "type": "Dirt",
+      "sceneXCoord": 0,
+      "sceneYCoord": 0
     },
     {
       "isCraftable": false,
@@ -39,7 +45,9 @@
       "size": 30,
       "canFall": false,
       "imagePath": "dirt_block.jpg",
-      "type": "Dirt"
+      "type": "Dirt",
+      "sceneXCoord": 0,
+      "sceneYCoord": 0
     },
     {
       "isCraftable": false,
@@ -48,7 +56,9 @@
       "size": 30,
       "canFall": false,
       "imagePath": "dirt_block.jpg",
-      "type": "Dirt"
+      "type": "Dirt",
+      "sceneXCoord": 0,
+      "sceneYCoord": 0
     },
     {
       "isCraftable": false,
@@ -57,7 +67,9 @@
       "size": 30,
       "canFall": false,
       "imagePath": "dirt_block.jpg",
-      "type": "Dirt"
+      "type": "Dirt",
+      "sceneXCoord": 0,
+      "sceneYCoord": 0
     },
     {
       "isCraftable": false,
@@ -66,7 +78,9 @@
       "size": 30,
       "canFall": false,
       "imagePath": "dirt_block.jpg",
-      "type": "Dirt"
+      "type": "Dirt",
+      "sceneXCoord": 0,
+      "sceneYCoord": 0
     },
     {
       "isCraftable": false,
@@ -75,7 +89,9 @@
       "size": 30,
       "canFall": false,
       "imagePath": "dirt_block.jpg",
-      "type": "Dirt"
+      "type": "Dirt",
+      "sceneXCoord": 0,
+      "sceneYCoord": 0
     },
     {
       "isCraftable": false,
@@ -84,7 +100,9 @@
       "size": 30,
       "canFall": false,
       "imagePath": "dirt_block.jpg",
-      "type": "Dirt"
+      "type": "Dirt",
+      "sceneXCoord": 0,
+      "sceneYCoord": 0
     },
     {
       "isCraftable": false,
@@ -93,7 +111,9 @@
       "size": 30,
       "canFall": false,
       "imagePath": "dirt_block.jpg",
-      "type": "Dirt"
+      "type": "Dirt",
+      "sceneXCoord": 0,
+      "sceneYCoord": 0
     },
     {
       "isCraftable": false,
@@ -102,7 +122,9 @@
       "size": 30,
       "canFall": false,
       "imagePath": "dirt_block.jpg",
-      "type": "Dirt"
+      "type": "Dirt",
+      "sceneXCoord": 0,
+      "sceneYCoord": 0
     },
     {
       "isCraftable": false,
@@ -111,7 +133,9 @@
       "size": 30,
       "canFall": false,
       "imagePath": "dirt_block.jpg",
-      "type": "Dirt"
+      "type": "Dirt",
+      "sceneXCoord": 0,
+      "sceneYCoord": 0
     },
     {
       "isCraftable": false,
@@ -120,7 +144,9 @@
       "size": 30,
       "canFall": false,
       "imagePath": "dirt_block.jpg",
-      "type": "Dirt"
+      "type": "Dirt",
+      "sceneXCoord": 0,
+      "sceneYCoord": 0
     },
     {
       "isCraftable": false,
@@ -129,7 +155,9 @@
       "size": 30,
       "canFall": false,
       "imagePath": "dirt_block.jpg",
-      "type": "Dirt"
+      "type": "Dirt",
+      "sceneXCoord": 0,
+      "sceneYCoord": 0
     },
     {
       "isCraftable": false,
@@ -138,7 +166,9 @@
       "size": 30,
       "canFall": false,
       "imagePath": "dirt_block.jpg",
-      "type": "Dirt"
+      "type": "Dirt",
+      "sceneXCoord": 0,
+      "sceneYCoord": 0
     },
     {
       "isCraftable": false,
@@ -147,7 +177,9 @@
       "size": 30,
       "canFall": false,
       "imagePath": "dirt_block.jpg",
-      "type": "Dirt"
+      "type": "Dirt",
+      "sceneXCoord": 0,
+      "sceneYCoord": 0
     },
     {
       "isCraftable": false,
@@ -156,7 +188,9 @@
       "size": 30,
       "canFall": false,
       "imagePath": "dirt_block.jpg",
-      "type": "Dirt"
+      "type": "Dirt",
+      "sceneXCoord": 0,
+      "sceneYCoord": 0
     },
     {
       "isCraftable": false,
@@ -165,7 +199,9 @@
       "size": 30,
       "canFall": false,
       "imagePath": "dirt_block.jpg",
-      "type": "Dirt"
+      "type": "Dirt",
+      "sceneXCoord": 0,
+      "sceneYCoord": 0
     },
     {
       "isCraftable": false,
@@ -174,7 +210,9 @@
       "size": 30,
       "canFall": false,
       "imagePath": "dirt_block.jpg",
-      "type": "Dirt"
+      "type": "Dirt",
+      "sceneXCoord": 0,
+      "sceneYCoord": 0
     },
     {
       "isCraftable": false,
@@ -183,7 +221,9 @@
       "size": 30,
       "canFall": false,
       "imagePath": "dirt_block.jpg",
-      "type": "Dirt"
+      "type": "Dirt",
+      "sceneXCoord": 0,
+      "sceneYCoord": 0
     },
     {
       "isCraftable": false,
@@ -192,7 +232,9 @@
       "size": 30,
       "canFall": false,
       "imagePath": "dirt_block.jpg",
-      "type": "Dirt"
+      "type": "Dirt",
+      "sceneXCoord": 0,
+      "sceneYCoord": 0
     },
     {
       "isCraftable": false,
@@ -201,7 +243,9 @@
       "size": 30,
       "canFall": false,
       "imagePath": "dirt_block.jpg",
-      "type": "Dirt"
+      "type": "Dirt",
+      "sceneXCoord": 0,
+      "sceneYCoord": 0
     },
     {
       "isCraftable": false,
@@ -210,7 +254,9 @@
       "size": 30,
       "canFall": false,
       "imagePath": "dirt_block.jpg",
-      "type": "Dirt"
+      "type": "Dirt",
+      "sceneXCoord": 0,
+      "sceneYCoord": 0
     },
     {
       "isCraftable": false,
@@ -219,7 +265,9 @@
       "size": 30,
       "canFall": false,
       "imagePath": "dirt_block.jpg",
-      "type": "Dirt"
+      "type": "Dirt",
+      "sceneXCoord": 0,
+      "sceneYCoord": 0
     },
     {
       "isCraftable": false,
@@ -228,7 +276,9 @@
       "size": 30,
       "canFall": false,
       "imagePath": "dirt_block.jpg",
-      "type": "Dirt"
+      "type": "Dirt",
+      "sceneXCoord": 0,
+      "sceneYCoord": 0
     },
     {
       "isCraftable": false,
@@ -237,7 +287,9 @@
       "size": 30,
       "canFall": false,
       "imagePath": "dirt_block.jpg",
-      "type": "Dirt"
+      "type": "Dirt",
+      "sceneXCoord": 0,
+      "sceneYCoord": 0
     },
     {
       "isCraftable": false,
@@ -246,7 +298,9 @@
       "size": 30,
       "canFall": false,
       "imagePath": "dirt_block.jpg",
-      "type": "Dirt"
+      "type": "Dirt",
+      "sceneXCoord": 0,
+      "sceneYCoord": 0
     },
     {
       "isCraftable": false,
@@ -255,7 +309,9 @@
       "size": 30,
       "canFall": false,
       "imagePath": "dirt_block.jpg",
-      "type": "Dirt"
+      "type": "Dirt",
+      "sceneXCoord": 0,
+      "sceneYCoord": 0
     },
     {
       "isCraftable": false,
@@ -264,7 +320,9 @@
       "size": 30,
       "canFall": false,
       "imagePath": "dirt_block.jpg",
-      "type": "Dirt"
+      "type": "Dirt",
+      "sceneXCoord": 0,
+      "sceneYCoord": 0
     },
     {
       "isCraftable": false,
@@ -273,7 +331,9 @@
       "size": 30,
       "canFall": false,
       "imagePath": "dirt_block.jpg",
-      "type": "Dirt"
+      "type": "Dirt",
+      "sceneXCoord": 0,
+      "sceneYCoord": 0
     },
     {
       "isCraftable": false,
@@ -282,7 +342,9 @@
       "size": 30,
       "canFall": false,
       "imagePath": "dirt_block.jpg",
-      "type": "Dirt"
+      "type": "Dirt",
+      "sceneXCoord": 0,
+      "sceneYCoord": 0
     },
     {
       "isCraftable": false,
@@ -291,7 +353,9 @@
       "size": 30,
       "canFall": false,
       "imagePath": "dirt_block.jpg",
-      "type": "Dirt"
+      "type": "Dirt",
+      "sceneXCoord": 0,
+      "sceneYCoord": 0
     },
     {
       "isCraftable": false,
@@ -300,7 +364,9 @@
       "size": 30,
       "canFall": false,
       "imagePath": "dirt_block.jpg",
-      "type": "Dirt"
+      "type": "Dirt",
+      "sceneXCoord": 0,
+      "sceneYCoord": 0
     },
     {
       "isCraftable": false,
@@ -309,7 +375,9 @@
       "size": 30,
       "canFall": false,
       "imagePath": "dirt_block.jpg",
-      "type": "Dirt"
+      "type": "Dirt",
+      "sceneXCoord": 0,
+      "sceneYCoord": 0
     },
     {
       "isCraftable": false,
@@ -318,7 +386,9 @@
       "size": 30,
       "canFall": false,
       "imagePath": "dirt_block.jpg",
-      "type": "Dirt"
+      "type": "Dirt",
+      "sceneXCoord": 0,
+      "sceneYCoord": 0
     },
     {
       "isCraftable": false,
@@ -327,7 +397,9 @@
       "size": 30,
       "canFall": false,
       "imagePath": "dirt_block.jpg",
-      "type": "Dirt"
+      "type": "Dirt",
+      "sceneXCoord": 0,
+      "sceneYCoord": 0
     },
     {
       "isCraftable": false,
@@ -336,7 +408,9 @@
       "size": 30,
       "canFall": false,
       "imagePath": "dirt_block.jpg",
-      "type": "Dirt"
+      "type": "Dirt",
+      "sceneXCoord": 0,
+      "sceneYCoord": 0
     },
     {
       "isCraftable": false,
@@ -345,7 +419,9 @@
       "size": 30,
       "canFall": false,
       "imagePath": "dirt_block.jpg",
-      "type": "Dirt"
+      "type": "Dirt",
+      "sceneXCoord": 0,
+      "sceneYCoord": 0
     },
     {
       "isCraftable": false,
@@ -354,7 +430,9 @@
       "size": 30,
       "canFall": false,
       "imagePath": "dirt_block.jpg",
-      "type": "Dirt"
+      "type": "Dirt",
+      "sceneXCoord": 0,
+      "sceneYCoord": 0
     },
     {
       "isCraftable": false,
@@ -363,7 +441,9 @@
       "size": 30,
       "canFall": false,
       "imagePath": "dirt_block.jpg",
-      "type": "Dirt"
+      "type": "Dirt",
+      "sceneXCoord": 0,
+      "sceneYCoord": 0
     },
     {
       "isCraftable": false,
@@ -372,7 +452,9 @@
       "size": 30,
       "canFall": false,
       "imagePath": "dirt_block.jpg",
-      "type": "Dirt"
+      "type": "Dirt",
+      "sceneXCoord": 0,
+      "sceneYCoord": 0
     },
     {
       "isCraftable": false,
@@ -381,7 +463,9 @@
       "size": 30,
       "canFall": false,
       "imagePath": "dirt_block.jpg",
-      "type": "Dirt"
+      "type": "Dirt",
+      "sceneXCoord": 0,
+      "sceneYCoord": 0
     },
     {
       "isCraftable": false,
@@ -390,7 +474,9 @@
       "size": 30,
       "canFall": false,
       "imagePath": "dirt_block.jpg",
-      "type": "Dirt"
+      "type": "Dirt",
+      "sceneXCoord": 0,
+      "sceneYCoord": 0
     },
     {
       "isCraftable": false,
@@ -399,7 +485,9 @@
       "size": 30,
       "canFall": false,
       "imagePath": "dirt_block.jpg",
-      "type": "Dirt"
+      "type": "Dirt",
+      "sceneXCoord": 0,
+      "sceneYCoord": 0
     },
     {
       "isCraftable": false,
@@ -408,7 +496,9 @@
       "size": 30,
       "canFall": false,
       "imagePath": "dirt_block.jpg",
-      "type": "Dirt"
+      "type": "Dirt",
+      "sceneXCoord": 0,
+      "sceneYCoord": 0
     },
     {
       "isCraftable": false,
@@ -417,7 +507,9 @@
       "size": 30,
       "canFall": false,
       "imagePath": "dirt_block.jpg",
-      "type": "Dirt"
+      "type": "Dirt",
+      "sceneXCoord": 0,
+      "sceneYCoord": 0
     },
     {
       "isCraftable": false,
@@ -426,7 +518,9 @@
       "size": 30,
       "canFall": false,
       "imagePath": "dirt_block.jpg",
-      "type": "Dirt"
+      "type": "Dirt",
+      "sceneXCoord": 0,
+      "sceneYCoord": 0
     },
     {
       "isCraftable": false,
@@ -435,7 +529,9 @@
       "size": 30,
       "canFall": false,
       "imagePath": "dirt_block.jpg",
-      "type": "Dirt"
+      "type": "Dirt",
+      "sceneXCoord": 0,
+      "sceneYCoord": 0
     },
     {
       "isCraftable": false,
@@ -444,7 +540,9 @@
       "size": 30,
       "canFall": false,
       "imagePath": "dirt_block.jpg",
-      "type": "Dirt"
+      "type": "Dirt",
+      "sceneXCoord": 0,
+      "sceneYCoord": 0
     },
     {
       "isCraftable": false,
@@ -453,7 +551,9 @@
       "size": 30,
       "canFall": false,
       "imagePath": "dirt_block.jpg",
-      "type": "Dirt"
+      "type": "Dirt",
+      "sceneXCoord": 0,
+      "sceneYCoord": 0
     },
     {
       "isCraftable": false,
@@ -462,7 +562,9 @@
       "size": 30,
       "canFall": false,
       "imagePath": "dirt_block.jpg",
-      "type": "Dirt"
+      "type": "Dirt",
+      "sceneXCoord": 0,
+      "sceneYCoord": 0
     },
     {
       "isCraftable": false,
@@ -471,7 +573,9 @@
       "size": 30,
       "canFall": false,
       "imagePath": "dirt_block.jpg",
-      "type": "Dirt"
+      "type": "Dirt",
+      "sceneXCoord": 0,
+      "sceneYCoord": 0
     },
     {
       "isCraftable": false,
@@ -480,7 +584,9 @@
       "size": 30,
       "canFall": false,
       "imagePath": "dirt_block.jpg",
-      "type": "Dirt"
+      "type": "Dirt",
+      "sceneXCoord": 0,
+      "sceneYCoord": 0
     },
     {
       "isCraftable": false,
@@ -489,7 +595,9 @@
       "size": 30,
       "canFall": false,
       "imagePath": "dirt_block.jpg",
-      "type": "Dirt"
+      "type": "Dirt",
+      "sceneXCoord": 0,
+      "sceneYCoord": 0
     },
     {
       "isCraftable": false,
@@ -498,7 +606,9 @@
       "size": 30,
       "canFall": false,
       "imagePath": "dirt_block.jpg",
-      "type": "Dirt"
+      "type": "Dirt",
+      "sceneXCoord": 0,
+      "sceneYCoord": 0
     },
     {
       "isCraftable": false,
@@ -507,7 +617,9 @@
       "size": 30,
       "canFall": false,
       "imagePath": "dirt_block.jpg",
-      "type": "Dirt"
+      "type": "Dirt",
+      "sceneXCoord": 0,
+      "sceneYCoord": 0
     },
     {
       "isCraftable": false,
@@ -516,7 +628,9 @@
       "size": 30,
       "canFall": false,
       "imagePath": "dirt_block.jpg",
-      "type": "Dirt"
+      "type": "Dirt",
+      "sceneXCoord": 0,
+      "sceneYCoord": 0
     },
     {
       "isCraftable": false,
@@ -525,7 +639,9 @@
       "size": 30,
       "canFall": false,
       "imagePath": "dirt_block.jpg",
-      "type": "Dirt"
+      "type": "Dirt",
+      "sceneXCoord": 0,
+      "sceneYCoord": 0
     },
     {
       "isCraftable": false,
@@ -534,7 +650,9 @@
       "size": 30,
       "canFall": false,
       "imagePath": "dirt_block.jpg",
-      "type": "Dirt"
+      "type": "Dirt",
+      "sceneXCoord": 0,
+      "sceneYCoord": 0
     },
     {
       "isCraftable": false,
@@ -543,7 +661,9 @@
       "size": 30,
       "canFall": false,
       "imagePath": "dirt_block.jpg",
-      "type": "Dirt"
+      "type": "Dirt",
+      "sceneXCoord": 0,
+      "sceneYCoord": 0
     },
     {
       "isCraftable": false,
@@ -552,7 +672,9 @@
       "size": 30,
       "canFall": false,
       "imagePath": "dirt_block.jpg",
-      "type": "Dirt"
+      "type": "Dirt",
+      "sceneXCoord": 0,
+      "sceneYCoord": 0
     },
     {
       "isCraftable": false,
@@ -561,7 +683,9 @@
       "size": 30,
       "canFall": false,
       "imagePath": "dirt_block.jpg",
-      "type": "Dirt"
+      "type": "Dirt",
+      "sceneXCoord": 0,
+      "sceneYCoord": 0
     },
     {
       "isCraftable": false,
@@ -570,7 +694,9 @@
       "size": 30,
       "canFall": false,
       "imagePath": "dirt_block.jpg",
-      "type": "Dirt"
+      "type": "Dirt",
+      "sceneXCoord": 0,
+      "sceneYCoord": 0
     },
     {
       "isCraftable": false,
@@ -579,7 +705,9 @@
       "size": 30,
       "canFall": false,
       "imagePath": "dirt_block.jpg",
-      "type": "Dirt"
+      "type": "Dirt",
+      "sceneXCoord": 0,
+      "sceneYCoord": 0
     },
     {
       "isCraftable": false,
@@ -588,7 +716,9 @@
       "size": 30,
       "canFall": false,
       "imagePath": "dirt_block.jpg",
-      "type": "Dirt"
+      "type": "Dirt",
+      "sceneXCoord": 0,
+      "sceneYCoord": 0
     },
     {
       "isCraftable": false,
@@ -597,7 +727,9 @@
       "size": 30,
       "canFall": false,
       "imagePath": "dirt_block.jpg",
-      "type": "Dirt"
+      "type": "Dirt",
+      "sceneXCoord": 0,
+      "sceneYCoord": 0
     },
     {
       "isCraftable": false,
@@ -606,7 +738,9 @@
       "size": 30,
       "canFall": false,
       "imagePath": "dirt_block.jpg",
-      "type": "Dirt"
+      "type": "Dirt",
+      "sceneXCoord": 0,
+      "sceneYCoord": 0
     },
     {
       "isCraftable": false,
@@ -615,7 +749,9 @@
       "size": 30,
       "canFall": false,
       "imagePath": "dirt_block.jpg",
-      "type": "Dirt"
+      "type": "Dirt",
+      "sceneXCoord": 0,
+      "sceneYCoord": 0
     },
     {
       "isCraftable": false,
@@ -624,7 +760,9 @@
       "size": 30,
       "canFall": false,
       "imagePath": "dirt_block.jpg",
-      "type": "Dirt"
+      "type": "Dirt",
+      "sceneXCoord": 0,
+      "sceneYCoord": 0
     },
     {
       "isCraftable": false,
@@ -633,7 +771,9 @@
       "size": 30,
       "canFall": false,
       "imagePath": "dirt_block.jpg",
-      "type": "Dirt"
+      "type": "Dirt",
+      "sceneXCoord": 0,
+      "sceneYCoord": 0
     },
     {
       "isCraftable": false,
@@ -642,7 +782,9 @@
       "size": 30,
       "canFall": false,
       "imagePath": "dirt_block.jpg",
-      "type": "Dirt"
+      "type": "Dirt",
+      "sceneXCoord": 0,
+      "sceneYCoord": 0
     },
     {
       "isCraftable": false,
@@ -651,7 +793,9 @@
       "size": 30,
       "canFall": false,
       "imagePath": "dirt_block.jpg",
-      "type": "Dirt"
+      "type": "Dirt",
+      "sceneXCoord": 0,
+      "sceneYCoord": 0
     },
     {
       "isCraftable": false,
@@ -660,7 +804,9 @@
       "size": 30,
       "canFall": false,
       "imagePath": "dirt_block.jpg",
-      "type": "Dirt"
+      "type": "Dirt",
+      "sceneXCoord": 0,
+      "sceneYCoord": 0
     },
     {
       "isCraftable": false,
@@ -669,7 +815,9 @@
       "size": 30,
       "canFall": false,
       "imagePath": "dirt_block.jpg",
-      "type": "Dirt"
+      "type": "Dirt",
+      "sceneXCoord": 0,
+      "sceneYCoord": 0
     },
     {
       "isCraftable": false,
@@ -678,7 +826,9 @@
       "size": 30,
       "canFall": false,
       "imagePath": "dirt_block.jpg",
-      "type": "Dirt"
+      "type": "Dirt",
+      "sceneXCoord": 0,
+      "sceneYCoord": 0
     },
     {
       "isCraftable": false,
@@ -687,7 +837,9 @@
       "size": 30,
       "canFall": false,
       "imagePath": "dirt_block.jpg",
-      "type": "Dirt"
+      "type": "Dirt",
+      "sceneXCoord": 0,
+      "sceneYCoord": 0
     },
     {
       "isCraftable": false,
@@ -696,7 +848,9 @@
       "size": 30,
       "canFall": false,
       "imagePath": "dirt_block.jpg",
-      "type": "Dirt"
+      "type": "Dirt",
+      "sceneXCoord": 0,
+      "sceneYCoord": 0
     },
     {
       "isCraftable": false,
@@ -705,7 +859,9 @@
       "size": 30,
       "canFall": false,
       "imagePath": "dirt_block.jpg",
-      "type": "Dirt"
+      "type": "Dirt",
+      "sceneXCoord": 0,
+      "sceneYCoord": 0
     },
     {
       "isCraftable": false,
@@ -714,7 +870,9 @@
       "size": 30,
       "canFall": false,
       "imagePath": "dirt_block.jpg",
-      "type": "Dirt"
+      "type": "Dirt",
+      "sceneXCoord": 0,
+      "sceneYCoord": 0
     },
     {
       "isCraftable": false,
@@ -723,7 +881,9 @@
       "size": 30,
       "canFall": false,
       "imagePath": "dirt_block.jpg",
-      "type": "Dirt"
+      "type": "Dirt",
+      "sceneXCoord": 0,
+      "sceneYCoord": 0
     },
     {
       "isCraftable": false,
@@ -732,7 +892,9 @@
       "size": 30,
       "canFall": false,
       "imagePath": "dirt_block.jpg",
-      "type": "Dirt"
+      "type": "Dirt",
+      "sceneXCoord": 0,
+      "sceneYCoord": 0
     },
     {
       "isCraftable": false,
@@ -741,7 +903,9 @@
       "size": 30,
       "canFall": false,
       "imagePath": "dirt_block.jpg",
-      "type": "Dirt"
+      "type": "Dirt",
+      "sceneXCoord": 0,
+      "sceneYCoord": 0
     },
     {
       "isCraftable": false,
@@ -750,7 +914,9 @@
       "size": 30,
       "canFall": false,
       "imagePath": "dirt_block.jpg",
-      "type": "Dirt"
+      "type": "Dirt",
+      "sceneXCoord": 0,
+      "sceneYCoord": 0
     },
     {
       "isCraftable": false,
@@ -759,7 +925,9 @@
       "size": 30,
       "canFall": false,
       "imagePath": "dirt_block.jpg",
-      "type": "Dirt"
+      "type": "Dirt",
+      "sceneXCoord": 0,
+      "sceneYCoord": 0
     },
     {
       "isCraftable": false,
@@ -768,7 +936,9 @@
       "size": 30,
       "canFall": false,
       "imagePath": "dirt_block.jpg",
-      "type": "Dirt"
+      "type": "Dirt",
+      "sceneXCoord": 0,
+      "sceneYCoord": 0
     },
     {
       "isCraftable": false,
@@ -777,7 +947,9 @@
       "size": 30,
       "canFall": false,
       "imagePath": "dirt_block.jpg",
-      "type": "Dirt"
+      "type": "Dirt",
+      "sceneXCoord": 0,
+      "sceneYCoord": 0
     },
     {
       "isCraftable": false,
@@ -786,7 +958,9 @@
       "size": 30,
       "canFall": false,
       "imagePath": "dirt_block.jpg",
-      "type": "Dirt"
+      "type": "Dirt",
+      "sceneXCoord": 0,
+      "sceneYCoord": 0
     },
     {
       "isCraftable": false,
@@ -795,7 +969,9 @@
       "size": 30,
       "canFall": false,
       "imagePath": "dirt_block.jpg",
-      "type": "Dirt"
+      "type": "Dirt",
+      "sceneXCoord": 0,
+      "sceneYCoord": 0
     },
     {
       "isCraftable": false,
@@ -804,7 +980,9 @@
       "size": 30,
       "canFall": false,
       "imagePath": "dirt_block.jpg",
-      "type": "Dirt"
+      "type": "Dirt",
+      "sceneXCoord": 0,
+      "sceneYCoord": 0
     },
     {
       "isCraftable": false,
@@ -813,7 +991,9 @@
       "size": 30,
       "canFall": false,
       "imagePath": "dirt_block.jpg",
-      "type": "Dirt"
+      "type": "Dirt",
+      "sceneXCoord": 0,
+      "sceneYCoord": 0
     },
     {
       "isCraftable": false,
@@ -822,7 +1002,9 @@
       "size": 30,
       "canFall": false,
       "imagePath": "dirt_block.jpg",
-      "type": "Dirt"
+      "type": "Dirt",
+      "sceneXCoord": 0,
+      "sceneYCoord": 0
     },
     {
       "isCraftable": false,
@@ -831,7 +1013,9 @@
       "size": 30,
       "canFall": false,
       "imagePath": "dirt_block.jpg",
-      "type": "Dirt"
+      "type": "Dirt",
+      "sceneXCoord": 0,
+      "sceneYCoord": 0
     },
     {
       "isCraftable": false,
@@ -840,7 +1024,9 @@
       "size": 30,
       "canFall": false,
       "imagePath": "dirt_block.jpg",
-      "type": "Dirt"
+      "type": "Dirt",
+      "sceneXCoord": 0,
+      "sceneYCoord": 0
     },
     {
       "isCraftable": false,
@@ -849,7 +1035,9 @@
       "size": 30,
       "canFall": false,
       "imagePath": "dirt_block.jpg",
-      "type": "Dirt"
+      "type": "Dirt",
+      "sceneXCoord": 0,
+      "sceneYCoord": 0
     },
     {
       "isCraftable": false,
@@ -858,7 +1046,9 @@
       "size": 30,
       "canFall": false,
       "imagePath": "dirt_block.jpg",
-      "type": "Dirt"
+      "type": "Dirt",
+      "sceneXCoord": 0,
+      "sceneYCoord": 0
     },
     {
       "isCraftable": false,
@@ -867,7 +1057,9 @@
       "size": 30,
       "canFall": false,
       "imagePath": "dirt_block.jpg",
-      "type": "Dirt"
+      "type": "Dirt",
+      "sceneXCoord": 0,
+      "sceneYCoord": 0
     },
     {
       "isCraftable": false,
@@ -876,7 +1068,9 @@
       "size": 30,
       "canFall": false,
       "imagePath": "dirt_block.jpg",
-      "type": "Dirt"
+      "type": "Dirt",
+      "sceneXCoord": 0,
+      "sceneYCoord": 0
     },
     {
       "isCraftable": false,
@@ -885,7 +1079,9 @@
       "size": 30,
       "canFall": false,
       "imagePath": "dirt_block.jpg",
-      "type": "Dirt"
+      "type": "Dirt",
+      "sceneXCoord": 0,
+      "sceneYCoord": 0
     },
     {
       "isCraftable": true,
@@ -895,7 +1091,9 @@
       "canFall": false,
       "group": "Block",
       "imagePath": "dirt_block.jpg",
-      "type": "Dirt"
+      "type": "Dirt",
+      "sceneXCoord": 0,
+      "sceneYCoord": 0
     },
     {
       "isCraftable": true,
@@ -905,7 +1103,9 @@
       "canFall": false,
       "group": "Block",
       "imagePath": "dirt_block.jpg",
-      "type": "Dirt"
+      "type": "Dirt",
+      "sceneXCoord": 0,
+      "sceneYCoord": 0
     },
     {
       "isCraftable": true,
@@ -915,7 +1115,9 @@
       "canFall": false,
       "group": "Block",
       "imagePath": "dirt_block.jpg",
-      "type": "Dirt"
+      "type": "Dirt",
+      "sceneXCoord": 0,
+      "sceneYCoord": 0
     },
     {
       "isCraftable": true,
@@ -925,7 +1127,9 @@
       "canFall": false,
       "group": "Block",
       "imagePath": "dirt_block.jpg",
-      "type": "Dirt"
+      "type": "Dirt",
+      "sceneXCoord": 0,
+      "sceneYCoord": 0
     },
     {
       "isCraftable": true,
@@ -935,7 +1139,9 @@
       "canFall": false,
       "group": "Block",
       "imagePath": "dirt_block.jpg",
-      "type": "Dirt"
+      "type": "Dirt",
+      "sceneXCoord": 0,
+      "sceneYCoord": 0
     },
     {
       "isCraftable": true,
@@ -945,7 +1151,9 @@
       "canFall": false,
       "group": "Block",
       "imagePath": "dirt_block.jpg",
-      "type": "Dirt"
+      "type": "Dirt",
+      "sceneXCoord": 0,
+      "sceneYCoord": 0
     },
     {
       "isCraftable": true,
@@ -955,7 +1163,9 @@
       "canFall": false,
       "group": "Block",
       "imagePath": "dirt_block.jpg",
-      "type": "Dirt"
+      "type": "Dirt",
+      "sceneXCoord": 0,
+      "sceneYCoord": 0
     },
     {
       "isCraftable": true,
@@ -965,7 +1175,9 @@
       "canFall": false,
       "group": "Block",
       "imagePath": "dirt_block.jpg",
-      "type": "Dirt"
+      "type": "Dirt",
+      "sceneXCoord": 0,
+      "sceneYCoord": 0
     },
     {
       "isCraftable": true,
@@ -975,7 +1187,9 @@
       "canFall": false,
       "group": "Block",
       "imagePath": "dirt_block.jpg",
-      "type": "Dirt"
+      "type": "Dirt",
+      "sceneXCoord": 0,
+      "sceneYCoord": 0
     },
     {
       "isCraftable": true,
@@ -985,7 +1199,9 @@
       "canFall": false,
       "group": "Block",
       "imagePath": "dirt_block.jpg",
-      "type": "Dirt"
+      "type": "Dirt",
+      "sceneXCoord": 0,
+      "sceneYCoord": 0
     },
     {
       "isCraftable": true,
@@ -995,7 +1211,9 @@
       "canFall": false,
       "group": "Block",
       "imagePath": "dirt_block.jpg",
-      "type": "Dirt"
+      "type": "Dirt",
+      "sceneXCoord": 0,
+      "sceneYCoord": 0
     },
     {
       "isCraftable": true,
@@ -1005,7 +1223,9 @@
       "canFall": false,
       "group": "Block",
       "imagePath": "dirt_block.jpg",
-      "type": "Dirt"
+      "type": "Dirt",
+      "sceneXCoord": 0,
+      "sceneYCoord": 0
     },
     {
       "isCraftable": true,
@@ -1015,7 +1235,9 @@
       "canFall": false,
       "group": "Block",
       "imagePath": "dirt_block.jpg",
-      "type": "Dirt"
+      "type": "Dirt",
+      "sceneXCoord": 0,
+      "sceneYCoord": 0
     },
     {
       "isCraftable": true,
@@ -1025,7 +1247,9 @@
       "canFall": false,
       "group": "Block",
       "imagePath": "dirt_block.jpg",
-      "type": "Dirt"
+      "type": "Dirt",
+      "sceneXCoord": 0,
+      "sceneYCoord": 0
     },
     {
       "isCraftable": true,
@@ -1035,7 +1259,9 @@
       "canFall": false,
       "group": "Block",
       "imagePath": "dirt_block.jpg",
-      "type": "Dirt"
+      "type": "Dirt",
+      "sceneXCoord": 0,
+      "sceneYCoord": 0
     },
     {
       "isCraftable": true,
@@ -1045,7 +1271,9 @@
       "canFall": false,
       "group": "Block",
       "imagePath": "dirt_block.jpg",
-      "type": "Dirt"
+      "type": "Dirt",
+      "sceneXCoord": 0,
+      "sceneYCoord": 0
     },
     {
       "isCraftable": true,
@@ -1055,7 +1283,9 @@
       "canFall": false,
       "group": "Block",
       "imagePath": "dirt_block.jpg",
-      "type": "Dirt"
+      "type": "Dirt",
+      "sceneXCoord": 0,
+      "sceneYCoord": 0
     },
     {
       "isCraftable": true,
@@ -1065,7 +1295,9 @@
       "canFall": false,
       "group": "Block",
       "imagePath": "dirt_block.jpg",
-      "type": "Dirt"
+      "type": "Dirt",
+      "sceneXCoord": 0,
+      "sceneYCoord": 0
     },
     {
       "isCraftable": true,
@@ -1075,7 +1307,9 @@
       "canFall": false,
       "group": "Block",
       "imagePath": "dirt_block.jpg",
-      "type": "Dirt"
+      "type": "Dirt",
+      "sceneXCoord": 0,
+      "sceneYCoord": 0
     },
     {
       "isCraftable": true,
@@ -1085,7 +1319,9 @@
       "canFall": false,
       "group": "Block",
       "imagePath": "dirt_block.jpg",
-      "type": "Dirt"
+      "type": "Dirt",
+      "sceneXCoord": 0,
+      "sceneYCoord": 0
     },
     {
       "isCraftable": true,
@@ -1095,7 +1331,9 @@
       "canFall": false,
       "group": "Block",
       "imagePath": "dirt_block.jpg",
-      "type": "Dirt"
+      "type": "Dirt",
+      "sceneXCoord": 0,
+      "sceneYCoord": 0
     },
     {
       "isCraftable": true,
@@ -1105,7 +1343,9 @@
       "canFall": false,
       "group": "Block",
       "imagePath": "dirt_block.jpg",
-      "type": "Dirt"
+      "type": "Dirt",
+      "sceneXCoord": 0,
+      "sceneYCoord": 0
     },
     {
       "isCraftable": true,
@@ -1115,7 +1355,9 @@
       "canFall": false,
       "group": "Block",
       "imagePath": "dirt_block.jpg",
-      "type": "Dirt"
+      "type": "Dirt",
+      "sceneXCoord": 0,
+      "sceneYCoord": 0
     },
     {
       "isCraftable": true,
@@ -1125,7 +1367,9 @@
       "canFall": false,
       "group": "Block",
       "imagePath": "dirt_block.jpg",
-      "type": "Dirt"
+      "type": "Dirt",
+      "sceneXCoord": 0,
+      "sceneYCoord": 0
     },
     {
       "isCraftable": true,
@@ -1135,7 +1379,9 @@
       "canFall": false,
       "group": "Block",
       "imagePath": "dirt_block.jpg",
-      "type": "Dirt"
+      "type": "Dirt",
+      "sceneXCoord": 0,
+      "sceneYCoord": 0
     },
     {
       "isCraftable": true,
@@ -1145,7 +1391,9 @@
       "canFall": false,
       "group": "Block",
       "imagePath": "dirt_block.jpg",
-      "type": "Dirt"
+      "type": "Dirt",
+      "sceneXCoord": 0,
+      "sceneYCoord": 0
     },
     {
       "isCraftable": true,
@@ -1155,7 +1403,9 @@
       "canFall": false,
       "group": "Block",
       "imagePath": "dirt_block.jpg",
-      "type": "Dirt"
+      "type": "Dirt",
+      "sceneXCoord": 0,
+      "sceneYCoord": 0
     },
     {
       "isCraftable": true,
@@ -1165,7 +1415,9 @@
       "canFall": false,
       "group": "Block",
       "imagePath": "dirt_block.jpg",
-      "type": "Dirt"
+      "type": "Dirt",
+      "sceneXCoord": 0,
+      "sceneYCoord": 0
     },
     {
       "isCraftable": true,
@@ -1175,7 +1427,9 @@
       "canFall": false,
       "group": "Block",
       "imagePath": "dirt_block.jpg",
-      "type": "Dirt"
+      "type": "Dirt",
+      "sceneXCoord": 0,
+      "sceneYCoord": 0
     },
     {
       "isCraftable": true,
@@ -1185,7 +1439,9 @@
       "canFall": false,
       "group": "Block",
       "imagePath": "dirt_block.jpg",
-      "type": "Dirt"
+      "type": "Dirt",
+      "sceneXCoord": 0,
+      "sceneYCoord": 0
     },
     {
       "isCraftable": true,
@@ -1195,7 +1451,9 @@
       "canFall": false,
       "group": "Block",
       "imagePath": "dirt_block.jpg",
-      "type": "Dirt"
+      "type": "Dirt",
+      "sceneXCoord": 0,
+      "sceneYCoord": 0
     },
     {
       "isCraftable": true,
@@ -1205,7 +1463,9 @@
       "canFall": false,
       "group": "Block",
       "imagePath": "dirt_block.jpg",
-      "type": "Dirt"
+      "type": "Dirt",
+      "sceneXCoord": 0,
+      "sceneYCoord": 0
     },
     {
       "isCraftable": true,
@@ -1215,7 +1475,9 @@
       "canFall": false,
       "group": "Block",
       "imagePath": "dirt_block.jpg",
-      "type": "Dirt"
+      "type": "Dirt",
+      "sceneXCoord": 0,
+      "sceneYCoord": 0
     },
     {
       "isCraftable": true,
@@ -1225,7 +1487,9 @@
       "canFall": false,
       "group": "Block",
       "imagePath": "dirt_block.jpg",
-      "type": "Dirt"
+      "type": "Dirt",
+      "sceneXCoord": 0,
+      "sceneYCoord": 0
     },
     {
       "isCraftable": true,
@@ -1235,7 +1499,9 @@
       "canFall": false,
       "group": "Block",
       "imagePath": "dirt_block.jpg",
-      "type": "Dirt"
+      "type": "Dirt",
+      "sceneXCoord": 0,
+      "sceneYCoord": 0
     },
     {
       "isCraftable": true,
@@ -1245,7 +1511,9 @@
       "canFall": false,
       "group": "Block",
       "imagePath": "dirt_block.jpg",
-      "type": "Dirt"
+      "type": "Dirt",
+      "sceneXCoord": 0,
+      "sceneYCoord": 0
     },
     {
       "isCraftable": true,
@@ -1255,7 +1523,9 @@
       "canFall": false,
       "group": "Block",
       "imagePath": "dirt_block.jpg",
-      "type": "Dirt"
+      "type": "Dirt",
+      "sceneXCoord": 0,
+      "sceneYCoord": 0
     },
     {
       "isCraftable": true,
@@ -1265,7 +1535,9 @@
       "canFall": false,
       "group": "Block",
       "imagePath": "dirt_block.jpg",
-      "type": "Dirt"
+      "type": "Dirt",
+      "sceneXCoord": 0,
+      "sceneYCoord": 0
     },
     {
       "isCraftable": true,
@@ -1275,7 +1547,9 @@
       "canFall": false,
       "group": "Block",
       "imagePath": "dirt_block.jpg",
-      "type": "Dirt"
+      "type": "Dirt",
+      "sceneXCoord": 0,
+      "sceneYCoord": 0
     },
     {
       "isCraftable": true,
@@ -1285,7 +1559,9 @@
       "canFall": false,
       "group": "Block",
       "imagePath": "dirt_block.jpg",
-      "type": "Dirt"
+      "type": "Dirt",
+      "sceneXCoord": 0,
+      "sceneYCoord": 0
     },
     {
       "isCraftable": true,
@@ -1295,7 +1571,9 @@
       "canFall": false,
       "group": "Block",
       "imagePath": "dirt_block.jpg",
-      "type": "Dirt"
+      "type": "Dirt",
+      "sceneXCoord": 0,
+      "sceneYCoord": 0
     },
     {
       "isCraftable": true,
@@ -1305,7 +1583,9 @@
       "canFall": false,
       "group": "Block",
       "imagePath": "dirt_block.jpg",
-      "type": "Dirt"
+      "type": "Dirt",
+      "sceneXCoord": 0,
+      "sceneYCoord": 0
     },
     {
       "isCraftable": true,
@@ -1315,7 +1595,9 @@
       "canFall": false,
       "group": "Block",
       "imagePath": "dirt_block.jpg",
-      "type": "Dirt"
+      "type": "Dirt",
+      "sceneXCoord": 0,
+      "sceneYCoord": 0
     },
     {
       "isCraftable": true,
@@ -1325,7 +1607,9 @@
       "canFall": false,
       "group": "Block",
       "imagePath": "dirt_block.jpg",
-      "type": "Dirt"
+      "type": "Dirt",
+      "sceneXCoord": 0,
+      "sceneYCoord": 0
     },
     {
       "isCraftable": true,
@@ -1335,7 +1619,9 @@
       "canFall": false,
       "group": "Block",
       "imagePath": "dirt_block.jpg",
-      "type": "Dirt"
+      "type": "Dirt",
+      "sceneXCoord": 0,
+      "sceneYCoord": 0
     },
     {
       "isCraftable": true,
@@ -1345,7 +1631,9 @@
       "canFall": false,
       "group": "Block",
       "imagePath": "dirt_block.jpg",
-      "type": "Dirt"
+      "type": "Dirt",
+      "sceneXCoord": 0,
+      "sceneYCoord": 0
     },
     {
       "isCraftable": true,
@@ -1355,7 +1643,9 @@
       "canFall": false,
       "group": "Block",
       "imagePath": "dirt_block.jpg",
-      "type": "Dirt"
+      "type": "Dirt",
+      "sceneXCoord": 0,
+      "sceneYCoord": 0
     },
     {
       "isCraftable": true,
@@ -1365,7 +1655,9 @@
       "canFall": false,
       "group": "Block",
       "imagePath": "dirt_block.jpg",
-      "type": "Dirt"
+      "type": "Dirt",
+      "sceneXCoord": 0,
+      "sceneYCoord": 0
     },
     {
       "isCraftable": true,
@@ -1375,7 +1667,9 @@
       "canFall": false,
       "group": "Block",
       "imagePath": "dirt_block.jpg",
-      "type": "Dirt"
+      "type": "Dirt",
+      "sceneXCoord": 0,
+      "sceneYCoord": 0
     },
     {
       "inventory": [],
@@ -1386,7 +1680,9 @@
       "canFall": false,
       "group": "Block",
       "imagePath": "crafting_table.png",
-      "type": "specialBlock"
+      "type": "specialBlock",
+      "sceneXCoord": 0,
+      "sceneYCoord": 0
     },
     {
       "inventory": [],
@@ -1397,9 +1693,21 @@
       "canFall": false,
       "group": "Block",
       "imagePath": "chest.png",
-      "type": "specialBlock"
+      "type": "specialBlock",
+      "sceneXCoord": 0,
+      "sceneYCoord": 0
     }
   ],
-  "mobs": [],
+  "mobs": [
+    {
+      "speed": 0,
+      "damage": 20,
+      "type": "Enemy",
+      "xCoords": 12,
+      "yCoords": 24,
+      "HP": 20,
+      "imagePath": "enemy1.png"
+    }
+  ],
   "backgroundImagePath": "overworld_background_hd.jpg"
 }

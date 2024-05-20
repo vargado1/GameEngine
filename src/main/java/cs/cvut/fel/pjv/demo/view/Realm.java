@@ -22,7 +22,7 @@ public class Realm {
     @Expose
     private ArrayList<Block> blocks = new ArrayList<>();
     @Expose
-    public ArrayList<Object> mobs = new ArrayList<>();
+    public ArrayList<Enemy> mobs = new ArrayList<>();
     public Block[][] map;
     @Expose
     private String backgroundImagePath;
@@ -43,6 +43,10 @@ public class Realm {
         this.map = new Block[xMaxCoords][yMaxCoords];
         this.xMaxCoords = xMaxCoords;
         this.yMaxCoords = yMaxCoords;
+    }
+
+    public void addMob(Enemy enemy) {
+        mobs.add(enemy);
     }
 
     /**
@@ -90,15 +94,6 @@ public class Realm {
      */
     public int getDifficulty() {
         return difficulty;
-    }
-
-    /**DONE
-     * Metoda na pridanie characteru do mapy
-     * @param mob character na pridanie
-     * @return uspesnost pridania
-     */
-    public void addMob(Object mob){
-        mobs.add(mob);
     }
 
     public String getBackgroundImagePath() {
@@ -166,5 +161,9 @@ public class Realm {
         }
 
         return null;
+    }
+
+    public ArrayList<Enemy> getMobs() {
+        return mobs;
     }
 }

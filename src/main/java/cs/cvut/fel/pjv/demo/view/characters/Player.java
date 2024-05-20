@@ -194,7 +194,20 @@ public class Player {
 //     *
 //     * @param usedTool Použitý nástroj na útok.
 //     */
-    public void punch(Tool usedTool){}
+    public void punch(Enemy enemy){
+        int swordBonus = 0;
+        int enHP = enemy.getHP();
+
+        if (selectetItem.getImagePath().equals("wooden_sword.png")) {
+            swordBonus = 5;
+        } else if (selectetItem.getImagePath().equals("stone_sword.png")) {
+            swordBonus = 10;
+        } else if (selectetItem.getImagePath().equals("iron_sword.png")) {
+            swordBonus = 15;
+        }
+
+        enemy.setHP(enHP - 2 - swordBonus);
+    }
 
     /**
      * Metóda na rozbíjanie bloku s použitím nástroja.
@@ -331,4 +344,7 @@ public class Player {
         isMoving = moving;
     }
 
+    public void setHP(int HP) {
+        this.HP = HP;
+    }
 }
