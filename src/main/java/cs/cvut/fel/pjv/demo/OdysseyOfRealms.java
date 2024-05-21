@@ -468,7 +468,7 @@ public class OdysseyOfRealms extends Application {
 
     /**
      * Clears all ImageViews in hot bar.
-     * @param root
+     * @param root main scene
      */
     private void clearHotbar(StackPane root) {
         for (ImageView node : hotbarNodes) {
@@ -650,7 +650,7 @@ public class OdysseyOfRealms extends Application {
     /**
      * This method will count how many different materials are needed for recipe.
      * @param recipe recipe to chceck
-     * @return
+     * @return return how many different materials are needed for recipe
      */
     public int countDifferentMaterials(Recipes recipe) {
         int count = 0;
@@ -1038,6 +1038,7 @@ public class OdysseyOfRealms extends Application {
 
                 specialBlock.getInventory().clear();
 
+                root.setOnMouseClicked(null);
                 LOGGER.info("player exited crafting");
             }
             if (event.getCode() == KeyCode.ENTER && specialBlockImagePath.equals("crafting_table.png")) {
@@ -1318,6 +1319,12 @@ public class OdysseyOfRealms extends Application {
         scene.setOnMouseClicked(new EventHandler<MouseEvent>() {
             @Override
             public void handle(MouseEvent event) {
+                boolean checker = false;
+                if (player.getSelectetItem() != null){
+                    if (player.getSelectetItem().getGroup().equals("Sword")) {
+                        checker = true;
+                    }
+                }
                 if (event.getButton() == MouseButton.SECONDARY && player.getSelectetItem() != null && "Block".equals(player.getSelectetItem().getGroup())) {
 
                     //places block from hot bar
@@ -1342,12 +1349,25 @@ public class OdysseyOfRealms extends Application {
 
                     LOGGER.info("a block was built");
                 }
-                if (event.getButton() == MouseButton.PRIMARY && player.getSelectetItem() == null) {
-                    if (player.getSelectetItem() != null) {
-                        if (player.getSelectetItem().getGroup().equals("Sword")) {
-                            return;
+                if (event.getButton() == MouseButton.PRIMARY && checker) {
+                    //if player has sword in hand he wil attack
+                    Enemy enemyToKill = null;
+
+                    for (Enemy enemy: world.mobs) {
+                        if (model.isNearObject(player, enemy.getxCoords(), enemy.getyCoords())) {
+                            player.punch(enemy);
+                            if (enemy.getHP() <= 0) {
+                                enemyToKill = enemy;
+
+                            }
                         }
                     }
+
+                    banishEnemy(enemyToKill, root);
+
+                    LOGGER.info("player have attacked an enemy");
+                }
+                if (event.getButton() == MouseButton.PRIMARY && !checker) {
                     //enables player to destroy block
                     double sceneX = event.getX();
                     double sceneY = event.getY();
@@ -1389,27 +1409,7 @@ public class OdysseyOfRealms extends Application {
 
                     LOGGER.info("a block was destroyed");
                 }
-                if (event.getButton() == MouseButton.PRIMARY && player.getSelectetItem() != null) {
-                    //if player has sword in hand he wil attack
-                    Enemy enemyToKill = null;
-                    if (!player.getSelectetItem().getGroup().equals("Sword")) {
-                        return;
-                    }
 
-                    for (Enemy enemy: world.mobs) {
-                        if (model.isNearObject(player, enemy.getxCoords(), enemy.getyCoords())) {
-                            player.punch(enemy);
-                            if (enemy.getHP() <= 0) {
-                                enemyToKill = enemy;
-
-                            }
-                        }
-                    }
-
-                    banishEnemy(enemyToKill, root);
-
-                    LOGGER.info("player have attacked an enemy");
-                }
             }
         });
 

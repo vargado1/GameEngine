@@ -2502,3 +2502,2123 @@ May 20, 2024 3:48:04 PM cs.cvut.fel.pjv.demo.OdysseyOfRealms isFalling
 INFO: player just falled
 May 20, 2024 3:48:08 PM cs.cvut.fel.pjv.demo.OdysseyOfRealms saveGame
 INFO: saved game
+May 21, 2024 1:37:47 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms loadOverworldFromSave
+INFO: loaded overworld successfully
+May 21, 2024 1:37:47 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms clearHP
+INFO: cleared all hearts from screen
+May 21, 2024 1:37:47 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms updateHP
+INFO: updated hearts based on players HP
+May 21, 2024 1:37:47 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms loadPlayer
+INFO: loaded player successfully
+May 21, 2024 1:37:47 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms loadNPC
+INFO: loaded NPC successfully
+May 21, 2024 1:37:47 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms clearHotbar
+INFO: cleared images from hot bar
+May 21, 2024 1:37:47 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms fillHotbar
+INFO: filled hot bar with images of player's hot bar
+May 21, 2024 1:37:47 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms loadGame
+INFO: loaded whole game
+May 21, 2024 1:37:50 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms$1 handle
+INFO: A was pressed
+May 21, 2024 1:37:50 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms viewPlayer
+INFO: changed player's view to0300
+May 21, 2024 1:37:50 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms$1 handle
+INFO: player moved left
+May 21, 2024 1:37:50 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms$1 handle
+INFO: A was pressed
+May 21, 2024 1:37:50 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms viewPlayer
+INFO: changed player's view to-30300
+May 21, 2024 1:37:50 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms$1 handle
+INFO: player moved left
+May 21, 2024 1:37:50 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms isFalling
+INFO: player just falled
+May 21, 2024 1:37:50 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms$1 handle
+INFO: A was pressed
+May 21, 2024 1:37:50 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms viewPlayer
+INFO: changed player's view to-60300
+May 21, 2024 1:37:50 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms$1 handle
+INFO: player moved left
+May 21, 2024 1:37:51 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms$1 handle
+INFO: A was pressed
+May 21, 2024 1:37:51 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms viewPlayer
+INFO: changed player's view to-90300
+May 21, 2024 1:37:51 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms$1 handle
+INFO: player moved left
+May 21, 2024 1:37:51 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms isFalling
+INFO: player just falled
+May 21, 2024 1:37:51 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms$1 handle
+INFO: A was pressed
+May 21, 2024 1:37:51 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms viewPlayer
+INFO: changed player's view to-120300
+May 21, 2024 1:37:51 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms$1 handle
+INFO: player moved left
+May 21, 2024 1:37:51 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms isFalling
+INFO: player just falled
+May 21, 2024 1:37:52 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms$1 handle
+INFO: W was pressed
+May 21, 2024 1:37:52 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms viewPlayer
+INFO: changed player's view to-120270
+May 21, 2024 1:37:52 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms$1 handle
+INFO: A was pressed
+May 21, 2024 1:37:52 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms viewPlayer
+INFO: changed player's view to-150270
+May 21, 2024 1:37:52 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms$1 handle
+INFO: player moved left
+May 21, 2024 1:37:52 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms$1 handle
+INFO: A was pressed
+May 21, 2024 1:37:52 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms viewPlayer
+INFO: changed player's view to-180270
+May 21, 2024 1:37:52 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms$1 handle
+INFO: player moved left
+May 21, 2024 1:37:52 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms viewPlayer
+INFO: changed player's view to-180300
+May 21, 2024 1:37:52 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms isFalling
+INFO: player just falled
+May 21, 2024 1:37:53 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms$1 handle
+INFO: 1 was pressed
+May 21, 2024 1:37:53 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms setFocusOnHotbar
+INFO: new focus is set on hot bar
+May 21, 2024 1:37:53 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms setSelectedItemIcon
+INFO: new cursor is set
+May 21, 2024 1:37:54 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms$1 handle
+INFO: A was pressed
+May 21, 2024 1:37:54 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms viewPlayer
+INFO: changed player's view to-210300
+May 21, 2024 1:37:54 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms$1 handle
+INFO: player moved left
+May 21, 2024 1:37:54 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms$1 handle
+INFO: A was pressed
+May 21, 2024 1:37:54 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms viewPlayer
+INFO: changed player's view to-240300
+May 21, 2024 1:37:54 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms$1 handle
+INFO: player moved left
+May 21, 2024 1:37:54 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms isFalling
+INFO: player just falled
+May 21, 2024 1:37:54 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms$1 handle
+INFO: A was pressed
+May 21, 2024 1:37:54 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms viewPlayer
+INFO: changed player's view to-270300
+May 21, 2024 1:37:54 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms$1 handle
+INFO: player moved left
+May 21, 2024 1:37:55 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms$1 handle
+INFO: A was pressed
+May 21, 2024 1:37:55 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms viewPlayer
+INFO: changed player's view to-300300
+May 21, 2024 1:37:55 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms$1 handle
+INFO: player moved left
+May 21, 2024 1:37:55 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms isFalling
+INFO: player just falled
+May 21, 2024 1:37:55 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms$1 handle
+INFO: A was pressed
+May 21, 2024 1:37:55 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms viewPlayer
+INFO: changed player's view to-330300
+May 21, 2024 1:37:55 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms clearHP
+INFO: cleared all hearts from screen
+May 21, 2024 1:37:55 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms updateHP
+INFO: updated hearts based on players HP
+May 21, 2024 1:37:55 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms$1 handle
+INFO: player took damage from enemy
+May 21, 2024 1:37:55 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms$1 handle
+INFO: player moved left
+May 21, 2024 1:37:55 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms isFalling
+INFO: player just falled
+May 21, 2024 1:37:56 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms$2 handle
+INFO: player have attacked an enemy
+May 21, 2024 1:37:56 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms banishEnemy
+INFO: banished enemy
+May 21, 2024 1:37:56 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms$2 handle
+INFO: player have attacked an enemy
+May 21, 2024 1:37:57 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms$1 handle
+INFO: D was pressed
+May 21, 2024 1:37:57 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms viewPlayer
+INFO: changed player's view to-300300
+May 21, 2024 1:37:57 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms$1 handle
+INFO: player moved right
+May 21, 2024 1:37:57 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms$1 handle
+INFO: D was pressed
+May 21, 2024 1:37:57 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms viewPlayer
+INFO: changed player's view to-270300
+May 21, 2024 1:37:57 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms$1 handle
+INFO: player moved right
+May 21, 2024 1:37:57 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms isFalling
+INFO: player just falled
+May 21, 2024 1:37:57 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms$1 handle
+INFO: D was pressed
+May 21, 2024 1:37:57 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms viewPlayer
+INFO: changed player's view to-240300
+May 21, 2024 1:37:57 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms$1 handle
+INFO: player moved right
+May 21, 2024 1:37:58 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms$1 handle
+INFO: D was pressed
+May 21, 2024 1:37:58 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms viewPlayer
+INFO: changed player's view to-210300
+May 21, 2024 1:37:58 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms$1 handle
+INFO: player moved right
+May 21, 2024 1:37:58 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms isFalling
+INFO: player just falled
+May 21, 2024 1:37:58 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms$1 handle
+INFO: D was pressed
+May 21, 2024 1:37:58 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms viewPlayer
+INFO: changed player's view to-180300
+May 21, 2024 1:37:58 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms$1 handle
+INFO: player moved right
+May 21, 2024 1:37:58 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms$1 handle
+INFO: D was pressed
+May 21, 2024 1:37:58 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms isFalling
+INFO: player just falled
+May 21, 2024 1:37:58 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms$1 handle
+INFO: W was pressed
+May 21, 2024 1:37:58 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms viewPlayer
+INFO: changed player's view to-180270
+May 21, 2024 1:37:58 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms$1 handle
+INFO: D was pressed
+May 21, 2024 1:37:58 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms viewPlayer
+INFO: changed player's view to-150270
+May 21, 2024 1:37:58 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms$1 handle
+INFO: player moved right
+May 21, 2024 1:37:59 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms$1 handle
+INFO: D was pressed
+May 21, 2024 1:37:59 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms viewPlayer
+INFO: changed player's view to-120270
+May 21, 2024 1:37:59 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms$1 handle
+INFO: player moved right
+May 21, 2024 1:37:59 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms viewPlayer
+INFO: changed player's view to-120300
+May 21, 2024 1:37:59 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms isFalling
+INFO: player just falled
+May 21, 2024 1:37:59 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms$1 handle
+INFO: D was pressed
+May 21, 2024 1:37:59 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms viewPlayer
+INFO: changed player's view to-90300
+May 21, 2024 1:37:59 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms$1 handle
+INFO: player moved right
+May 21, 2024 1:37:59 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms isFalling
+INFO: player just falled
+May 21, 2024 1:37:59 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms$1 handle
+INFO: D was pressed
+May 21, 2024 1:37:59 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms viewPlayer
+INFO: changed player's view to-60300
+May 21, 2024 1:37:59 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms$1 handle
+INFO: player moved right
+May 21, 2024 1:37:59 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms$1 handle
+INFO: D was pressed
+May 21, 2024 1:37:59 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms viewPlayer
+INFO: changed player's view to-30300
+May 21, 2024 1:37:59 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms$1 handle
+INFO: player moved right
+May 21, 2024 1:37:59 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms$1 handle
+INFO: D was pressed
+May 21, 2024 1:37:59 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms viewPlayer
+INFO: changed player's view to0300
+May 21, 2024 1:37:59 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms$1 handle
+INFO: player moved right
+May 21, 2024 1:37:59 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms$1 handle
+INFO: D was pressed
+May 21, 2024 1:37:59 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms viewPlayer
+INFO: changed player's view to30300
+May 21, 2024 1:37:59 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms$1 handle
+INFO: player moved right
+May 21, 2024 1:38:00 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms$1 handle
+INFO: D was pressed
+May 21, 2024 1:38:00 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms viewPlayer
+INFO: changed player's view to60300
+May 21, 2024 1:38:00 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms$1 handle
+INFO: player moved right
+May 21, 2024 1:38:00 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms$1 handle
+INFO: D was pressed
+May 21, 2024 1:38:00 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms viewPlayer
+INFO: changed player's view to90300
+May 21, 2024 1:38:00 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms$1 handle
+INFO: player moved right
+May 21, 2024 1:38:00 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms$1 handle
+INFO: D was pressed
+May 21, 2024 1:38:00 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms viewPlayer
+INFO: changed player's view to120300
+May 21, 2024 1:38:00 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms$1 handle
+INFO: player moved right
+May 21, 2024 1:38:00 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms$1 handle
+INFO: D was pressed
+May 21, 2024 1:38:00 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms viewPlayer
+INFO: changed player's view to150300
+May 21, 2024 1:38:00 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms$1 handle
+INFO: player moved right
+May 21, 2024 1:38:00 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms$1 handle
+INFO: D was pressed
+May 21, 2024 1:38:00 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms viewPlayer
+INFO: changed player's view to180300
+May 21, 2024 1:38:00 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms$1 handle
+INFO: player moved right
+May 21, 2024 1:38:00 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms$1 handle
+INFO: D was pressed
+May 21, 2024 1:38:00 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms viewPlayer
+INFO: changed player's view to210300
+May 21, 2024 1:38:00 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms$1 handle
+INFO: player moved right
+May 21, 2024 1:38:00 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms isFalling
+INFO: player just falled
+May 21, 2024 1:38:00 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms$1 handle
+INFO: D was pressed
+May 21, 2024 1:38:00 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms viewPlayer
+INFO: changed player's view to240300
+May 21, 2024 1:38:00 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms$1 handle
+INFO: player moved right
+May 21, 2024 1:38:00 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms$1 handle
+INFO: D was pressed
+May 21, 2024 1:38:00 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms viewPlayer
+INFO: changed player's view to270300
+May 21, 2024 1:38:00 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms$1 handle
+INFO: player moved right
+May 21, 2024 1:38:00 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms isFalling
+INFO: player just falled
+May 21, 2024 1:38:00 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms$1 handle
+INFO: 1 was pressed
+May 21, 2024 1:38:00 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms setFocusOnHotbar
+INFO: new focus is set on hot bar
+May 21, 2024 1:38:00 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms setSelectedItemIcon
+INFO: new cursor is set
+May 21, 2024 1:38:02 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms$1 handle
+INFO: 0 was pressed
+May 21, 2024 1:38:02 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms toggleLogging
+INFO: Logging disabled
+May 21, 2024 1:38:57 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms loadOverworldFromSave
+INFO: loaded overworld successfully
+May 21, 2024 1:38:57 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms clearHP
+INFO: cleared all hearts from screen
+May 21, 2024 1:38:57 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms updateHP
+INFO: updated hearts based on players HP
+May 21, 2024 1:38:57 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms loadPlayer
+INFO: loaded player successfully
+May 21, 2024 1:38:57 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms loadNPC
+INFO: loaded NPC successfully
+May 21, 2024 1:38:57 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms clearHotbar
+INFO: cleared images from hot bar
+May 21, 2024 1:38:57 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms fillHotbar
+INFO: filled hot bar with images of player's hot bar
+May 21, 2024 1:38:57 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms loadGame
+INFO: loaded whole game
+May 21, 2024 1:38:59 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms$1 handle
+INFO: 3 was pressed
+May 21, 2024 1:38:59 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms setFocusOnHotbar
+INFO: new focus is set on hot bar
+May 21, 2024 1:38:59 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms setSelectedItemIcon
+INFO: new cursor is set
+May 21, 2024 1:39:02 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms$1 handle
+INFO: 4 was pressed
+May 21, 2024 1:39:02 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms setFocusOnHotbar
+INFO: new focus is set on hot bar
+May 21, 2024 1:39:02 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms setSelectedItemIcon
+INFO: new cursor is set
+May 21, 2024 1:39:05 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms addBlockToScreen
+INFO: Block added to screen to positon2324
+May 21, 2024 1:39:05 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms clearHotbar
+INFO: cleared images from hot bar
+May 21, 2024 1:39:05 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms fillHotbar
+INFO: filled hot bar with images of player's hot bar
+May 21, 2024 1:39:05 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms$2 handle
+INFO: a block was built
+May 21, 2024 1:39:06 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms$1 handle
+INFO: 3 was pressed
+May 21, 2024 1:39:06 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms setFocusOnHotbar
+INFO: new focus is set on hot bar
+May 21, 2024 1:39:06 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms setSelectedItemIcon
+INFO: new cursor is set
+May 21, 2024 1:39:09 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms$1 handle
+INFO: 4 was pressed
+May 21, 2024 1:39:09 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms setFocusOnHotbar
+INFO: new focus is set on hot bar
+May 21, 2024 1:39:10 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms clearHotbar
+INFO: cleared images from hot bar
+May 21, 2024 1:39:10 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms fillHotbar
+INFO: filled hot bar with images of player's hot bar
+May 21, 2024 1:39:10 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms$2 handle
+INFO: a block was destroyed
+May 21, 2024 1:39:11 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms$1 handle
+INFO: D was pressed
+May 21, 2024 1:39:11 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms viewPlayer
+INFO: changed player's view to60300
+May 21, 2024 1:39:11 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms$1 handle
+INFO: player moved right
+May 21, 2024 1:39:11 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms$1 handle
+INFO: D was pressed
+May 21, 2024 1:39:11 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms viewPlayer
+INFO: changed player's view to90300
+May 21, 2024 1:39:11 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms$1 handle
+INFO: player moved right
+May 21, 2024 1:39:11 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms isFalling
+INFO: player just falled
+May 21, 2024 1:39:11 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms$1 handle
+INFO: D was pressed
+May 21, 2024 1:39:11 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms viewPlayer
+INFO: changed player's view to120300
+May 21, 2024 1:39:11 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms$1 handle
+INFO: player moved right
+May 21, 2024 1:39:12 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms$1 handle
+INFO: D was pressed
+May 21, 2024 1:39:12 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms viewPlayer
+INFO: changed player's view to150300
+May 21, 2024 1:39:12 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms$1 handle
+INFO: player moved right
+May 21, 2024 1:39:12 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms isFalling
+INFO: player just falled
+May 21, 2024 1:39:12 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms$1 handle
+INFO: D was pressed
+May 21, 2024 1:39:12 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms viewPlayer
+INFO: changed player's view to180300
+May 21, 2024 1:39:12 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms$1 handle
+INFO: player moved right
+May 21, 2024 1:39:12 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms$1 handle
+INFO: D was pressed
+May 21, 2024 1:39:12 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms viewPlayer
+INFO: changed player's view to210300
+May 21, 2024 1:39:12 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms$1 handle
+INFO: player moved right
+May 21, 2024 1:39:12 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms isFalling
+INFO: player just falled
+May 21, 2024 1:39:12 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms$1 handle
+INFO: D was pressed
+May 21, 2024 1:39:12 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms viewPlayer
+INFO: changed player's view to240300
+May 21, 2024 1:39:12 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms$1 handle
+INFO: player moved right
+May 21, 2024 1:39:13 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms$1 handle
+INFO: D was pressed
+May 21, 2024 1:39:13 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms viewPlayer
+INFO: changed player's view to270300
+May 21, 2024 1:39:13 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms$1 handle
+INFO: player moved right
+May 21, 2024 1:39:13 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms$1 handle
+INFO: D was pressed
+May 21, 2024 1:39:13 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms viewPlayer
+INFO: changed player's view to300300
+May 21, 2024 1:39:13 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms$1 handle
+INFO: player moved right
+May 21, 2024 1:39:13 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms$1 handle
+INFO: D was pressed
+May 21, 2024 1:39:13 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms viewPlayer
+INFO: changed player's view to330300
+May 21, 2024 1:39:13 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms$1 handle
+INFO: player moved right
+May 21, 2024 1:39:13 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms$1 handle
+INFO: D was pressed
+May 21, 2024 1:39:13 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms viewPlayer
+INFO: changed player's view to360300
+May 21, 2024 1:39:13 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms$1 handle
+INFO: player moved right
+May 21, 2024 1:39:13 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms isFalling
+INFO: player just falled
+May 21, 2024 1:39:13 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms$1 handle
+INFO: W was pressed
+May 21, 2024 1:39:13 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms viewPlayer
+INFO: changed player's view to360270
+May 21, 2024 1:39:14 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms$1 handle
+INFO: 2 was pressed
+May 21, 2024 1:39:14 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms setFocusOnHotbar
+INFO: new focus is set on hot bar
+May 21, 2024 1:39:14 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms setSelectedItemIcon
+INFO: new cursor is set
+May 21, 2024 1:39:14 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms$1 handle
+INFO: A was pressed
+May 21, 2024 1:39:14 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms viewPlayer
+INFO: changed player's view to330270
+May 21, 2024 1:39:14 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms$1 handle
+INFO: player moved left
+May 21, 2024 1:39:15 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms viewPlayer
+INFO: changed player's view to330300
+May 21, 2024 1:39:15 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms isFalling
+INFO: player just falled
+May 21, 2024 1:39:15 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms$1 handle
+INFO: A was pressed
+May 21, 2024 1:39:15 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms viewPlayer
+INFO: changed player's view to300300
+May 21, 2024 1:39:15 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms$1 handle
+INFO: player moved left
+May 21, 2024 1:39:15 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms isFalling
+INFO: player just falled
+May 21, 2024 1:39:15 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms$1 handle
+INFO: A was pressed
+May 21, 2024 1:39:15 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms viewPlayer
+INFO: changed player's view to270300
+May 21, 2024 1:39:15 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms$1 handle
+INFO: player moved left
+May 21, 2024 1:39:15 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms isFalling
+INFO: player just falled
+May 21, 2024 1:39:16 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms$1 handle
+INFO: A was pressed
+May 21, 2024 1:39:16 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms viewPlayer
+INFO: changed player's view to240300
+May 21, 2024 1:39:16 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms$1 handle
+INFO: player moved left
+May 21, 2024 1:39:16 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms$1 handle
+INFO: A was pressed
+May 21, 2024 1:39:16 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms viewPlayer
+INFO: changed player's view to210300
+May 21, 2024 1:39:16 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms$1 handle
+INFO: player moved left
+May 21, 2024 1:39:16 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms$1 handle
+INFO: A was pressed
+May 21, 2024 1:39:16 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms viewPlayer
+INFO: changed player's view to180300
+May 21, 2024 1:39:16 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms$1 handle
+INFO: player moved left
+May 21, 2024 1:39:16 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms$1 handle
+INFO: A was pressed
+May 21, 2024 1:39:16 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms viewPlayer
+INFO: changed player's view to150300
+May 21, 2024 1:39:16 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms$1 handle
+INFO: player moved left
+May 21, 2024 1:39:16 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms$1 handle
+INFO: A was pressed
+May 21, 2024 1:39:16 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms viewPlayer
+INFO: changed player's view to120300
+May 21, 2024 1:39:16 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms$1 handle
+INFO: player moved left
+May 21, 2024 1:39:16 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms$1 handle
+INFO: A was pressed
+May 21, 2024 1:39:16 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms viewPlayer
+INFO: changed player's view to90300
+May 21, 2024 1:39:16 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms$1 handle
+INFO: player moved left
+May 21, 2024 1:39:16 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms$1 handle
+INFO: A was pressed
+May 21, 2024 1:39:16 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms viewPlayer
+INFO: changed player's view to60300
+May 21, 2024 1:39:16 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms$1 handle
+INFO: player moved left
+May 21, 2024 1:39:16 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms$1 handle
+INFO: A was pressed
+May 21, 2024 1:39:16 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms viewPlayer
+INFO: changed player's view to30300
+May 21, 2024 1:39:16 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms$1 handle
+INFO: player moved left
+May 21, 2024 1:39:16 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms isFalling
+INFO: player just falled
+May 21, 2024 1:39:16 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms$1 handle
+INFO: 4 was pressed
+May 21, 2024 1:39:16 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms setFocusOnHotbar
+INFO: new focus is set on hot bar
+May 21, 2024 1:39:16 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms setSelectedItemIcon
+INFO: new cursor is set
+May 21, 2024 1:39:17 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms addBlockToScreen
+INFO: Block added to screen to positon2224
+May 21, 2024 1:39:17 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms clearHotbar
+INFO: cleared images from hot bar
+May 21, 2024 1:39:17 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms fillHotbar
+INFO: filled hot bar with images of player's hot bar
+May 21, 2024 1:39:17 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms$2 handle
+INFO: a block was built
+May 21, 2024 1:39:18 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms$1 handle
+INFO: A was pressed
+May 21, 2024 1:39:18 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms viewPlayer
+INFO: changed player's view to0300
+May 21, 2024 1:39:18 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms$1 handle
+INFO: player moved left
+May 21, 2024 1:39:19 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms isFalling
+INFO: player just falled
+May 21, 2024 1:39:19 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms$1 handle
+INFO: 3 was pressed
+May 21, 2024 1:39:19 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms setFocusOnHotbar
+INFO: new focus is set on hot bar
+May 21, 2024 1:39:19 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms setSelectedItemIcon
+INFO: new cursor is set
+May 21, 2024 1:39:20 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms$1 handle
+INFO: 4 was pressed
+May 21, 2024 1:39:20 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms setFocusOnHotbar
+INFO: new focus is set on hot bar
+May 21, 2024 1:39:21 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms$1 handle
+INFO: 2 was pressed
+May 21, 2024 1:39:21 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms setFocusOnHotbar
+INFO: new focus is set on hot bar
+May 21, 2024 1:39:21 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms setSelectedItemIcon
+INFO: new cursor is set
+May 21, 2024 1:39:24 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms$1 handle
+INFO: 3 was pressed
+May 21, 2024 1:39:24 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms setFocusOnHotbar
+INFO: new focus is set on hot bar
+May 21, 2024 1:39:24 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms setSelectedItemIcon
+INFO: new cursor is set
+May 21, 2024 1:39:24 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms$1 handle
+INFO: 4 was pressed
+May 21, 2024 1:39:24 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms setFocusOnHotbar
+INFO: new focus is set on hot bar
+May 21, 2024 1:39:25 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms clearHotbar
+INFO: cleared images from hot bar
+May 21, 2024 1:39:25 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms fillHotbar
+INFO: filled hot bar with images of player's hot bar
+May 21, 2024 1:39:25 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms$2 handle
+INFO: a block was destroyed
+May 21, 2024 1:39:25 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms$1 handle
+INFO: D was pressed
+May 21, 2024 1:39:25 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms viewPlayer
+INFO: changed player's view to30300
+May 21, 2024 1:39:25 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms$1 handle
+INFO: player moved right
+May 21, 2024 1:39:26 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms isFalling
+INFO: player just falled
+May 21, 2024 1:39:26 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms$1 handle
+INFO: D was pressed
+May 21, 2024 1:39:26 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms viewPlayer
+INFO: changed player's view to60300
+May 21, 2024 1:39:26 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms$1 handle
+INFO: player moved right
+May 21, 2024 1:39:26 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms$1 handle
+INFO: D was pressed
+May 21, 2024 1:39:26 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms viewPlayer
+INFO: changed player's view to90300
+May 21, 2024 1:39:26 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms$1 handle
+INFO: player moved right
+May 21, 2024 1:39:26 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms$1 handle
+INFO: D was pressed
+May 21, 2024 1:39:26 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms viewPlayer
+INFO: changed player's view to120300
+May 21, 2024 1:39:26 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms$1 handle
+INFO: player moved right
+May 21, 2024 1:39:26 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms$1 handle
+INFO: D was pressed
+May 21, 2024 1:39:26 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms viewPlayer
+INFO: changed player's view to150300
+May 21, 2024 1:39:26 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms$1 handle
+INFO: player moved right
+May 21, 2024 1:39:26 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms$1 handle
+INFO: D was pressed
+May 21, 2024 1:39:26 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms viewPlayer
+INFO: changed player's view to180300
+May 21, 2024 1:39:26 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms$1 handle
+INFO: player moved right
+May 21, 2024 1:39:26 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms$1 handle
+INFO: D was pressed
+May 21, 2024 1:39:26 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms viewPlayer
+INFO: changed player's view to210300
+May 21, 2024 1:39:26 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms$1 handle
+INFO: player moved right
+May 21, 2024 1:39:26 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms$1 handle
+INFO: D was pressed
+May 21, 2024 1:39:26 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms viewPlayer
+INFO: changed player's view to240300
+May 21, 2024 1:39:26 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms$1 handle
+INFO: player moved right
+May 21, 2024 1:39:26 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms$1 handle
+INFO: D was pressed
+May 21, 2024 1:39:26 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms viewPlayer
+INFO: changed player's view to270300
+May 21, 2024 1:39:26 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms$1 handle
+INFO: player moved right
+May 21, 2024 1:39:26 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms$1 handle
+INFO: D was pressed
+May 21, 2024 1:39:26 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms viewPlayer
+INFO: changed player's view to300300
+May 21, 2024 1:39:26 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms$1 handle
+INFO: player moved right
+May 21, 2024 1:39:26 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms$1 handle
+INFO: D was pressed
+May 21, 2024 1:39:26 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms viewPlayer
+INFO: changed player's view to330300
+May 21, 2024 1:39:26 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms$1 handle
+INFO: player moved right
+May 21, 2024 1:39:26 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms isFalling
+INFO: player just falled
+May 21, 2024 1:39:26 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms$1 handle
+INFO: D was pressed
+May 21, 2024 1:39:26 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms viewPlayer
+INFO: changed player's view to360300
+May 21, 2024 1:39:26 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms$1 handle
+INFO: player moved right
+May 21, 2024 1:39:26 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms$1 handle
+INFO: D was pressed
+May 21, 2024 1:39:26 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms viewPlayer
+INFO: changed player's view to390300
+May 21, 2024 1:39:26 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms$1 handle
+INFO: player moved right
+May 21, 2024 1:39:26 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms$1 handle
+INFO: D was pressed
+May 21, 2024 1:39:26 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms$1 handle
+INFO: D was pressed
+May 21, 2024 1:39:26 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms$1 handle
+INFO: D was pressed
+May 21, 2024 1:39:26 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms isFalling
+INFO: player just falled
+May 21, 2024 1:39:27 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms fillEmptySlots
+INFO: made empty slots for special block interface
+May 21, 2024 1:39:27 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms showCraftingGUI
+INFO: showed special block interface
+May 21, 2024 1:39:27 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms$1 handle
+INFO: player moved up
+May 21, 2024 1:39:28 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms$1 handle
+INFO: 5 was pressed
+May 21, 2024 1:39:28 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms setFocusOnHotbar
+INFO: new focus is set on hot bar
+May 21, 2024 1:39:28 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms setSelectedItemIcon
+INFO: new cursor is set
+May 21, 2024 1:39:29 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms$1 handle
+INFO: 7 was pressed
+May 21, 2024 1:39:29 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms setFocusOnHotbar
+INFO: new focus is set on hot bar
+May 21, 2024 1:39:29 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms setSelectedItemIcon
+INFO: new cursor is set
+May 21, 2024 1:39:30 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms lambda$showCraftingGUI$1
+INFO: primary button was pressed on mause
+May 21, 2024 1:39:30 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms clearHotbar
+INFO: cleared images from hot bar
+May 21, 2024 1:39:30 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms fillHotbar
+INFO: filled hot bar with images of player's hot bar
+May 21, 2024 1:39:30 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms lambda$showCraftingGUI$1
+INFO: added item to crafting
+May 21, 2024 1:39:31 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms$1 handle
+INFO: 6 was pressed
+May 21, 2024 1:39:31 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms setFocusOnHotbar
+INFO: new focus is set on hot bar
+May 21, 2024 1:39:31 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms setSelectedItemIcon
+INFO: new cursor is set
+May 21, 2024 1:39:32 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms clearHotbar
+INFO: cleared images from hot bar
+May 21, 2024 1:39:32 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms fillHotbar
+INFO: filled hot bar with images of player's hot bar
+May 21, 2024 1:39:32 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms lambda$showCraftingGUI$2
+INFO: player exited crafting
+May 21, 2024 1:39:34 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms$1 handle
+INFO: 0 was pressed
+May 21, 2024 1:39:34 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms toggleLogging
+INFO: Logging disabled
+May 21, 2024 1:44:39 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms loadOverworldFromSave
+INFO: loaded overworld successfully
+May 21, 2024 1:44:40 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms clearHP
+INFO: cleared all hearts from screen
+May 21, 2024 1:44:40 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms updateHP
+INFO: updated hearts based on players HP
+May 21, 2024 1:44:40 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms loadPlayer
+INFO: loaded player successfully
+May 21, 2024 1:44:40 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms loadNPC
+INFO: loaded NPC successfully
+May 21, 2024 1:44:40 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms clearHotbar
+INFO: cleared images from hot bar
+May 21, 2024 1:44:40 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms fillHotbar
+INFO: filled hot bar with images of player's hot bar
+May 21, 2024 1:44:40 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms loadGame
+INFO: loaded whole game
+May 21, 2024 1:44:43 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms$1 handle
+INFO: 4 was pressed
+May 21, 2024 1:44:43 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms setFocusOnHotbar
+INFO: new focus is set on hot bar
+May 21, 2024 1:44:43 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms setSelectedItemIcon
+INFO: new cursor is set
+May 21, 2024 1:44:45 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms addBlockToScreen
+INFO: Block added to screen to positon2324
+May 21, 2024 1:44:45 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms clearHotbar
+INFO: cleared images from hot bar
+May 21, 2024 1:44:45 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms fillHotbar
+INFO: filled hot bar with images of player's hot bar
+May 21, 2024 1:44:45 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms$2 handle
+INFO: a block was built
+May 21, 2024 1:44:46 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms clearHotbar
+INFO: cleared images from hot bar
+May 21, 2024 1:44:46 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms fillHotbar
+INFO: filled hot bar with images of player's hot bar
+May 21, 2024 1:44:46 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms$2 handle
+INFO: a block was destroyed
+May 21, 2024 1:44:46 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms$1 handle
+INFO: D was pressed
+May 21, 2024 1:44:46 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms viewPlayer
+INFO: changed player's view to60300
+May 21, 2024 1:44:46 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms$1 handle
+INFO: player moved right
+May 21, 2024 1:44:46 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms isFalling
+INFO: player just falled
+May 21, 2024 1:44:47 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms$1 handle
+INFO: D was pressed
+May 21, 2024 1:44:47 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms viewPlayer
+INFO: changed player's view to90300
+May 21, 2024 1:44:47 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms$1 handle
+INFO: player moved right
+May 21, 2024 1:44:47 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms$1 handle
+INFO: D was pressed
+May 21, 2024 1:44:47 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms viewPlayer
+INFO: changed player's view to120300
+May 21, 2024 1:44:47 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms$1 handle
+INFO: player moved right
+May 21, 2024 1:44:47 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms$1 handle
+INFO: D was pressed
+May 21, 2024 1:44:47 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms viewPlayer
+INFO: changed player's view to150300
+May 21, 2024 1:44:47 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms$1 handle
+INFO: player moved right
+May 21, 2024 1:44:47 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms$1 handle
+INFO: D was pressed
+May 21, 2024 1:44:47 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms viewPlayer
+INFO: changed player's view to180300
+May 21, 2024 1:44:47 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms$1 handle
+INFO: player moved right
+May 21, 2024 1:44:47 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms$1 handle
+INFO: D was pressed
+May 21, 2024 1:44:47 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms viewPlayer
+INFO: changed player's view to210300
+May 21, 2024 1:44:47 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms$1 handle
+INFO: player moved right
+May 21, 2024 1:44:47 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms$1 handle
+INFO: D was pressed
+May 21, 2024 1:44:47 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms viewPlayer
+INFO: changed player's view to240300
+May 21, 2024 1:44:47 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms$1 handle
+INFO: player moved right
+May 21, 2024 1:44:47 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms$1 handle
+INFO: D was pressed
+May 21, 2024 1:44:47 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms viewPlayer
+INFO: changed player's view to270300
+May 21, 2024 1:44:47 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms$1 handle
+INFO: player moved right
+May 21, 2024 1:44:47 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms$1 handle
+INFO: D was pressed
+May 21, 2024 1:44:47 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms viewPlayer
+INFO: changed player's view to300300
+May 21, 2024 1:44:47 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms$1 handle
+INFO: player moved right
+May 21, 2024 1:44:47 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms$1 handle
+INFO: D was pressed
+May 21, 2024 1:44:47 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms viewPlayer
+INFO: changed player's view to330300
+May 21, 2024 1:44:47 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms$1 handle
+INFO: player moved right
+May 21, 2024 1:44:47 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms$1 handle
+INFO: D was pressed
+May 21, 2024 1:44:47 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms viewPlayer
+INFO: changed player's view to360300
+May 21, 2024 1:44:47 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms$1 handle
+INFO: player moved right
+May 21, 2024 1:44:47 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms isFalling
+INFO: player just falled
+May 21, 2024 1:44:47 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms$1 handle
+INFO: D was pressed
+May 21, 2024 1:44:47 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms viewPlayer
+INFO: changed player's view to390300
+May 21, 2024 1:44:47 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms$1 handle
+INFO: player moved right
+May 21, 2024 1:44:47 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms isFalling
+INFO: player just falled
+May 21, 2024 1:44:47 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms fillEmptySlots
+INFO: made empty slots for special block interface
+May 21, 2024 1:44:47 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms showCraftingGUI
+INFO: showed special block interface
+May 21, 2024 1:44:47 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms$1 handle
+INFO: player moved up
+May 21, 2024 1:44:48 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms$1 handle
+INFO: 5 was pressed
+May 21, 2024 1:44:48 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms setFocusOnHotbar
+INFO: new focus is set on hot bar
+May 21, 2024 1:44:48 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms setSelectedItemIcon
+INFO: new cursor is set
+May 21, 2024 1:44:49 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms lambda$showCraftingGUI$1
+INFO: primary button was pressed on mause
+May 21, 2024 1:44:49 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms clearHotbar
+INFO: cleared images from hot bar
+May 21, 2024 1:44:49 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms fillHotbar
+INFO: filled hot bar with images of player's hot bar
+May 21, 2024 1:44:49 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms lambda$showCraftingGUI$1
+INFO: added item to crafting
+May 21, 2024 1:44:50 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms clearHotbar
+INFO: cleared images from hot bar
+May 21, 2024 1:44:50 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms fillHotbar
+INFO: filled hot bar with images of player's hot bar
+May 21, 2024 1:44:50 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms lambda$showCraftingGUI$2
+INFO: player exited crafting
+May 21, 2024 1:44:51 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms$1 handle
+INFO: 3 was pressed
+May 21, 2024 1:44:51 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms setFocusOnHotbar
+INFO: new focus is set on hot bar
+May 21, 2024 1:44:51 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms setSelectedItemIcon
+INFO: new cursor is set
+May 21, 2024 1:44:51 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms$1 handle
+INFO: 3 was pressed
+May 21, 2024 1:44:51 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms setFocusOnHotbar
+INFO: new focus is set on hot bar
+May 21, 2024 1:44:51 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms setSelectedItemIcon
+INFO: new cursor is set
+May 21, 2024 1:44:52 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms$1 handle
+INFO: 4 was pressed
+May 21, 2024 1:44:52 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms setFocusOnHotbar
+INFO: new focus is set on hot bar
+May 21, 2024 1:44:52 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms setSelectedItemIcon
+INFO: new cursor is set
+May 21, 2024 1:44:52 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms addBlockToScreen
+INFO: Block added to screen to positon3224
+May 21, 2024 1:44:52 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms clearHotbar
+INFO: cleared images from hot bar
+May 21, 2024 1:44:52 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms fillHotbar
+INFO: filled hot bar with images of player's hot bar
+May 21, 2024 1:44:52 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms$2 handle
+INFO: a block was built
+May 21, 2024 1:44:53 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms clearHotbar
+INFO: cleared images from hot bar
+May 21, 2024 1:44:53 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms fillHotbar
+INFO: filled hot bar with images of player's hot bar
+May 21, 2024 1:44:53 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms$2 handle
+INFO: a block was destroyed
+May 21, 2024 1:44:54 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms$1 handle
+INFO: A was pressed
+May 21, 2024 1:44:54 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms viewPlayer
+INFO: changed player's view to360300
+May 21, 2024 1:44:54 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms$1 handle
+INFO: player moved left
+May 21, 2024 1:44:55 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms isFalling
+INFO: player just falled
+May 21, 2024 1:44:55 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms$1 handle
+INFO: A was pressed
+May 21, 2024 1:44:55 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms viewPlayer
+INFO: changed player's view to330300
+May 21, 2024 1:44:55 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms$1 handle
+INFO: player moved left
+May 21, 2024 1:44:55 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms$1 handle
+INFO: A was pressed
+May 21, 2024 1:44:55 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms viewPlayer
+INFO: changed player's view to300300
+May 21, 2024 1:44:55 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms$1 handle
+INFO: player moved left
+May 21, 2024 1:44:55 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms$1 handle
+INFO: A was pressed
+May 21, 2024 1:44:55 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms viewPlayer
+INFO: changed player's view to270300
+May 21, 2024 1:44:55 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms$1 handle
+INFO: player moved left
+May 21, 2024 1:44:55 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms$1 handle
+INFO: A was pressed
+May 21, 2024 1:44:55 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms viewPlayer
+INFO: changed player's view to240300
+May 21, 2024 1:44:55 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms$1 handle
+INFO: player moved left
+May 21, 2024 1:44:55 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms$1 handle
+INFO: A was pressed
+May 21, 2024 1:44:55 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms viewPlayer
+INFO: changed player's view to210300
+May 21, 2024 1:44:55 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms$1 handle
+INFO: player moved left
+May 21, 2024 1:44:55 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms$1 handle
+INFO: A was pressed
+May 21, 2024 1:44:55 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms viewPlayer
+INFO: changed player's view to180300
+May 21, 2024 1:44:55 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms$1 handle
+INFO: player moved left
+May 21, 2024 1:44:55 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms$1 handle
+INFO: A was pressed
+May 21, 2024 1:44:55 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms viewPlayer
+INFO: changed player's view to150300
+May 21, 2024 1:44:55 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms$1 handle
+INFO: player moved left
+May 21, 2024 1:44:55 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms$1 handle
+INFO: A was pressed
+May 21, 2024 1:44:55 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms viewPlayer
+INFO: changed player's view to120300
+May 21, 2024 1:44:55 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms$1 handle
+INFO: player moved left
+May 21, 2024 1:44:55 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms$1 handle
+INFO: A was pressed
+May 21, 2024 1:44:55 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms viewPlayer
+INFO: changed player's view to90300
+May 21, 2024 1:44:55 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms$1 handle
+INFO: player moved left
+May 21, 2024 1:44:55 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms$1 handle
+INFO: A was pressed
+May 21, 2024 1:44:55 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms viewPlayer
+INFO: changed player's view to60300
+May 21, 2024 1:44:55 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms$1 handle
+INFO: player moved left
+May 21, 2024 1:44:55 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms isFalling
+INFO: player just falled
+May 21, 2024 1:44:55 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms$1 handle
+INFO: A was pressed
+May 21, 2024 1:44:55 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms viewPlayer
+INFO: changed player's view to30300
+May 21, 2024 1:44:55 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms$1 handle
+INFO: player moved left
+May 21, 2024 1:44:55 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms$1 handle
+INFO: A was pressed
+May 21, 2024 1:44:55 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms viewPlayer
+INFO: changed player's view to0300
+May 21, 2024 1:44:55 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms$1 handle
+INFO: player moved left
+May 21, 2024 1:44:55 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms$1 handle
+INFO: A was pressed
+May 21, 2024 1:44:55 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms viewPlayer
+INFO: changed player's view to-30300
+May 21, 2024 1:44:55 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms$1 handle
+INFO: player moved left
+May 21, 2024 1:44:55 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms$1 handle
+INFO: A was pressed
+May 21, 2024 1:44:55 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms viewPlayer
+INFO: changed player's view to-60300
+May 21, 2024 1:44:55 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms$1 handle
+INFO: player moved left
+May 21, 2024 1:44:55 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms$1 handle
+INFO: A was pressed
+May 21, 2024 1:44:55 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms viewPlayer
+INFO: changed player's view to-90300
+May 21, 2024 1:44:55 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms$1 handle
+INFO: player moved left
+May 21, 2024 1:44:55 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms$1 handle
+INFO: A was pressed
+May 21, 2024 1:44:55 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms viewPlayer
+INFO: changed player's view to-120300
+May 21, 2024 1:44:55 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms$1 handle
+INFO: player moved left
+May 21, 2024 1:44:55 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms$1 handle
+INFO: A was pressed
+May 21, 2024 1:44:55 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms$1 handle
+INFO: A was pressed
+May 21, 2024 1:44:55 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms isFalling
+INFO: player just falled
+May 21, 2024 1:44:56 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms$1 handle
+INFO: D was pressed
+May 21, 2024 1:44:56 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms viewPlayer
+INFO: changed player's view to-90300
+May 21, 2024 1:44:56 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms$1 handle
+INFO: player moved right
+May 21, 2024 1:44:56 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms isFalling
+INFO: player just falled
+May 21, 2024 1:44:56 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms$1 handle
+INFO: D was pressed
+May 21, 2024 1:44:56 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms viewPlayer
+INFO: changed player's view to-60300
+May 21, 2024 1:44:56 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms$1 handle
+INFO: player moved right
+May 21, 2024 1:44:56 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms$1 handle
+INFO: D was pressed
+May 21, 2024 1:44:56 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms viewPlayer
+INFO: changed player's view to-30300
+May 21, 2024 1:44:56 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms$1 handle
+INFO: player moved right
+May 21, 2024 1:44:56 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms$1 handle
+INFO: D was pressed
+May 21, 2024 1:44:56 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms viewPlayer
+INFO: changed player's view to0300
+May 21, 2024 1:44:56 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms$1 handle
+INFO: player moved right
+May 21, 2024 1:44:56 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms$1 handle
+INFO: D was pressed
+May 21, 2024 1:44:56 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms viewPlayer
+INFO: changed player's view to30300
+May 21, 2024 1:44:56 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms$1 handle
+INFO: player moved right
+May 21, 2024 1:44:56 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms$1 handle
+INFO: D was pressed
+May 21, 2024 1:44:56 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms viewPlayer
+INFO: changed player's view to60300
+May 21, 2024 1:44:56 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms$1 handle
+INFO: player moved right
+May 21, 2024 1:44:56 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms$1 handle
+INFO: D was pressed
+May 21, 2024 1:44:56 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms viewPlayer
+INFO: changed player's view to90300
+May 21, 2024 1:44:56 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms$1 handle
+INFO: player moved right
+May 21, 2024 1:44:56 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms$1 handle
+INFO: D was pressed
+May 21, 2024 1:44:56 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms viewPlayer
+INFO: changed player's view to120300
+May 21, 2024 1:44:56 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms$1 handle
+INFO: player moved right
+May 21, 2024 1:44:56 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms$1 handle
+INFO: D was pressed
+May 21, 2024 1:44:56 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms viewPlayer
+INFO: changed player's view to150300
+May 21, 2024 1:44:56 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms$1 handle
+INFO: player moved right
+May 21, 2024 1:44:56 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms$1 handle
+INFO: D was pressed
+May 21, 2024 1:44:56 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms viewPlayer
+INFO: changed player's view to180300
+May 21, 2024 1:44:56 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms$1 handle
+INFO: player moved right
+May 21, 2024 1:44:56 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms$1 handle
+INFO: D was pressed
+May 21, 2024 1:44:56 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms viewPlayer
+INFO: changed player's view to210300
+May 21, 2024 1:44:56 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms$1 handle
+INFO: player moved right
+May 21, 2024 1:44:56 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms isFalling
+INFO: player just falled
+May 21, 2024 1:44:56 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms$1 handle
+INFO: D was pressed
+May 21, 2024 1:44:56 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms viewPlayer
+INFO: changed player's view to240300
+May 21, 2024 1:44:56 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms$1 handle
+INFO: player moved right
+May 21, 2024 1:44:57 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms$1 handle
+INFO: D was pressed
+May 21, 2024 1:44:57 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms viewPlayer
+INFO: changed player's view to270300
+May 21, 2024 1:44:57 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms$1 handle
+INFO: player moved right
+May 21, 2024 1:44:57 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms$1 handle
+INFO: D was pressed
+May 21, 2024 1:44:57 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms viewPlayer
+INFO: changed player's view to300300
+May 21, 2024 1:44:57 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms$1 handle
+INFO: player moved right
+May 21, 2024 1:44:57 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms$1 handle
+INFO: D was pressed
+May 21, 2024 1:44:57 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms viewPlayer
+INFO: changed player's view to330300
+May 21, 2024 1:44:57 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms$1 handle
+INFO: player moved right
+May 21, 2024 1:44:57 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms$1 handle
+INFO: D was pressed
+May 21, 2024 1:44:57 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms viewPlayer
+INFO: changed player's view to360300
+May 21, 2024 1:44:57 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms$1 handle
+INFO: player moved right
+May 21, 2024 1:44:57 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms$1 handle
+INFO: D was pressed
+May 21, 2024 1:44:57 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms viewPlayer
+INFO: changed player's view to390300
+May 21, 2024 1:44:57 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms$1 handle
+INFO: player moved right
+May 21, 2024 1:44:57 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms$1 handle
+INFO: D was pressed
+May 21, 2024 1:44:57 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms isFalling
+INFO: player just falled
+May 21, 2024 1:44:57 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms$1 handle
+INFO: W was pressed
+May 21, 2024 1:44:57 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms viewPlayer
+INFO: changed player's view to390270
+May 21, 2024 1:44:57 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms$1 handle
+INFO: D was pressed
+May 21, 2024 1:44:57 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms viewPlayer
+INFO: changed player's view to420270
+May 21, 2024 1:44:57 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms$1 handle
+INFO: player moved right
+May 21, 2024 1:44:57 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms isFalling
+INFO: player just falled
+May 21, 2024 1:44:58 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms$1 handle
+INFO: A was pressed
+May 21, 2024 1:44:58 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms viewPlayer
+INFO: changed player's view to390270
+May 21, 2024 1:44:58 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms$1 handle
+INFO: player moved left
+May 21, 2024 1:44:58 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms viewPlayer
+INFO: changed player's view to390300
+May 21, 2024 1:44:58 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms isFalling
+INFO: player just falled
+May 21, 2024 1:44:58 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms$1 handle
+INFO: A was pressed
+May 21, 2024 1:44:58 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms viewPlayer
+INFO: changed player's view to360300
+May 21, 2024 1:44:58 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms$1 handle
+INFO: player moved left
+May 21, 2024 1:44:58 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms$1 handle
+INFO: A was pressed
+May 21, 2024 1:44:58 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms viewPlayer
+INFO: changed player's view to330300
+May 21, 2024 1:44:58 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms$1 handle
+INFO: player moved left
+May 21, 2024 1:44:58 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms$1 handle
+INFO: A was pressed
+May 21, 2024 1:44:58 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms viewPlayer
+INFO: changed player's view to300300
+May 21, 2024 1:44:58 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms$1 handle
+INFO: player moved left
+May 21, 2024 1:44:58 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms$1 handle
+INFO: A was pressed
+May 21, 2024 1:44:58 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms viewPlayer
+INFO: changed player's view to270300
+May 21, 2024 1:44:58 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms$1 handle
+INFO: player moved left
+May 21, 2024 1:44:58 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms$1 handle
+INFO: A was pressed
+May 21, 2024 1:44:58 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms viewPlayer
+INFO: changed player's view to240300
+May 21, 2024 1:44:58 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms$1 handle
+INFO: player moved left
+May 21, 2024 1:44:58 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms$1 handle
+INFO: A was pressed
+May 21, 2024 1:44:58 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms viewPlayer
+INFO: changed player's view to210300
+May 21, 2024 1:44:58 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms$1 handle
+INFO: player moved left
+May 21, 2024 1:44:58 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms$1 handle
+INFO: A was pressed
+May 21, 2024 1:44:58 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms viewPlayer
+INFO: changed player's view to180300
+May 21, 2024 1:44:58 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms$1 handle
+INFO: player moved left
+May 21, 2024 1:44:59 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms$1 handle
+INFO: A was pressed
+May 21, 2024 1:44:59 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms viewPlayer
+INFO: changed player's view to150300
+May 21, 2024 1:44:59 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms$1 handle
+INFO: player moved left
+May 21, 2024 1:44:59 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms$1 handle
+INFO: A was pressed
+May 21, 2024 1:44:59 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms viewPlayer
+INFO: changed player's view to120300
+May 21, 2024 1:44:59 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms$1 handle
+INFO: player moved left
+May 21, 2024 1:44:59 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms$1 handle
+INFO: A was pressed
+May 21, 2024 1:44:59 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms viewPlayer
+INFO: changed player's view to90300
+May 21, 2024 1:44:59 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms$1 handle
+INFO: player moved left
+May 21, 2024 1:44:59 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms isFalling
+INFO: player just falled
+May 21, 2024 1:44:59 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms$1 handle
+INFO: A was pressed
+May 21, 2024 1:44:59 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms viewPlayer
+INFO: changed player's view to60300
+May 21, 2024 1:44:59 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms$1 handle
+INFO: player moved left
+May 21, 2024 1:44:59 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms$1 handle
+INFO: A was pressed
+May 21, 2024 1:44:59 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms viewPlayer
+INFO: changed player's view to30300
+May 21, 2024 1:44:59 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms$1 handle
+INFO: player moved left
+May 21, 2024 1:44:59 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms$1 handle
+INFO: A was pressed
+May 21, 2024 1:44:59 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms viewPlayer
+INFO: changed player's view to0300
+May 21, 2024 1:44:59 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms$1 handle
+INFO: player moved left
+May 21, 2024 1:44:59 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms$1 handle
+INFO: A was pressed
+May 21, 2024 1:44:59 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms viewPlayer
+INFO: changed player's view to-30300
+May 21, 2024 1:44:59 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms$1 handle
+INFO: player moved left
+May 21, 2024 1:44:59 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms$1 handle
+INFO: A was pressed
+May 21, 2024 1:44:59 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms viewPlayer
+INFO: changed player's view to-60300
+May 21, 2024 1:44:59 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms$1 handle
+INFO: player moved left
+May 21, 2024 1:44:59 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms$1 handle
+INFO: A was pressed
+May 21, 2024 1:44:59 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms viewPlayer
+INFO: changed player's view to-90300
+May 21, 2024 1:44:59 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms$1 handle
+INFO: player moved left
+May 21, 2024 1:44:59 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms$1 handle
+INFO: A was pressed
+May 21, 2024 1:44:59 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms viewPlayer
+INFO: changed player's view to-120300
+May 21, 2024 1:44:59 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms$1 handle
+INFO: player moved left
+May 21, 2024 1:44:59 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms$1 handle
+INFO: A was pressed
+May 21, 2024 1:44:59 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms$1 handle
+INFO: A was pressed
+May 21, 2024 1:44:59 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms$1 handle
+INFO: A was pressed
+May 21, 2024 1:44:59 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms isFalling
+INFO: player just falled
+May 21, 2024 1:44:59 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms$1 handle
+INFO: 1 was pressed
+May 21, 2024 1:44:59 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms setFocusOnHotbar
+INFO: new focus is set on hot bar
+May 21, 2024 1:44:59 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms setSelectedItemIcon
+INFO: new cursor is set
+May 21, 2024 1:45:00 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms$1 handle
+INFO: W was pressed
+May 21, 2024 1:45:00 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms viewPlayer
+INFO: changed player's view to-120270
+May 21, 2024 1:45:01 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms$1 handle
+INFO: A was pressed
+May 21, 2024 1:45:01 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms viewPlayer
+INFO: changed player's view to-150270
+May 21, 2024 1:45:01 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms$1 handle
+INFO: player moved left
+May 21, 2024 1:45:01 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms$1 handle
+INFO: A was pressed
+May 21, 2024 1:45:01 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms viewPlayer
+INFO: changed player's view to-180270
+May 21, 2024 1:45:01 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms$1 handle
+INFO: player moved left
+May 21, 2024 1:45:01 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms viewPlayer
+INFO: changed player's view to-180300
+May 21, 2024 1:45:01 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms isFalling
+INFO: player just falled
+May 21, 2024 1:45:01 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms$1 handle
+INFO: A was pressed
+May 21, 2024 1:45:01 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms viewPlayer
+INFO: changed player's view to-210300
+May 21, 2024 1:45:01 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms$1 handle
+INFO: player moved left
+May 21, 2024 1:45:01 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms$1 handle
+INFO: A was pressed
+May 21, 2024 1:45:01 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms viewPlayer
+INFO: changed player's view to-240300
+May 21, 2024 1:45:01 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms$1 handle
+INFO: player moved left
+May 21, 2024 1:45:01 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms isFalling
+INFO: player just falled
+May 21, 2024 1:45:02 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms$1 handle
+INFO: A was pressed
+May 21, 2024 1:45:02 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms viewPlayer
+INFO: changed player's view to-270300
+May 21, 2024 1:45:02 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms$1 handle
+INFO: player moved left
+May 21, 2024 1:45:02 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms$1 handle
+INFO: A was pressed
+May 21, 2024 1:45:02 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms viewPlayer
+INFO: changed player's view to-300300
+May 21, 2024 1:45:02 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms$1 handle
+INFO: player moved left
+May 21, 2024 1:45:02 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms isFalling
+INFO: player just falled
+May 21, 2024 1:45:02 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms$1 handle
+INFO: A was pressed
+May 21, 2024 1:45:02 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms viewPlayer
+INFO: changed player's view to-330300
+May 21, 2024 1:45:02 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms clearHP
+INFO: cleared all hearts from screen
+May 21, 2024 1:45:02 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms updateHP
+INFO: updated hearts based on players HP
+May 21, 2024 1:45:02 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms$1 handle
+INFO: player took damage from enemy
+May 21, 2024 1:45:02 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms$1 handle
+INFO: player moved left
+May 21, 2024 1:45:02 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms isFalling
+INFO: player just falled
+May 21, 2024 1:45:03 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms$2 handle
+INFO: player have attacked an enemy
+May 21, 2024 1:45:03 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms banishEnemy
+INFO: banished enemy
+May 21, 2024 1:45:03 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms$2 handle
+INFO: player have attacked an enemy
+May 21, 2024 1:45:03 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms$2 handle
+INFO: player have attacked an enemy
+May 21, 2024 1:45:04 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms$1 handle
+INFO: D was pressed
+May 21, 2024 1:45:04 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms viewPlayer
+INFO: changed player's view to-300300
+May 21, 2024 1:45:04 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms$1 handle
+INFO: player moved right
+May 21, 2024 1:45:04 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms isFalling
+INFO: player just falled
+May 21, 2024 1:45:04 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms$1 handle
+INFO: D was pressed
+May 21, 2024 1:45:04 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms viewPlayer
+INFO: changed player's view to-270300
+May 21, 2024 1:45:04 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms$1 handle
+INFO: player moved right
+May 21, 2024 1:45:04 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms$1 handle
+INFO: D was pressed
+May 21, 2024 1:45:04 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms viewPlayer
+INFO: changed player's view to-240300
+May 21, 2024 1:45:04 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms$1 handle
+INFO: player moved right
+May 21, 2024 1:45:04 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms$1 handle
+INFO: D was pressed
+May 21, 2024 1:45:04 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms viewPlayer
+INFO: changed player's view to-210300
+May 21, 2024 1:45:04 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms$1 handle
+INFO: player moved right
+May 21, 2024 1:45:05 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms$1 handle
+INFO: D was pressed
+May 21, 2024 1:45:05 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms viewPlayer
+INFO: changed player's view to-180300
+May 21, 2024 1:45:05 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms$1 handle
+INFO: player moved right
+May 21, 2024 1:45:05 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms$1 handle
+INFO: D was pressed
+May 21, 2024 1:45:05 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms$1 handle
+INFO: D was pressed
+May 21, 2024 1:45:05 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms$1 handle
+INFO: W was pressed
+May 21, 2024 1:45:05 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms viewPlayer
+INFO: changed player's view to-180270
+May 21, 2024 1:45:05 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms viewPlayer
+INFO: changed player's view to-180300
+May 21, 2024 1:45:05 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms isFalling
+INFO: player just falled
+May 21, 2024 1:45:05 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms$1 handle
+INFO: D was pressed
+May 21, 2024 1:45:05 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms$1 handle
+INFO: W was pressed
+May 21, 2024 1:45:05 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms viewPlayer
+INFO: changed player's view to-180270
+May 21, 2024 1:45:05 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms$1 handle
+INFO: D was pressed
+May 21, 2024 1:45:05 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms viewPlayer
+INFO: changed player's view to-150270
+May 21, 2024 1:45:05 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms$1 handle
+INFO: player moved right
+May 21, 2024 1:45:06 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms isFalling
+INFO: player just falled
+May 21, 2024 1:45:06 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms$1 handle
+INFO: D was pressed
+May 21, 2024 1:45:06 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms viewPlayer
+INFO: changed player's view to-120270
+May 21, 2024 1:45:06 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms$1 handle
+INFO: player moved right
+May 21, 2024 1:45:06 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms$1 handle
+INFO: D was pressed
+May 21, 2024 1:45:06 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms viewPlayer
+INFO: changed player's view to-90270
+May 21, 2024 1:45:06 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms$1 handle
+INFO: player moved right
+May 21, 2024 1:45:06 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms$1 handle
+INFO: D was pressed
+May 21, 2024 1:45:06 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms viewPlayer
+INFO: changed player's view to-60270
+May 21, 2024 1:45:06 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms$1 handle
+INFO: player moved right
+May 21, 2024 1:45:06 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms$1 handle
+INFO: D was pressed
+May 21, 2024 1:45:06 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms viewPlayer
+INFO: changed player's view to-30270
+May 21, 2024 1:45:06 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms$1 handle
+INFO: player moved right
+May 21, 2024 1:45:06 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms$1 handle
+INFO: D was pressed
+May 21, 2024 1:45:06 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms viewPlayer
+INFO: changed player's view to0270
+May 21, 2024 1:45:06 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms$1 handle
+INFO: player moved right
+May 21, 2024 1:45:06 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms$1 handle
+INFO: D was pressed
+May 21, 2024 1:45:06 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms viewPlayer
+INFO: changed player's view to30270
+May 21, 2024 1:45:06 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms$1 handle
+INFO: player moved right
+May 21, 2024 1:45:06 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms$1 handle
+INFO: D was pressed
+May 21, 2024 1:45:06 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms viewPlayer
+INFO: changed player's view to60270
+May 21, 2024 1:45:06 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms$1 handle
+INFO: player moved right
+May 21, 2024 1:45:06 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms viewPlayer
+INFO: changed player's view to60300
+May 21, 2024 1:45:06 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms isFalling
+INFO: player just falled
+May 21, 2024 1:45:08 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms$1 handle
+INFO: 4 was pressed
+May 21, 2024 1:45:08 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms setFocusOnHotbar
+INFO: new focus is set on hot bar
+May 21, 2024 1:45:08 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms setSelectedItemIcon
+INFO: new cursor is set
+May 21, 2024 1:45:10 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms addBlockToScreen
+INFO: Block added to screen to positon2324
+May 21, 2024 1:45:10 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms clearHotbar
+INFO: cleared images from hot bar
+May 21, 2024 1:45:10 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms fillHotbar
+INFO: filled hot bar with images of player's hot bar
+May 21, 2024 1:45:10 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms$2 handle
+INFO: a block was built
+May 21, 2024 1:45:11 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms$1 handle
+INFO: 2 was pressed
+May 21, 2024 1:45:11 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms setFocusOnHotbar
+INFO: new focus is set on hot bar
+May 21, 2024 1:45:11 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms setSelectedItemIcon
+INFO: new cursor is set
+May 21, 2024 1:45:14 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms$1 handle
+INFO: 4 was pressed
+May 21, 2024 1:45:14 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms setFocusOnHotbar
+INFO: new focus is set on hot bar
+May 21, 2024 1:45:15 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms clearHotbar
+INFO: cleared images from hot bar
+May 21, 2024 1:45:15 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms fillHotbar
+INFO: filled hot bar with images of player's hot bar
+May 21, 2024 1:45:15 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms$2 handle
+INFO: a block was destroyed
+May 21, 2024 1:45:16 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms$1 handle
+INFO: D was pressed
+May 21, 2024 1:45:16 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms viewPlayer
+INFO: changed player's view to90300
+May 21, 2024 1:45:16 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms$1 handle
+INFO: player moved right
+May 21, 2024 1:45:16 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms$1 handle
+INFO: D was pressed
+May 21, 2024 1:45:16 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms viewPlayer
+INFO: changed player's view to120300
+May 21, 2024 1:45:16 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms$1 handle
+INFO: player moved right
+May 21, 2024 1:45:16 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms isFalling
+INFO: player just falled
+May 21, 2024 1:45:16 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms$1 handle
+INFO: D was pressed
+May 21, 2024 1:45:16 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms viewPlayer
+INFO: changed player's view to150300
+May 21, 2024 1:45:16 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms$1 handle
+INFO: player moved right
+May 21, 2024 1:45:16 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms$1 handle
+INFO: D was pressed
+May 21, 2024 1:45:16 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms viewPlayer
+INFO: changed player's view to180300
+May 21, 2024 1:45:16 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms$1 handle
+INFO: player moved right
+May 21, 2024 1:45:17 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms isFalling
+INFO: player just falled
+May 21, 2024 1:45:17 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms$1 handle
+INFO: D was pressed
+May 21, 2024 1:45:17 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms viewPlayer
+INFO: changed player's view to210300
+May 21, 2024 1:45:17 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms$1 handle
+INFO: player moved right
+May 21, 2024 1:45:17 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms isFalling
+INFO: player just falled
+May 21, 2024 1:45:17 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms$1 handle
+INFO: D was pressed
+May 21, 2024 1:45:17 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms viewPlayer
+INFO: changed player's view to240300
+May 21, 2024 1:45:17 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms$1 handle
+INFO: player moved right
+May 21, 2024 1:45:18 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms isFalling
+INFO: player just falled
+May 21, 2024 1:47:41 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms loadOverworldFromSave
+INFO: loaded overworld successfully
+May 21, 2024 1:47:42 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms clearHP
+INFO: cleared all hearts from screen
+May 21, 2024 1:47:42 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms updateHP
+INFO: updated hearts based on players HP
+May 21, 2024 1:47:42 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms loadPlayer
+INFO: loaded player successfully
+May 21, 2024 1:47:42 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms loadNPC
+INFO: loaded NPC successfully
+May 21, 2024 1:47:42 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms clearHotbar
+INFO: cleared images from hot bar
+May 21, 2024 1:47:42 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms fillHotbar
+INFO: filled hot bar with images of player's hot bar
+May 21, 2024 1:47:42 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms loadGame
+INFO: loaded whole game
+May 21, 2024 1:47:49 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms$1 handle
+INFO: 4 was pressed
+May 21, 2024 1:47:49 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms setFocusOnHotbar
+INFO: new focus is set on hot bar
+May 21, 2024 1:47:49 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms setSelectedItemIcon
+INFO: new cursor is set
+May 21, 2024 1:47:50 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms addBlockToScreen
+INFO: Block added to screen to positon2223
+May 21, 2024 1:47:50 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms clearHotbar
+INFO: cleared images from hot bar
+May 21, 2024 1:47:50 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms fillHotbar
+INFO: filled hot bar with images of player's hot bar
+May 21, 2024 1:47:50 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms$2 handle
+INFO: a block was built
+May 21, 2024 1:47:51 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms$1 handle
+INFO: 3 was pressed
+May 21, 2024 1:47:51 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms setFocusOnHotbar
+INFO: new focus is set on hot bar
+May 21, 2024 1:47:51 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms setSelectedItemIcon
+INFO: new cursor is set
+May 21, 2024 1:47:51 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms$1 handle
+INFO: 2 was pressed
+May 21, 2024 1:47:51 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms setFocusOnHotbar
+INFO: new focus is set on hot bar
+May 21, 2024 1:47:51 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms setSelectedItemIcon
+INFO: new cursor is set
+May 21, 2024 1:47:52 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms clearHotbar
+INFO: cleared images from hot bar
+May 21, 2024 1:47:52 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms fillHotbar
+INFO: filled hot bar with images of player's hot bar
+May 21, 2024 1:47:52 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms$2 handle
+INFO: a block was destroyed
+May 21, 2024 1:47:53 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms$1 handle
+INFO: 1 was pressed
+May 21, 2024 1:47:53 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms setFocusOnHotbar
+INFO: new focus is set on hot bar
+May 21, 2024 1:47:53 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms setSelectedItemIcon
+INFO: new cursor is set
+May 21, 2024 1:47:55 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms$1 handle
+INFO: 0 was pressed
+May 21, 2024 1:47:55 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms toggleLogging
+INFO: Logging disabled
+May 21, 2024 1:49:55 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms loadOverworldFromSave
+INFO: loaded overworld successfully
+May 21, 2024 1:49:56 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms clearHP
+INFO: cleared all hearts from screen
+May 21, 2024 1:49:56 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms updateHP
+INFO: updated hearts based on players HP
+May 21, 2024 1:49:56 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms loadPlayer
+INFO: loaded player successfully
+May 21, 2024 1:49:56 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms loadNPC
+INFO: loaded NPC successfully
+May 21, 2024 1:49:56 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms clearHotbar
+INFO: cleared images from hot bar
+May 21, 2024 1:49:56 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms fillHotbar
+INFO: filled hot bar with images of player's hot bar
+May 21, 2024 1:49:56 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms loadGame
+INFO: loaded whole game
+May 21, 2024 1:49:57 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms$1 handle
+INFO: A was pressed
+May 21, 2024 1:49:57 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms viewPlayer
+INFO: changed player's view to0300
+May 21, 2024 1:49:57 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms$1 handle
+INFO: player moved left
+May 21, 2024 1:49:57 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms$1 handle
+INFO: A was pressed
+May 21, 2024 1:49:57 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms viewPlayer
+INFO: changed player's view to-30300
+May 21, 2024 1:49:57 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms$1 handle
+INFO: player moved left
+May 21, 2024 1:49:58 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms isFalling
+INFO: player just falled
+May 21, 2024 1:49:58 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms$1 handle
+INFO: A was pressed
+May 21, 2024 1:49:58 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms viewPlayer
+INFO: changed player's view to-60300
+May 21, 2024 1:49:58 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms$1 handle
+INFO: player moved left
+May 21, 2024 1:49:58 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms$1 handle
+INFO: A was pressed
+May 21, 2024 1:49:58 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms viewPlayer
+INFO: changed player's view to-90300
+May 21, 2024 1:49:58 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms$1 handle
+INFO: player moved left
+May 21, 2024 1:49:58 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms$1 handle
+INFO: A was pressed
+May 21, 2024 1:49:58 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms viewPlayer
+INFO: changed player's view to-120300
+May 21, 2024 1:49:58 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms$1 handle
+INFO: player moved left
+May 21, 2024 1:49:58 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms$1 handle
+INFO: A was pressed
+May 21, 2024 1:49:58 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms$1 handle
+INFO: A was pressed
+May 21, 2024 1:49:58 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms$1 handle
+INFO: A was pressed
+May 21, 2024 1:49:58 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms$1 handle
+INFO: A was pressed
+May 21, 2024 1:49:58 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms$1 handle
+INFO: A was pressed
+May 21, 2024 1:49:58 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms isFalling
+INFO: player just falled
+May 21, 2024 1:49:58 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms$1 handle
+INFO: W was pressed
+May 21, 2024 1:49:58 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms viewPlayer
+INFO: changed player's view to-120270
+May 21, 2024 1:49:59 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms$1 handle
+INFO: A was pressed
+May 21, 2024 1:49:59 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms viewPlayer
+INFO: changed player's view to-150270
+May 21, 2024 1:49:59 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms$1 handle
+INFO: player moved left
+May 21, 2024 1:49:59 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms$1 handle
+INFO: A was pressed
+May 21, 2024 1:49:59 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms viewPlayer
+INFO: changed player's view to-180270
+May 21, 2024 1:49:59 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms$1 handle
+INFO: player moved left
+May 21, 2024 1:49:59 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms viewPlayer
+INFO: changed player's view to-180300
+May 21, 2024 1:49:59 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms isFalling
+INFO: player just falled
+May 21, 2024 1:50:00 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms$1 handle
+INFO: 1 was pressed
+May 21, 2024 1:50:00 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms setFocusOnHotbar
+INFO: new focus is set on hot bar
+May 21, 2024 1:50:00 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms setSelectedItemIcon
+INFO: new cursor is set
+May 21, 2024 1:50:00 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms$1 handle
+INFO: A was pressed
+May 21, 2024 1:50:00 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms viewPlayer
+INFO: changed player's view to-210300
+May 21, 2024 1:50:00 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms$1 handle
+INFO: player moved left
+May 21, 2024 1:50:01 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms$1 handle
+INFO: A was pressed
+May 21, 2024 1:50:01 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms viewPlayer
+INFO: changed player's view to-240300
+May 21, 2024 1:50:01 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms$1 handle
+INFO: player moved left
+May 21, 2024 1:50:01 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms isFalling
+INFO: player just falled
+May 21, 2024 1:50:01 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms$1 handle
+INFO: A was pressed
+May 21, 2024 1:50:01 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms viewPlayer
+INFO: changed player's view to-270300
+May 21, 2024 1:50:01 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms$1 handle
+INFO: player moved left
+May 21, 2024 1:50:01 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms$1 handle
+INFO: A was pressed
+May 21, 2024 1:50:01 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms viewPlayer
+INFO: changed player's view to-300300
+May 21, 2024 1:50:01 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms$1 handle
+INFO: player moved left
+May 21, 2024 1:50:01 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms isFalling
+INFO: player just falled
+May 21, 2024 1:50:02 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms$2 handle
+INFO: player have attacked an enemy
+May 21, 2024 1:50:02 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms$1 handle
+INFO: A was pressed
+May 21, 2024 1:50:02 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms viewPlayer
+INFO: changed player's view to-330300
+May 21, 2024 1:50:02 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms clearHP
+INFO: cleared all hearts from screen
+May 21, 2024 1:50:02 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms updateHP
+INFO: updated hearts based on players HP
+May 21, 2024 1:50:02 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms$1 handle
+INFO: player took damage from enemy
+May 21, 2024 1:50:02 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms$1 handle
+INFO: player moved left
+May 21, 2024 1:50:02 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms isFalling
+INFO: player just falled
+May 21, 2024 1:50:02 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms$2 handle
+INFO: player have attacked an enemy
+May 21, 2024 1:50:03 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms banishEnemy
+INFO: banished enemy
+May 21, 2024 1:50:03 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms$2 handle
+INFO: player have attacked an enemy
+May 21, 2024 1:50:04 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms$1 handle
+INFO: D was pressed
+May 21, 2024 1:50:04 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms viewPlayer
+INFO: changed player's view to-300300
+May 21, 2024 1:50:04 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms$1 handle
+INFO: player moved right
+May 21, 2024 1:50:04 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms$1 handle
+INFO: D was pressed
+May 21, 2024 1:50:04 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms viewPlayer
+INFO: changed player's view to-270300
+May 21, 2024 1:50:04 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms$1 handle
+INFO: player moved right
+May 21, 2024 1:50:04 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms isFalling
+INFO: player just falled
+May 21, 2024 1:50:04 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms$1 handle
+INFO: D was pressed
+May 21, 2024 1:50:04 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms viewPlayer
+INFO: changed player's view to-240300
+May 21, 2024 1:50:04 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms$1 handle
+INFO: player moved right
+May 21, 2024 1:50:04 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms$1 handle
+INFO: D was pressed
+May 21, 2024 1:50:04 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms viewPlayer
+INFO: changed player's view to-210300
+May 21, 2024 1:50:04 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms$1 handle
+INFO: player moved right
+May 21, 2024 1:50:04 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms isFalling
+INFO: player just falled
+May 21, 2024 1:50:05 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms$1 handle
+INFO: W was pressed
+May 21, 2024 1:50:05 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms viewPlayer
+INFO: changed player's view to-210270
+May 21, 2024 1:50:05 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms$1 handle
+INFO: D was pressed
+May 21, 2024 1:50:05 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms viewPlayer
+INFO: changed player's view to-180270
+May 21, 2024 1:50:05 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms$1 handle
+INFO: player moved right
+May 21, 2024 1:50:05 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms$1 handle
+INFO: D was pressed
+May 21, 2024 1:50:05 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms viewPlayer
+INFO: changed player's view to-150270
+May 21, 2024 1:50:05 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms$1 handle
+INFO: player moved right
+May 21, 2024 1:50:05 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms isFalling
+INFO: player just falled
+May 21, 2024 1:50:05 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms$1 handle
+INFO: D was pressed
+May 21, 2024 1:50:05 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms viewPlayer
+INFO: changed player's view to-120270
+May 21, 2024 1:50:05 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms$1 handle
+INFO: player moved right
+May 21, 2024 1:50:06 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms viewPlayer
+INFO: changed player's view to-120300
+May 21, 2024 1:50:06 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms isFalling
+INFO: player just falled
+May 21, 2024 1:50:06 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms$1 handle
+INFO: 5 was pressed
+May 21, 2024 1:50:06 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms setFocusOnHotbar
+INFO: new focus is set on hot bar
+May 21, 2024 1:50:06 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms setSelectedItemIcon
+INFO: new cursor is set
+May 21, 2024 1:50:07 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms$1 handle
+INFO: 4 was pressed
+May 21, 2024 1:50:07 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms setFocusOnHotbar
+INFO: new focus is set on hot bar
+May 21, 2024 1:50:07 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms setSelectedItemIcon
+INFO: new cursor is set
+May 21, 2024 1:50:08 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms addBlockToScreen
+INFO: Block added to screen to positon2324
+May 21, 2024 1:50:08 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms clearHotbar
+INFO: cleared images from hot bar
+May 21, 2024 1:50:08 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms fillHotbar
+INFO: filled hot bar with images of player's hot bar
+May 21, 2024 1:50:08 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms$2 handle
+INFO: a block was built
+May 21, 2024 1:50:08 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms$1 handle
+INFO: 3 was pressed
+May 21, 2024 1:50:08 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms setFocusOnHotbar
+INFO: new focus is set on hot bar
+May 21, 2024 1:50:08 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms setSelectedItemIcon
+INFO: new cursor is set
+May 21, 2024 1:54:04 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms loadOverworldFromSave
+INFO: loaded overworld successfully
+May 21, 2024 1:54:04 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms clearHP
+INFO: cleared all hearts from screen
+May 21, 2024 1:54:04 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms updateHP
+INFO: updated hearts based on players HP
+May 21, 2024 1:54:04 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms loadPlayer
+INFO: loaded player successfully
+May 21, 2024 1:54:04 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms loadNPC
+INFO: loaded NPC successfully
+May 21, 2024 1:54:05 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms clearHotbar
+INFO: cleared images from hot bar
+May 21, 2024 1:54:05 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms fillHotbar
+INFO: filled hot bar with images of player's hot bar
+May 21, 2024 1:54:05 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms loadGame
+INFO: loaded whole game
+May 21, 2024 1:54:07 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms$1 handle
+INFO: A was pressed
+May 21, 2024 1:54:07 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms viewPlayer
+INFO: changed player's view to0300
+May 21, 2024 1:54:07 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms$1 handle
+INFO: player moved left
+May 21, 2024 1:54:07 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms isFalling
+INFO: player just falled
+May 21, 2024 1:54:07 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms$1 handle
+INFO: A was pressed
+May 21, 2024 1:54:07 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms viewPlayer
+INFO: changed player's view to-30300
+May 21, 2024 1:54:07 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms$1 handle
+INFO: player moved left
+May 21, 2024 1:54:07 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms$1 handle
+INFO: A was pressed
+May 21, 2024 1:54:07 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms viewPlayer
+INFO: changed player's view to-60300
+May 21, 2024 1:54:07 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms$1 handle
+INFO: player moved left
+May 21, 2024 1:54:07 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms$1 handle
+INFO: A was pressed
+May 21, 2024 1:54:07 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms viewPlayer
+INFO: changed player's view to-90300
+May 21, 2024 1:54:07 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms$1 handle
+INFO: player moved left
+May 21, 2024 1:54:07 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms$1 handle
+INFO: A was pressed
+May 21, 2024 1:54:07 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms viewPlayer
+INFO: changed player's view to-120300
+May 21, 2024 1:54:07 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms$1 handle
+INFO: player moved left
+May 21, 2024 1:54:07 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms$1 handle
+INFO: A was pressed
+May 21, 2024 1:54:07 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms$1 handle
+INFO: A was pressed
+May 21, 2024 1:54:07 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms$1 handle
+INFO: A was pressed
+May 21, 2024 1:54:07 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms isFalling
+INFO: player just falled
+May 21, 2024 1:54:07 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms$1 handle
+INFO: W was pressed
+May 21, 2024 1:54:07 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms viewPlayer
+INFO: changed player's view to-120270
+May 21, 2024 1:54:08 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms$1 handle
+INFO: A was pressed
+May 21, 2024 1:54:08 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms viewPlayer
+INFO: changed player's view to-150270
+May 21, 2024 1:54:08 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms$1 handle
+INFO: player moved left
+May 21, 2024 1:54:08 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms$1 handle
+INFO: A was pressed
+May 21, 2024 1:54:08 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms viewPlayer
+INFO: changed player's view to-180270
+May 21, 2024 1:54:08 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms$1 handle
+INFO: player moved left
+May 21, 2024 1:54:08 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms viewPlayer
+INFO: changed player's view to-180300
+May 21, 2024 1:54:08 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms isFalling
+INFO: player just falled
+May 21, 2024 1:54:08 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms$1 handle
+INFO: A was pressed
+May 21, 2024 1:54:08 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms viewPlayer
+INFO: changed player's view to-210300
+May 21, 2024 1:54:08 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms$1 handle
+INFO: player moved left
+May 21, 2024 1:54:08 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms isFalling
+INFO: player just falled
+May 21, 2024 1:54:08 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms$1 handle
+INFO: 1 was pressed
+May 21, 2024 1:54:08 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms setFocusOnHotbar
+INFO: new focus is set on hot bar
+May 21, 2024 1:54:08 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms setSelectedItemIcon
+INFO: new cursor is set
+May 21, 2024 1:54:09 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms$1 handle
+INFO: A was pressed
+May 21, 2024 1:54:09 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms viewPlayer
+INFO: changed player's view to-240300
+May 21, 2024 1:54:09 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms$1 handle
+INFO: player moved left
+May 21, 2024 1:54:09 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms isFalling
+INFO: player just falled
+May 21, 2024 1:54:09 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms$1 handle
+INFO: A was pressed
+May 21, 2024 1:54:09 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms viewPlayer
+INFO: changed player's view to-270300
+May 21, 2024 1:54:09 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms$1 handle
+INFO: player moved left
+May 21, 2024 1:54:09 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms$1 handle
+INFO: A was pressed
+May 21, 2024 1:54:09 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms viewPlayer
+INFO: changed player's view to-300300
+May 21, 2024 1:54:09 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms$1 handle
+INFO: player moved left
+May 21, 2024 1:54:09 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms isFalling
+INFO: player just falled
+May 21, 2024 1:54:10 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms$1 handle
+INFO: A was pressed
+May 21, 2024 1:54:10 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms viewPlayer
+INFO: changed player's view to-330300
+May 21, 2024 1:54:10 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms clearHP
+INFO: cleared all hearts from screen
+May 21, 2024 1:54:10 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms updateHP
+INFO: updated hearts based on players HP
+May 21, 2024 1:54:10 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms$1 handle
+INFO: player took damage from enemy
+May 21, 2024 1:54:10 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms$1 handle
+INFO: player moved left
+May 21, 2024 1:54:10 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms isFalling
+INFO: player just falled
+May 21, 2024 1:54:10 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms$2 handle
+INFO: player have attacked an enemy
+May 21, 2024 1:54:10 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms banishEnemy
+INFO: banished enemy
+May 21, 2024 1:54:10 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms$2 handle
+INFO: player have attacked an enemy
+May 21, 2024 1:54:12 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms$1 handle
+INFO: 5 was pressed
+May 21, 2024 1:54:12 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms setFocusOnHotbar
+INFO: new focus is set on hot bar
+May 21, 2024 1:54:12 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms setSelectedItemIcon
+INFO: new cursor is set
+May 21, 2024 1:54:13 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms$1 handle
+INFO: 4 was pressed
+May 21, 2024 1:54:13 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms setFocusOnHotbar
+INFO: new focus is set on hot bar
+May 21, 2024 1:54:13 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms setSelectedItemIcon
+INFO: new cursor is set
+May 21, 2024 1:54:14 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms addBlockToScreen
+INFO: Block added to screen to positon1524
+May 21, 2024 1:54:14 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms clearHotbar
+INFO: cleared images from hot bar
+May 21, 2024 1:54:14 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms fillHotbar
+INFO: filled hot bar with images of player's hot bar
+May 21, 2024 1:54:14 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms$2 handle
+INFO: a block was built
+May 21, 2024 1:54:15 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms clearHotbar
+INFO: cleared images from hot bar
+May 21, 2024 1:54:15 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms fillHotbar
+INFO: filled hot bar with images of player's hot bar
+May 21, 2024 1:54:15 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms$2 handle
+INFO: a block was destroyed
+May 21, 2024 1:54:16 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms$1 handle
+INFO: 4 was pressed
+May 21, 2024 1:54:16 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms setFocusOnHotbar
+INFO: new focus is set on hot bar
+May 21, 2024 1:54:16 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms setSelectedItemIcon
+INFO: new cursor is set
+May 21, 2024 1:54:17 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms addBlockToScreen
+INFO: Block added to screen to positon1524
+May 21, 2024 1:54:17 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms clearHotbar
+INFO: cleared images from hot bar
+May 21, 2024 1:54:17 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms fillHotbar
+INFO: filled hot bar with images of player's hot bar
+May 21, 2024 1:54:17 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms$2 handle
+INFO: a block was built
+May 21, 2024 1:54:18 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms$1 handle
+INFO: 2 was pressed
+May 21, 2024 1:54:18 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms setFocusOnHotbar
+INFO: new focus is set on hot bar
+May 21, 2024 1:54:18 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms setSelectedItemIcon
+INFO: new cursor is set
+May 21, 2024 1:54:18 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms clearHotbar
+INFO: cleared images from hot bar
+May 21, 2024 1:54:18 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms fillHotbar
+INFO: filled hot bar with images of player's hot bar
+May 21, 2024 1:54:18 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms$2 handle
+INFO: a block was destroyed
+May 21, 2024 1:54:19 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms$1 handle
+INFO: D was pressed
+May 21, 2024 1:54:19 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms viewPlayer
+INFO: changed player's view to-300300
+May 21, 2024 1:54:19 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms$1 handle
+INFO: player moved right
+May 21, 2024 1:54:20 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms isFalling
+INFO: player just falled
+May 21, 2024 1:54:48 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms loadOverworldFromSave
+INFO: loaded overworld successfully
+May 21, 2024 1:54:48 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms clearHP
+INFO: cleared all hearts from screen
+May 21, 2024 1:54:48 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms updateHP
+INFO: updated hearts based on players HP
+May 21, 2024 1:54:48 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms loadPlayer
+INFO: loaded player successfully
+May 21, 2024 1:54:48 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms loadNPC
+INFO: loaded NPC successfully
+May 21, 2024 1:54:48 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms clearHotbar
+INFO: cleared images from hot bar
+May 21, 2024 1:54:48 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms fillHotbar
+INFO: filled hot bar with images of player's hot bar
+May 21, 2024 1:54:48 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms loadGame
+INFO: loaded whole game
+May 21, 2024 1:54:50 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms$1 handle
+INFO: A was pressed
+May 21, 2024 1:54:50 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms viewPlayer
+INFO: changed player's view to0300
+May 21, 2024 1:54:50 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms$1 handle
+INFO: player moved left
+May 21, 2024 1:54:50 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms isFalling
+INFO: player just falled
+May 21, 2024 1:54:50 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms$1 handle
+INFO: A was pressed
+May 21, 2024 1:54:50 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms viewPlayer
+INFO: changed player's view to-30300
+May 21, 2024 1:54:50 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms$1 handle
+INFO: player moved left
+May 21, 2024 1:54:50 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms$1 handle
+INFO: A was pressed
+May 21, 2024 1:54:50 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms viewPlayer
+INFO: changed player's view to-60300
+May 21, 2024 1:54:50 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms$1 handle
+INFO: player moved left
+May 21, 2024 1:54:50 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms$1 handle
+INFO: A was pressed
+May 21, 2024 1:54:50 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms viewPlayer
+INFO: changed player's view to-90300
+May 21, 2024 1:54:50 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms$1 handle
+INFO: player moved left
+May 21, 2024 1:54:50 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms$1 handle
+INFO: A was pressed
+May 21, 2024 1:54:50 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms viewPlayer
+INFO: changed player's view to-120300
+May 21, 2024 1:54:50 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms$1 handle
+INFO: player moved left
+May 21, 2024 1:54:50 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms$1 handle
+INFO: A was pressed
+May 21, 2024 1:54:50 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms$1 handle
+INFO: A was pressed
+May 21, 2024 1:54:50 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms$1 handle
+INFO: A was pressed
+May 21, 2024 1:54:50 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms$1 handle
+INFO: A was pressed
+May 21, 2024 1:54:50 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms isFalling
+INFO: player just falled
+May 21, 2024 1:54:51 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms$1 handle
+INFO: W was pressed
+May 21, 2024 1:54:51 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms viewPlayer
+INFO: changed player's view to-120270
+May 21, 2024 1:54:51 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms$1 handle
+INFO: A was pressed
+May 21, 2024 1:54:51 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms viewPlayer
+INFO: changed player's view to-150270
+May 21, 2024 1:54:51 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms$1 handle
+INFO: player moved left
+May 21, 2024 1:54:52 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms isFalling
+INFO: player just falled
+May 21, 2024 1:54:52 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms$1 handle
+INFO: A was pressed
+May 21, 2024 1:54:52 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms viewPlayer
+INFO: changed player's view to-180270
+May 21, 2024 1:54:52 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms$1 handle
+INFO: player moved left
+May 21, 2024 1:54:52 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms$1 handle
+INFO: A was pressed
+May 21, 2024 1:54:52 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms viewPlayer
+INFO: changed player's view to-210270
+May 21, 2024 1:54:52 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms$1 handle
+INFO: player moved left
+May 21, 2024 1:54:52 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms$1 handle
+INFO: A was pressed
+May 21, 2024 1:54:52 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms viewPlayer
+INFO: changed player's view to-240270
+May 21, 2024 1:54:52 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms$1 handle
+INFO: player moved left
+May 21, 2024 1:54:52 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms$1 handle
+INFO: A was pressed
+May 21, 2024 1:54:52 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms viewPlayer
+INFO: changed player's view to-270270
+May 21, 2024 1:54:52 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms$1 handle
+INFO: player moved left
+May 21, 2024 1:54:52 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms$1 handle
+INFO: A was pressed
+May 21, 2024 1:54:52 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms viewPlayer
+INFO: changed player's view to-300270
+May 21, 2024 1:54:52 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms$1 handle
+INFO: player moved left
+May 21, 2024 1:54:52 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms$1 handle
+INFO: A was pressed
+May 21, 2024 1:54:52 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms viewPlayer
+INFO: changed player's view to-330270
+May 21, 2024 1:54:52 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms$1 handle
+INFO: player moved left
+May 21, 2024 1:54:52 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms viewPlayer
+INFO: changed player's view to-330300
+May 21, 2024 1:54:52 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms isFalling
+INFO: player just falled
+May 21, 2024 1:54:52 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms$1 handle
+INFO: 1 was pressed
+May 21, 2024 1:54:52 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms setFocusOnHotbar
+INFO: new focus is set on hot bar
+May 21, 2024 1:54:52 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms setSelectedItemIcon
+INFO: new cursor is set
+May 21, 2024 1:54:53 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms$1 handle
+INFO: D was pressed
+May 21, 2024 1:54:53 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms viewPlayer
+INFO: changed player's view to-300300
+May 21, 2024 1:54:53 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms$1 handle
+INFO: player moved right
+May 21, 2024 1:54:53 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms isFalling
+INFO: player just falled
+May 21, 2024 1:54:53 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms$2 handle
+INFO: player have attacked an enemy
+May 21, 2024 1:54:54 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms$1 handle
+INFO: A was pressed
+May 21, 2024 1:54:54 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms viewPlayer
+INFO: changed player's view to-330300
+May 21, 2024 1:54:54 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms clearHP
+INFO: cleared all hearts from screen
+May 21, 2024 1:54:54 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms updateHP
+INFO: updated hearts based on players HP
+May 21, 2024 1:54:54 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms$1 handle
+INFO: player took damage from enemy
+May 21, 2024 1:54:54 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms$1 handle
+INFO: player moved left
+May 21, 2024 1:54:54 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms isFalling
+INFO: player just falled
+May 21, 2024 1:54:54 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms$2 handle
+INFO: player have attacked an enemy
+May 21, 2024 1:54:54 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms banishEnemy
+INFO: banished enemy
+May 21, 2024 1:54:54 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms$2 handle
+INFO: player have attacked an enemy
+May 21, 2024 1:54:55 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms$1 handle
+INFO: D was pressed
+May 21, 2024 1:54:55 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms viewPlayer
+INFO: changed player's view to-300300
+May 21, 2024 1:54:55 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms$1 handle
+INFO: player moved right
+May 21, 2024 1:54:56 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms isFalling
+INFO: player just falled
+May 21, 2024 1:54:56 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms$1 handle
+INFO: D was pressed
+May 21, 2024 1:54:56 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms viewPlayer
+INFO: changed player's view to-270300
+May 21, 2024 1:54:56 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms$1 handle
+INFO: player moved right
+May 21, 2024 1:54:56 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms isFalling
+INFO: player just falled
+May 21, 2024 1:54:57 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms$1 handle
+INFO: 3 was pressed
+May 21, 2024 1:54:57 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms setFocusOnHotbar
+INFO: new focus is set on hot bar
+May 21, 2024 1:54:57 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms setSelectedItemIcon
+INFO: new cursor is set
+May 21, 2024 1:54:58 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms$1 handle
+INFO: 4 was pressed
+May 21, 2024 1:54:58 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms setFocusOnHotbar
+INFO: new focus is set on hot bar
+May 21, 2024 1:54:58 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms setSelectedItemIcon
+INFO: new cursor is set
+May 21, 2024 1:54:59 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms addBlockToScreen
+INFO: Block added to screen to positon1624
+May 21, 2024 1:54:59 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms clearHotbar
+INFO: cleared images from hot bar
+May 21, 2024 1:54:59 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms fillHotbar
+INFO: filled hot bar with images of player's hot bar
+May 21, 2024 1:54:59 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms$2 handle
+INFO: a block was built
+May 21, 2024 1:54:59 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms$1 handle
+INFO: 2 was pressed
+May 21, 2024 1:54:59 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms setFocusOnHotbar
+INFO: new focus is set on hot bar
+May 21, 2024 1:54:59 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms setSelectedItemIcon
+INFO: new cursor is set
+May 21, 2024 1:55:00 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms clearHotbar
+INFO: cleared images from hot bar
+May 21, 2024 1:55:00 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms fillHotbar
+INFO: filled hot bar with images of player's hot bar
+May 21, 2024 1:55:00 AM cs.cvut.fel.pjv.demo.OdysseyOfRealms$2 handle
+INFO: a block was destroyed

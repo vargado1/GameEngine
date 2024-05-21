@@ -16,12 +16,14 @@ public class LoggerSetup {
     public static void setupLogger(Logger logger) {
         try {
 
+            // Create a console handler to log messages to the console
             ConsoleHandler consoleHandler = new ConsoleHandler();
             consoleHandler.setLevel(Level.ALL);
+            // Use a simple formatter for log messages
             consoleHandler.setFormatter(new SimpleFormatter());
             logger.addHandler(consoleHandler);
 
-
+            // Create a file handler to log messages to a file named "application.log"
             FileHandler fileHandler = new FileHandler("application.log", true);
             fileHandler.setLevel(Level.ALL);
             fileHandler.setFormatter(new SimpleFormatter());

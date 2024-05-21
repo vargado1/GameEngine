@@ -4,10 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8eadbd22-06de-4bc4-b067-10e6afc5eb32" name="Changes" comment="unit testy">
+    <list default="true" id="8eadbd22-06de-4bc4-b067-10e6afc5eb32" name="Changes" comment="komenty">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/application.log" beforeDir="false" afterPath="$PROJECT_DIR$/application.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/player.json" beforeDir="false" afterPath="$PROJECT_DIR$/player.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/cs/cvut/fel/pjv/demo/LoggerSetup.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cs/cvut/fel/pjv/demo/LoggerSetup.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/cs/cvut/fel/pjv/demo/OdysseyOfRealms.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cs/cvut/fel/pjv/demo/OdysseyOfRealms.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -85,7 +85,7 @@
     "Application.HelloApplication.executor": "Run",
     "Application.LevelEdit.executor": "Run",
     "Application.MainApp.executor": "Run",
-    "Application.OdysseyOfRealms.executor": "Run",
+    "Application.OdysseyOfRealms.executor": "Debug",
     "JUnit.ControllerTest.interactWithObject.executor": "Run",
     "JUnit.ControllerTest.moveDown.executor": "Run",
     "JUnit.ControllerTest.moveRight.executor": "Debug",
@@ -141,9 +141,9 @@
       <recent name="cs.cvut.fel.pjv.demo.controller" />
     </key>
   </component>
-  <component name="RunManager">
-    <configuration name="LevelEdit" type="Application" factoryName="Application">
-      <option name="MAIN_CLASS_NAME" value="cs.cvut.fel.pjv.demo.editMode.EditMenu" />
+  <component name="RunManager" selected="Application.OdysseyOfRealms">
+    <configuration name="OdysseyOfRealms" type="Application" factoryName="Application">
+      <option name="MAIN_CLASS_NAME" value="cs.cvut.fel.pjv.demo.OdysseyOfRealms" />
       <module name="demo" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -230,7 +230,7 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="Application.LevelEdit" />
+      <item itemvalue="Application.OdysseyOfRealms" />
       <item itemvalue="JUnit.ModelTest.getCoordsFromScreenToList" />
       <item itemvalue="JUnit.ModelTest.isNearObject" />
       <item itemvalue="JUnit.PlayerTest.breakBlock" />
@@ -319,7 +319,8 @@
       <workItem from="1716128076312" duration="42127000" />
       <workItem from="1716170767572" duration="16528000" />
       <workItem from="1716203594770" duration="775000" />
-      <workItem from="1716204602410" duration="8927000" />
+      <workItem from="1716204602410" duration="9871000" />
+      <workItem from="1716247851828" duration="1782000" />
     </task>
     <task id="LOCAL-00001" summary="Objektový návrh">
       <option name="closed" value="true" />
@@ -473,7 +474,15 @@
       <option name="project" value="LOCAL" />
       <updated>1716212449119</updated>
     </task>
-    <option name="localTasksCounter" value="20" />
+    <task id="LOCAL-00020" summary="unit testy">
+      <option name="closed" value="true" />
+      <created>1716214859888</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1716214859888</updated>
+    </task>
+    <option name="localTasksCounter" value="21" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
