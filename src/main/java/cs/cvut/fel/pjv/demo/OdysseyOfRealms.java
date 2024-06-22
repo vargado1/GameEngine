@@ -1425,10 +1425,8 @@ public class OdysseyOfRealms extends Application {
 
                     LOGGER.info("a block was destroyed");
                 }
-
             }
         });
-
     }
 
 
