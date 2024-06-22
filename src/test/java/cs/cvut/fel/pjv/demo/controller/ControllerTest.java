@@ -18,7 +18,7 @@ class ControllerTest {
 
     @BeforeEach
     void setUp() {
-        Player player = new Player(24, 13, 100);
+        Player player = new Player(24, 14, 100);
         Model model = new Model();
         Realm realm = new Realm(RealmTypes.Overworld, "Boss", 1, "background.png", 49, 28);
         controller = new Controller(player, model, realm);
@@ -42,7 +42,7 @@ class ControllerTest {
 
     @Test
     void interactWithObject() {
-        NPC npc = new NPC("Hello", "NPC", 25, 13, "npc.png");
+        NPC npc = new NPC("Hello", "NPC", 25, 14, "npc.png");
         String result = controller.interactWithObject(npc);
         assertEquals("Hello", result);
 

@@ -1,6 +1,6 @@
 {
   "isMoving": false,
-  "direction": "LEFT",
+  "direction": "RIGHT",
   "speed": 1,
   "hotBar": [
     {
@@ -37,15 +37,8 @@
       "sceneYCoord": 0
     },
     {
-      "group": "Material",
-      "imagePath": "iron_ingot.png",
-      "type": "iron",
-      "sceneXCoord": 0,
-      "sceneYCoord": 0
-    },
-    {
-      "group": "Material",
-      "imagePath": "iron_ingot.png",
+      "group": "Sword",
+      "imagePath": "iron_sword.png",
       "type": "iron",
       "sceneXCoord": 0,
       "sceneYCoord": 0
@@ -57,13 +50,8 @@
       "sceneXCoord": 0,
       "sceneYCoord": 0
     },
-    {
-      "group": "Material",
-      "imagePath": "stick.png",
-      "type": "stick",
-      "sceneXCoord": 0,
-      "sceneYCoord": 0
-    },
+    null,
+    null,
     null
   ],
   "selectetItem": {
@@ -74,7 +62,7 @@
     "sceneYCoord": 0
   },
   "playerImage": "player.png",
-  "xCoords": 25,
+  "xCoords": 13,
   "yCoords": 24,
-  "HP": 100
+  "HP": 40
 }

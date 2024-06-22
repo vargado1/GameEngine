@@ -740,10 +740,14 @@ public class OdysseyOfRealms extends Application {
             imageView.setTranslateX(x + (count * 50));
             imageView.setTranslateY(y);
 
+            specialBlock.getInventory().get(i).setSceneYCoord(x + (count * 50));
+            specialBlock.getInventory().get(i).setSceneYCoord(y);
+
             imageView.setId("chestItem");
 
             root.getChildren().add(imageView);
 
+            count++;
         }
 
         LOGGER.info("filled chest");
@@ -834,10 +838,10 @@ public class OdysseyOfRealms extends Application {
                 break;
 
 //                TODO
-//            case "chest.png":
-//                slots = 36;
-//                fillEmptySlots(root, slots);
-//                fillChest(root, specialBlock);
+            case "chest.png":
+                slots = 36;
+                fillEmptySlots(root, slots);
+                fillChest(root, specialBlock);
 
         }
 
@@ -962,7 +966,7 @@ public class OdysseyOfRealms extends Application {
                     if (item == null) {
                         continue;
                     }
-                    if (item.getSceneXCoord() == sceneX && item.getSceneYCoord() == sceneY) {
+                    if (item.getSceneXCoord() == (sceneX + 25) && item.getSceneYCoord() == sceneY) {
                         desiredItem = item;
                     }
                 }
@@ -1040,6 +1044,18 @@ public class OdysseyOfRealms extends Application {
 
                 root.setOnMouseClicked(null);
                 LOGGER.info("player exited crafting");
+            }
+            if (event.getCode() == KeyCode.ESCAPE && specialBlockImagePath.equals("chest.png")) {
+                Iterator<Node> rootChildrenIterator = root.getChildren().iterator();
+                while (rootChildrenIterator.hasNext()) {
+                    Node node = rootChildrenIterator.next();
+                    if (node.getId() != null) {
+                        if (node.getId().equals("emptySlot") || node.getId().equals("usedItem")) {
+                            rootChildrenIterator.remove();
+                        }
+                    }
+                }
+
             }
             if (event.getCode() == KeyCode.ENTER && specialBlockImagePath.equals("crafting_table.png")) {
                 Item item = checkForRecipe(specialBlock);

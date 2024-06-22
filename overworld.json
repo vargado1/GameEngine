@@ -1241,18 +1241,6 @@
     },
     {
       "isCraftable": true,
-      "xCoord": 14,
-      "yCoord": 25,
-      "size": 30,
-      "canFall": false,
-      "group": "Block",
-      "imagePath": "dirt_block.jpg",
-      "type": "Dirt",
-      "sceneXCoord": 0,
-      "sceneYCoord": 0
-    },
-    {
-      "isCraftable": true,
       "xCoord": 15,
       "yCoord": 25,
       "size": 30,
@@ -1696,6 +1684,18 @@
       "type": "specialBlock",
       "sceneXCoord": 0,
       "sceneYCoord": 0
+    },
+    {
+      "isCraftable": true,
+      "xCoord": 14,
+      "yCoord": 25,
+      "size": 30,
+      "canFall": false,
+      "group": "Block",
+      "imagePath": "dirt_block.jpg",
+      "type": "Dirt",
+      "sceneXCoord": 0,
+      "sceneYCoord": 0
     }
   ],
   "mobs": [
@@ -1703,9 +1703,9 @@
       "speed": 0,
       "damage": 20,
       "type": "Enemy",
-      "xCoords": 12,
+      "xCoords": 6,
       "yCoords": 24,
-      "HP": 20,
+      "HP": 2,
       "imagePath": "enemy1.png"
     }
   ],

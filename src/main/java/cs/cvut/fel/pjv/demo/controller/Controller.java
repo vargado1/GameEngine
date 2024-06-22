@@ -55,6 +55,7 @@ public class Controller {
      */
     public int[] moveLeft(){
         int[] coords = player.moveLEFT();
+
         return model.getCoordsFromListToScreen(coords[0], coords[1], 30, realm);
     }
 
